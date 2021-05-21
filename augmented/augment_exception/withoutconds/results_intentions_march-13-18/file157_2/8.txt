@@ -1,0 +1,14 @@
+Read book
+Reading a book
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <bookmark> (1)
+[FIND] <bookmark> (1)
+[READ] <novel> (1)

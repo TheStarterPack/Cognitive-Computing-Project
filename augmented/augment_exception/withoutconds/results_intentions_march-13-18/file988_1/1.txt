@@ -1,0 +1,21 @@
+Wash dishes by hand
+wash dish in sink, dry, put in cupboard
+
+
+[FIND] <faucet> (1)
+[FIND] <dish_soap> (1)
+[GRAB] <dish_soap> (1)
+[SQUEEZE] <dish_soap> (1)
+[PUTOBJBACK] <dish_soap> (1)
+[FIND] <bowl> (1)
+[GRAB] <bowl> (1)
+[WASH] <bowl> (1)
+[RINSE] <bowl> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)
+[WIPE] <bowl> (1)
+[PUTOBJBACK] <towel> (1)
+[FIND] <cupboard> (1)
+[OPEN] <cupboard> (1)
+[PUTBACK] <bowl> (1) <cupboard> (1)
+[CLOSE] <cupboard> (1)

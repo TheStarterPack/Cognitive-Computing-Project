@@ -1,0 +1,9 @@
+Browse internet
+I go to the office and go to the computer. I turn the computer on and use the internet.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

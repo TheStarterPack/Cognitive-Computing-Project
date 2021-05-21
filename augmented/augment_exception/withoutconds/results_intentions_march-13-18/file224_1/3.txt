@@ -1,0 +1,15 @@
+Cook some food
+Find pottery, food and refrigerator items.
+
+
+[FIND] <freezer> (1)
+[FIND] <dry_pasta> (1)
+[GRAB] <dry_pasta> (1)
+[WALK] <sink> (1)
+[DROP] <dry_pasta> (1)
+[FIND] <pot> (1)
+[GRAB] <pot> (1)
+[RINSE] <pot> (1)
+[PUTOBJBACK] <pot> (1)
+[FIND] <oven> (1)
+[SWITCHON] <oven> (1)

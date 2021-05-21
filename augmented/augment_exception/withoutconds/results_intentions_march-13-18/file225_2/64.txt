@@ -1,0 +1,20 @@
+Watch TV
+Sit down, turn on the TV with the remote control that is on the coffee table.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <coffee_table> (1)
+[FIND] <coffee_table> (1)
+[TURNTO] <coffee_table> (1)
+[LOOKAT] <coffee_table> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[TURNTO] <television> (1)
+[POINTAT] <television> (1)

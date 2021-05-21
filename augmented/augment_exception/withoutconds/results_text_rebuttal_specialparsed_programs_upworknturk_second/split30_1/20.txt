@@ -1,0 +1,18 @@
+Watch movie
+Lay on pillows in bed. Turn on laptop. Go to internet on laptop and go to Netflix. Pick a television show on Netflix and hit play. Watch Netflix.
+
+
+[WALK] <bedroom> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[FIND] <bed> (1)
+[SIT] <bed> (1)
+[PLUGIN] <laptop> (1)
+[SWITCHON] <laptop> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[PUTBACK] <laptop> (1) <bed> (1)
+[LIE] <bed> (1)
+[TURNTO] <laptop> (1)
+[LOOKAT] <laptop> (1)

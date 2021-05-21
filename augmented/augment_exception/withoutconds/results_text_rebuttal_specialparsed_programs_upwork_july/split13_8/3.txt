@@ -1,0 +1,13 @@
+Work
+Sit at a desk.  Turn on computer.  Sign onto mTurk.  Perform tasks.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

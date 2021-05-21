@@ -1,0 +1,23 @@
+Work
+Go into the office and sit down at the desk in front of the computer. Turn on the computer and look at it while clicking with the mouse and typing with the keyboard.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

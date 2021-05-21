@@ -1,0 +1,8 @@
+Light candles
+Light the dining room lamps
+
+
+[WALK] <dining_room> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (2)
+[TURNTO] <floor_lamp> (2)

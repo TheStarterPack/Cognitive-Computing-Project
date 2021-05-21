@@ -1,0 +1,11 @@
+Pet cat
+Walk into bedrrom and to the sofa. Sit on the sofa and touch cat.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TOUCH] <cat> (1)

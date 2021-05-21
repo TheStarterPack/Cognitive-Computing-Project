@@ -1,0 +1,23 @@
+Pick up phone
+Go to the phone and pick it up.
+
+
+[RUN] <home_office> (1)
+[RUN] <table> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[WALK] <couch> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <clothes_hat> (1)
+[GRAB] <clothes_hat> (1)
+[RELEASE] <clothes_hat> (1)
+[FIND] <phone> (2)
+[GRAB] <phone> (2)
+[RELEASE] <phone> (2)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[RELEASE] <clothes_shirt> (1)
+[SIT] <couch> (1)
+[TOUCH] <phone> (1)

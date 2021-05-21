@@ -1,0 +1,21 @@
+Wash clothes
+Walk to bathroom, open cabinet and collect clothes and put them into washing machine and wash clothes
+
+
+[Walk] <bathroom> (1)
+[Walk] <dresser> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <clothes_dress> (1)
+[Grab] <clothes_dress> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[PutBack] <clothes_dress> (1) <dresser> (1)
+[Find] <clothes_pants> (1)
+[Grab] <clothes_pants> (1)
+[PutBack] <clothes_pants> (1) <dresser> (1)
+[Find] <clothes_jacket> (1)
+[Grab] <clothes_jacket> (1)
+[PutBack] <clothes_jacket> (1) <dresser> (1)
+[Close] <dresser> (1)
+[SwitchOn] <dresser> (1)

@@ -1,0 +1,1 @@
+[{"atreach": [["laptop", "1"], ["light", "1"]]}, {"free": ["chair", "1"]}, {"is_off": ["light", "1"]}, {"is_on": ["laptop", "1"]}, {"location": [["chair", "1"], ["home_office", "1"]]}, {"location": [["laptop", "1"], ["home_office", "1"]]}, {"location": [["light", "1"], ["home_office", "1"]]}, {"plugged": ["laptop", "1"]}, {"unplugged": ["light", "1"]}]

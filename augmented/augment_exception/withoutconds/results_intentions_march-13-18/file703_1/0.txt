@@ -1,0 +1,18 @@
+Relax on sofa
+getting finishing your work walk to living room and relax on a couch
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <chessboard> (1)
+[GRAB] <chessboard> (1)
+[RELEASE] <chessboard> (1)
+[LIE] <couch> (1)
+[SLEEP]

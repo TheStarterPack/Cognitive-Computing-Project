@@ -1,0 +1,27 @@
+Entertain
+Give guests wine, cheese, crackers and sit and talk
+
+
+[WALK] <home_office> (1)
+[WALK] <food_cheese> (1)
+[FIND] <food_cheese> (1)
+[FIND] <food_food> (1)
+[FIND] <couch> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[RELEASE] <mail> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[FIND] <shoes> (1)
+[GRAB] <shoes> (1)
+[RELEASE] <shoes> (1)
+[FIND] <band-aids> (1)
+[GRAB] <band-aids> (1)
+[RELEASE] <band-aids> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <wine_glass> (1)
+[FIND] <wine_glass> (1)
+[GRAB] <wine_glass> (1)
+[DRINK] <wine_glass> (1)

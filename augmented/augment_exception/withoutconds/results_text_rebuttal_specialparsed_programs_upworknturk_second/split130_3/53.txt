@@ -1,0 +1,27 @@
+Watch movie
+Sit down on couch in front of TV.  Use remote to turn on the TV
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <coin> (1)
+[GRAB] <coin> (1)
+[RELEASE] <coin> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <dirt> (1)
+[GRAB] <dirt> (1)
+[RELEASE] <dirt> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

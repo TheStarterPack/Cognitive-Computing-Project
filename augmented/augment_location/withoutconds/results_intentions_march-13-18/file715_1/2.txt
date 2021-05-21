@@ -1,0 +1,12 @@
+Pick up phone
+reach down, grasp phone, pick up phone
+
+
+[StandUp]
+[Walk] <kitchen> (1)
+[Walk] <bathroom_counter> (1)
+[Find] <bathroom_counter> (1)
+[TurnTo] <bathroom_counter> (1)
+[LookAt] <bathroom_counter> (1)
+[Find] <cellphone> (1)
+[Grab] <cellphone> (1)

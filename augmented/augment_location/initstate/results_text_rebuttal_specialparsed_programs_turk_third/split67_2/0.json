@@ -1,0 +1,1 @@
+[{"atreach": [["freezer", "1"], ["water_glass", "1"]]}, {"atreach": [["juice", "1"], ["water_glass", "1"]]}, {"location": [["water_glass", "1"], ["dining_room", "1"]]}, {"location": [["freezer", "1"], ["dining_room", "1"]]}, {"location": [["juice", "1"], ["dining_room", "1"]]}, {"closed": ["freezer", "1"]}, {"inside": [["juice", "1"], ["freezer", "1"]]}]

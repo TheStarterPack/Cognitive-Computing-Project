@@ -1,0 +1,16 @@
+Wash dishes with dishwasher
+I walk to the kitchen. I search and find dishwasher. I search dishes. I put dishes inside the dishwasher. I put dish soap in dishwasher. I switch on dishwasher and wait for dishes to be washed.
+
+
+[Walk] <kitchen> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[Open] <cabinet> (1)
+[PutBack] <plate> (1) <cabinet> (1)
+[Find] <dish_soap> (1)
+[Grab] <dish_soap> (1)
+[PutBack] <dish_soap> (1) <cabinet> (1)
+[Close] <cabinet> (1)
+[SwitchOn] <cabinet> (1)

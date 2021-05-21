@@ -1,0 +1,13 @@
+Work
+Get work done on a personal computer
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[FIND] <desk> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

@@ -1,0 +1,28 @@
+Play on laptop
+Sit down on the couch. Place laptop on lap. Open laptop. Turn on laptop. Choose selected program. Play selected program. Close game. Close laptop.
+
+
+[WALK] <home_office> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[FIND] <couch> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[FIND] <cards> (1)
+[GRAB] <cards> (1)
+[RELEASE] <cards> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <tray> (1)
+[GRAB] <tray> (1)
+[RELEASE] <tray> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <keyboard> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[SWITCHOFF] <laptop> (1)
+[PUTOBJBACK] <laptop> (1)

@@ -1,0 +1,7 @@
+Turn off light
+Hit the switch.
+
+
+[Walk] <bedroom> (1)
+[Walk] <lightswitch> (1)
+[SwitchOff] <lightswitch> (1)

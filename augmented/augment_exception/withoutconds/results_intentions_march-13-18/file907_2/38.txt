@@ -1,0 +1,16 @@
+Drink
+Walk to kitchen, grab a cup, fill with water and then drink it.
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[FIND] <faucet> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <water> (1)
+[FIND] <sink> (1)
+[PUTBACK] <cup> (1) <sink> (1)
+[GRAB] <cup> (1)
+[DRINK] <cup> (1)

@@ -1,0 +1,18 @@
+Cook some food
+walk to kicthen , find stove , find cooking pot , find vegetables , find water  ,put vegetables in cooking pot, pour water to cooking pot,put cooking pot on stove, switch on stove
+
+
+[WALK] <dining_room> (1)
+[WALK] <oven> (2)
+[FIND] <oven> (2)
+[FIND] <pot> (3)
+[FIND] <food_vegetable> (4)
+[FIND] <water> (5)
+[GRAB] <water> (5)
+[WALK] <food_vegetable> (4)
+[WASH] <food_vegetable> (4)
+[WALK] <pot> (3)
+[POUR] <water> (5) <pot> (3)
+[FIND] <pot> (1)
+[GRAB] <pot> (1)
+[PUTBACK] <pot> (1) <oven> (2)

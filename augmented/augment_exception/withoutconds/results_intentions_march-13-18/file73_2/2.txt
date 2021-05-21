@@ -1,0 +1,28 @@
+Listen to music
+walk to living room. grab cellphone. grab headset. lie in sofa. touch cellphone. look at cellphone.
+
+
+[WALK] <home_office> (1)
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[FIND] <headset> (1)
+[GRAB] <headset> (1)
+[PUTON] <headset> (1)
+[FIND] <couch> (1)
+[FIND] <purse> (1)
+[GRAB] <purse> (1)
+[RELEASE] <purse> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <purse> (2)
+[GRAB] <purse> (2)
+[RELEASE] <purse> (2)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[LIE] <couch> (1)
+[TOUCH] <phone> (1)
+[TURNTO] <phone> (1)
+[LOOKAT] <phone> (1)

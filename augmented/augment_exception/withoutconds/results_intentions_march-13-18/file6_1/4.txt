@@ -1,0 +1,26 @@
+Relax on sofa
+I turn on the tv and sit in the sofa. I watch the tv and fall asleep.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <couch> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[RELEASE] <mail> (1)
+[FIND] <cards> (1)
+[GRAB] <cards> (1)
+[RELEASE] <cards> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)
+[SLEEP]

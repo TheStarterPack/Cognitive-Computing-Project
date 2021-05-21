@@ -1,0 +1,31 @@
+Print out document
+Click on the printer icon.
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[READ] <check> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[STANDUP]
+[FIND] <fax_machine> (1)
+[SWITCHON] <fax_machine> (1)
+[FIND] <printing_paper> (1)
+[GRAB] <printing_paper> (1)
+[PUTBACK] <printing_paper> (1) <fax_machine> (1)

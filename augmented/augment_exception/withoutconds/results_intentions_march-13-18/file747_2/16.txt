@@ -1,0 +1,25 @@
+Wash dishes by hand
+I walk in to the Kitchen. I find a plate, a sponge, and the dish soap. I find the faucet. I turn the faucet on. I pour water on the sponge and plate. I add dish soap to the sponge. I put the dish soap back. I scrub the plate. I rinse the plate. I place the plate on the drying rack. I rinse the sponge. I turn the faucet off.
+
+
+[WALK] <dining_room> (1)
+[WALK] <faucet> (1)
+[FIND] <faucet> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <sponge> (1)
+[GRAB] <sponge> (1)
+[RINSE] <sponge> (1)
+[FIND] <dish_soap> (1)
+[GRAB] <dish_soap> (1)
+[POUR] <dish_soap> (1) <sponge> (1)
+[PUTOBJBACK] <dish_soap> (1)
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[WASH] <plate> (1)
+[RINSE] <plate> (1)
+[FIND] <drying_rack> (1)
+[PUTBACK] <plate> (1) <plate> (1)
+[RINSE] <sponge> (1)
+[PUTOBJBACK] <sponge> (1)
+[WALK] <faucet> (1)
+[SWITCHOFF] <faucet> (1)

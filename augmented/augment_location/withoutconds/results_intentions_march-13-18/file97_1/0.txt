@@ -1,0 +1,13 @@
+Drink
+Robot Drinks the water
+
+
+[Walk] <kitchen> (1)
+[Walk] <dresser> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <drinking_glass> (1)
+[Grab] <drinking_glass> (1)
+[Drink] <drinking_glass> (1)
+[PutObjBack] <drinking_glass> (1)
+[Close] <dresser> (1)

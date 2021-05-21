@@ -1,0 +1,26 @@
+Change TV channel
+go to living room. grab remote control. sit on couch. point remote at tv. push buttons.
+
+
+[WALK] <home_office> (1)
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_socks> (1)
+[GRAB] <clothes_socks> (1)
+[RELEASE] <clothes_socks> (1)
+[FIND] <dirt> (1)
+[GRAB] <dirt> (1)
+[RELEASE] <dirt> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[SIT] <couch> (1)
+[TURNTO] <remote_control> (1)
+[POINTAT] <remote_control> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)

@@ -1,0 +1,13 @@
+Take shoes off
+Take off your shoes by the door
+
+
+[WALK] <home_office> (1)
+[WALK] <shoes> (1)
+[FIND] <shoes> (1)
+[FIND] <shoes> (1)
+[PUTOFF] <shoes> (1)
+[FIND] <dresser> (1)
+[GRAB] <shoes> (1)
+[PUTIN] <shoes> (1) <dresser> (1)
+[CLOSE] <dresser> (1)

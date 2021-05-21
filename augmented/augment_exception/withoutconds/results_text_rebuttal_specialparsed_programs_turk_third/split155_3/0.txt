@@ -1,0 +1,24 @@
+Watch TV
+Sit on the couch or the chair or the floor and watch cable, movies, or netflix.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <couch> (1)
+[FIND] <chair> (1)
+[GRAB] <chair> (1)
+[RELEASE] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <brush> (1)
+[GRAB] <brush> (1)
+[RELEASE] <brush> (1)
+[FIND] <pajamas> (1)
+[GRAB] <pajamas> (1)
+[RELEASE] <pajamas> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

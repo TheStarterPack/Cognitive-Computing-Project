@@ -1,0 +1,9 @@
+Put groceries in Fridge
+Put Groceries in fridge
+
+
+[FIND] <freezer> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[PUTIN] <food_food> (1) <freezer> (1)
+[CLOSE] <freezer> (1)

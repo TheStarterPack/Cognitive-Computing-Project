@@ -1,0 +1,12 @@
+Put groceries in Fridge
+put away groceries in fridge. open the door, put on shelf, close the door.
+
+
+[Walk] <kitchen> (1)
+[Walk] <closet> (1)
+[Find] <closet> (1)
+[Open] <closet> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <closet> (1)
+[Close] <closet> (1)

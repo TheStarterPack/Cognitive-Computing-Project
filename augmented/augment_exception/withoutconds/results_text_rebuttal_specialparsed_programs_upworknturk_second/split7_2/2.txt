@@ -1,0 +1,16 @@
+Hang up jacket
+Go  to the hall closet and hang my jacket up.
+
+
+[WALK] <home_office> (1)
+[WALK] <clothes_jacket> (1)
+[FIND] <clothes_jacket> (1)
+[FIND] <clothes_jacket> (1)
+[PUTOFF] <clothes_jacket> (1)
+[WALK] <dresser> (1)
+[OPEN] <dresser> (1)
+[WALK] <clothes_jacket> (1)
+[GRAB] <clothes_jacket> (1)
+[WALK] <dresser> (1)
+[PUTIN] <clothes_jacket> (1) <dresser> (1)
+[CLOSE] <dresser> (1)

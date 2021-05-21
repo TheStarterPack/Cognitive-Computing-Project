@@ -1,0 +1,25 @@
+Read book
+Find book, grab book, fin bookmark, sit down somewhere comfortable, open book, read book, close book after reading.
+
+
+[WALK] <desk> (1)
+[FIND] <novel> (1)
+[FIND] <bookmark> (1)
+[GRAB] <bookmark> (1)
+[FIND] <couch> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[SIT] <couch> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)
+[PUTBACK] <bookmark> (1) <novel> (1)

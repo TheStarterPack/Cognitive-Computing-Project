@@ -1,0 +1,17 @@
+Watch TV
+Grab television remote. Sit down on bed. Turn television on. Select channel to watch on.
+
+
+[Walk] <bedroom> (1)
+[Walk] <lightswitch> (1)
+[Find] <lightswitch> (1)
+[SwitchOn] <lightswitch> (1)
+[Walk] <dresser> (1)
+[Find] <remote_control> (1)
+[Grab] <remote_control> (1)
+[Walk] <bed> (1)
+[Sit] <bed> (1)
+[Find] <television> (1)
+[SwitchOn] <television> (1)
+[TurnTo] <television> (1)
+[Watch] <television> (1)

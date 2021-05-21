@@ -1,0 +1,12 @@
+Listen to music
+Walk to living room, walk to cd player, turn on cd player, press play button, walk to sofa, sit in sofa and listen to music
+
+
+[WALK] <home_office> (1)
+[WALK] <cd_player> (1)
+[PLUGIN] <cd_player> (1)
+[SWITCHON] <cd_player> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)

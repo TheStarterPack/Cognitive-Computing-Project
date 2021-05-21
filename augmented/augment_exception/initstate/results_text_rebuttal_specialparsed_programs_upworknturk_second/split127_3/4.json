@@ -1,0 +1,1 @@
+[{"atreach": [["novel", "1"], ["floor_lamp", "1"]]}, {"atreach": [["chair", "1"], ["floor_lamp", "1"]]}, {"is_on": ["floor_lamp", "1"]}, {"location": [["novel", "1"], ["home_office", "1"]]}, {"location": [["chair", "1"], ["home_office", "1"]]}, {"location": [["floor_lamp", "1"], ["home_office", "1"]]}, {"occupied": ["chair", "1"]}]

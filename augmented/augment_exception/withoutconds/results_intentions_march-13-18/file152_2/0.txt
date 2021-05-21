@@ -1,0 +1,10 @@
+Put groceries in Fridge
+take every item from groceries bag and put them in the fridge
+
+
+[WALK] <dining_room> (1)
+[WALK] <food_food> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[FIND] <freezer> (1)
+[PUTIN] <food_food> (1) <freezer> (1)

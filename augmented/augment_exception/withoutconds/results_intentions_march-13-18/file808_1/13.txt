@@ -1,0 +1,22 @@
+Write an email
+I go to my home office, sit on the chair and see my computer on the desk. I switch on my computer and type an email on the mechanical keyboard. on the laptop.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

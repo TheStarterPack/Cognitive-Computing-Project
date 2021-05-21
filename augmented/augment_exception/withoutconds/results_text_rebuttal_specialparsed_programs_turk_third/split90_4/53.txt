@@ -1,0 +1,25 @@
+Watch TV
+I like to set on my sofa.Turn on the tv. And watch Perry Mason. Monday's through Friday's.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[RELEASE] <clothes_shirt> (1)
+[FIND] <dirt> (1)
+[GRAB] <dirt> (1)
+[RELEASE] <dirt> (1)
+[FIND] <dirt> (2)
+[GRAB] <dirt> (2)
+[RELEASE] <dirt> (2)
+[SIT] <couch> (1)
+[FIND] <television> (1)
+[STANDUP]
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)

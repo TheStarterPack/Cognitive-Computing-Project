@@ -1,0 +1,1 @@
+[{"atreach": [["dresser", "1"], ["alarm_clock", "1"]]}, {"closed": ["dresser", "1"]}, {"is_off": ["alarm_clock", "1"]}, {"location": [["alarm_clock", "1"], ["bedroom", "1"]]}, {"location": [["dresser", "1"], ["bedroom", "1"]]}, {"unplugged": ["alarm_clock", "1"]}]

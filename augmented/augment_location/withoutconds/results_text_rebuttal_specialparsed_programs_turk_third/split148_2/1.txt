@@ -1,0 +1,10 @@
+Get out dish
+Open cupboard.  Get out the dish.
+
+
+[Walk] <kitchen> (1)
+[Walk] <freezer> (1)
+[Open] <freezer> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[Close] <freezer> (1)

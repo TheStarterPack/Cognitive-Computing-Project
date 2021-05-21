@@ -1,0 +1,28 @@
+Read
+Have the child sit on her seat.  Take out a book.  Read aloud.  Put the book away.
+
+
+[WALK] <home_office> (1)
+[WALK] <child> (1)
+[FIND] <child> (1)
+[GREET] <child> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[TURNTO] <child> (1)
+[LOOKAT] <child> (1)
+[READ] <novel> (1)
+[STANDUP]
+[WALK] <filing_cabinet> (1)
+[PUTOBJBACK] <novel> (1)

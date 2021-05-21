@@ -1,0 +1,28 @@
+Watch TV
+Watch the television
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[WALK] <television> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[FIND] <board_game> (1)
+[GRAB] <board_game> (1)
+[RELEASE] <board_game> (1)
+[FIND] <tape> (1)
+[GRAB] <tape> (1)
+[RELEASE] <tape> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[RELEASE] <plate> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

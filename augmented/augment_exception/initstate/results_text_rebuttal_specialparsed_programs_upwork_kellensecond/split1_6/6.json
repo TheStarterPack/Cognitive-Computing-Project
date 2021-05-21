@@ -1,0 +1,1 @@
+[{"atreach": [["electrical_outlet", "1"], ["stereo", "1"]]}, {"is_on": ["electrical_outlet", "1"]}, {"is_on": ["stereo", "1"]}, {"location": [["electrical_outlet", "1"], ["home_office", "1"]]}, {"location": [["stereo", "1"], ["home_office", "1"]]}, {"plugged": ["stereo", "1"]}]

@@ -1,0 +1,23 @@
+Write an email
+I walk into my office and go to the computer desk. I sit at my desk and turn the computer on. Then I write an email.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

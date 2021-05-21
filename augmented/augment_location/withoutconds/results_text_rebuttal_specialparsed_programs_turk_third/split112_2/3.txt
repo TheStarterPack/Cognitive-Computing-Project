@@ -1,0 +1,10 @@
+Put on glasses
+Put on glasses.
+
+
+[Walk] <bedroom> (1)
+[Walk] <sofa> (1)
+[Find] <sofa> (1)
+[Find] <spectacles> (1)
+[Grab] <spectacles> (1)
+[PutOn] <spectacles> (1)

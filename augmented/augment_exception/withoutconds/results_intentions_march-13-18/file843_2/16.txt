@@ -1,0 +1,19 @@
+Make coffee
+I walk into the kitchen. I find the coffee maker and open it. I find the coffee filter, grab it and put it into the coffee maker. I find ground coffee, grab it and put it into the coffee maker. I find some water, then I pour it into the coffee maker. I close the coffee maker, I plug it in and I switch it on.
+
+
+[WALK] <dining_room> (1)
+[WALK] <coffe_maker> (1)
+[FIND] <coffe_maker> (1)
+[FIND] <coffee_filter> (1)
+[GRAB] <coffee_filter> (1)
+[PUTBACK] <coffee_filter> (1) <coffe_maker> (1)
+[FIND] <ground_coffee> (1)
+[GRAB] <ground_coffee> (1)
+[PUTBACK] <ground_coffee> (1) <coffe_maker> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <coffe_maker> (1)
+[CLOSE] <coffe_maker> (1)
+[PLUGIN] <coffe_maker> (1)

@@ -1,0 +1,12 @@
+Work
+you go into your office, switch on the light, find chair at desk, sit in the chair, switch on the computer and work.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[SWITCHON] <light> (1)
+[FIND] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

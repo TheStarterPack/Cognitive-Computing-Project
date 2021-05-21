@@ -1,0 +1,21 @@
+Take nap
+I habitually take naps on my living room couch.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <dog> (1)
+[GRAB] <dog> (1)
+[RELEASE] <dog> (1)
+[FIND] <headset> (1)
+[GRAB] <headset> (1)
+[RELEASE] <headset> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[RELEASE] <cup> (1)
+[LIE] <couch> (1)
+[SLEEP]

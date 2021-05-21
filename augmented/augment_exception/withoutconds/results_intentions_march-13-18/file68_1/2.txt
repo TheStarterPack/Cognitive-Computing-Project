@@ -1,0 +1,12 @@
+Pick up phone
+first i will go to home office and switch on the lights and answer the call after then i will put back it and switch off the lights and close the door
+
+
+[RUN] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[PUTOBJBACK] <phone> (1)
+[WALK] <light> (1)
+[SWITCHOFF] <light> (1)

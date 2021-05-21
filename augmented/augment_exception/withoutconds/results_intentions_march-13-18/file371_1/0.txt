@@ -1,0 +1,9 @@
+Browse internet
+I go to my desk. I turn on the computer. I open a web page and look at it.
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

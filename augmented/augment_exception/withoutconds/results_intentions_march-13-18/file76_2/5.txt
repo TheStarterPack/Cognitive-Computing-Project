@@ -1,0 +1,15 @@
+Watch TV
+walk to living room. look at cabinet. grab remote control. switch on television. touch remote control. watch television.
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <filing_cabinet> (1)
+[TURNTO] <filing_cabinet> (1)
+[LOOKAT] <filing_cabinet> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[TOUCH] <remote_control> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

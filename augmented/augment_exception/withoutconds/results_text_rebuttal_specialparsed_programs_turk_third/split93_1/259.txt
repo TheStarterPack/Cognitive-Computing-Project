@@ -1,0 +1,30 @@
+Work
+Prepare reports not finished at the office. Lay out spreadsheets across table, review.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[FIND] <laptop> (1)
+[STANDUP]
+[WALK] <fax_machine> (1)
+[FIND] <fax_machine> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[PUTBACK] <check> (1) <desk> (1)
+[FIND] <check> (2)
+[GRAB] <check> (2)
+[PUTBACK] <check> (2) <desk> (1)
+[FIND] <check> (3)
+[GRAB] <check> (3)
+[PUTBACK] <check> (3) <desk> (1)

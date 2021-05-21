@@ -1,0 +1,14 @@
+Drink
+Walk to kitchen. Walk to faucet. Switch on faucet. Pour water into drinking glass. Switch off faucet. Drink water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <faucet> (1)
+[FIND] <water> (1)
+[FIND] <drinking_glass> (1)
+[GRAB] <drinking_glass> (1)
+[FIND] <sink> (1)
+[PUTBACK] <drinking_glass> (1) <sink> (1)
+[GRAB] <drinking_glass> (1)
+[SWITCHOFF] <faucet> (1)
+[DRINK] <drinking_glass> (1)

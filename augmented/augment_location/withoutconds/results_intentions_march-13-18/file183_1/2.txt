@@ -1,0 +1,19 @@
+Wash dishes with dishwasher
+Walk to Kitchen, find dishwasher. Find vessels to be washed. Open dishwasher, put vessels in dish washer, close dish washer and switch it on.
+
+
+[Walk] <kitchen> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Open] <cabinet> (1)
+[Find] <cup> (1)
+[Grab] <cup> (1)
+[PutBack] <cup> (1) <cabinet> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[Grab] <cup> (1)
+[PutBack] <cup> (1) <plate> (1)
+[Grab] <cup> (1)
+[PutBack] <cup> (1) <cabinet> (1)
+[Close] <cabinet> (1)
+[SwitchOn] <cabinet> (1)

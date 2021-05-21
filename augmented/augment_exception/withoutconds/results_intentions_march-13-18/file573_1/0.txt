@@ -1,0 +1,16 @@
+Drink
+Feeling tired after hard work I opened the fridge and grabbed cool water and drank from the glass.
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <freezer> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[CLOSE] <freezer> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[FIND] <cup> (1)
+[POUR] <water> (1) <cup> (1)
+[FIND] <cup> (1)
+[DRINK] <cup> (1)

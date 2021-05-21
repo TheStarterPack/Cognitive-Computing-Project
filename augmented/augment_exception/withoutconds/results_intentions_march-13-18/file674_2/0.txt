@@ -1,0 +1,20 @@
+Relax on sofa
+Walk into the living room. Walk to the sofa and sit on it. Put your feet up on the sofa and lay down.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <clothes_jacket> (1)
+[GRAB] <clothes_jacket> (1)
+[RELEASE] <clothes_jacket> (1)
+[FIND] <lighter> (1)
+[GRAB] <lighter> (1)
+[RELEASE] <lighter> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <hair> (1)
+[GRAB] <hair> (1)
+[RELEASE] <hair> (1)
+[SIT] <couch> (1)
+[LIE] <couch> (1)

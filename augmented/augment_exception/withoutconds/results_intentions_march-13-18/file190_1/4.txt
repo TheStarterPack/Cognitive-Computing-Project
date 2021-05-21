@@ -1,0 +1,20 @@
+Wash dishes with dishwasher
+Put dishes in the dishwasher and start the dishwasher.
+
+
+[RUN] <dining_room> (1)
+[WALK] <bowl> (1)
+[FIND] <bowl> (1)
+[GRAB] <bowl> (1)
+[WALK] <dishwasher> (1)
+[PUTBACK] <bowl> (1) <dishwasher> (1)
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[WALK] <dishwasher> (1)
+[PUTBACK] <plate> (1) <dishwasher> (1)
+[FIND] <dish_soap> (1)
+[GRAB] <dish_soap> (1)
+[WALK] <dishwasher> (1)
+[PUTBACK] <dish_soap> (1) <dishwasher> (1)
+[CLOSE] <dishwasher> (1)
+[SWITCHON] <dishwasher> (1)

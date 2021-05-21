@@ -1,0 +1,1 @@
+[{"atreach": [["remote_control", "1"], ["filing_cabinet", "1"]]}, {"in": [["remote_control", "1"], ["filing_cabinet", "1"]]}, {"is_on": ["light", "1"]}, {"location": [["filing_cabinet", "1"], ["home_office", "1"]]}, {"location": [["light", "1"], ["home_office", "1"]]}, {"location": [["remote_control", "1"], ["home_office", "1"]]}, {"plugged": ["light", "1"]}]

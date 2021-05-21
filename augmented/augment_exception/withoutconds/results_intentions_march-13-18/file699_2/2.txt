@@ -1,0 +1,12 @@
+Pick up phone
+When the phone rings, I pick up the call and give response to the call.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)

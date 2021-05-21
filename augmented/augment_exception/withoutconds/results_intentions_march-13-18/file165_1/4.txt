@@ -1,0 +1,14 @@
+Wash dishes by hand
+Walk to Kitchen, find sink, find dishes and dish soap. Put soap on plate. open faucet, rinse dishes close faucet.
+
+
+[WALK] <dining_room> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[FIND] <dish_soap> (1)
+[GRAB] <dish_soap> (1)
+[PUTBACK] <dish_soap> (1) <plate> (1)
+[FIND] <faucet> (1)
+[RINSE] <plate> (1)

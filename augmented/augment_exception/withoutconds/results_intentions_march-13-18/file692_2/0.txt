@@ -1,0 +1,9 @@
+Put groceries in Fridge
+Open fridge, grab groceries, put groceries in fridge, close fridge
+
+
+[FIND] <freezer> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[PUTIN] <food_food> (1) <freezer> (1)
+[CLOSE] <freezer> (1)

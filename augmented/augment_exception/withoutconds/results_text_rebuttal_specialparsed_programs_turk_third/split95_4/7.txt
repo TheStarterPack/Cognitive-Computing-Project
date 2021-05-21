@@ -1,0 +1,21 @@
+Arrange folders
+Go through all my folders and re-arrange in alfabetaical order and put on computer desk
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <folder> (1)
+[GRAB] <folder> (1)
+[PUTBACK] <folder> (1) <desk> (1)
+[FIND] <folder> (2)
+[GRAB] <folder> (2)
+[PUTBACK] <folder> (2) <desk> (1)
+[FIND] <folder> (3)
+[GRAB] <folder> (3)
+[PUTBACK] <folder> (3) <desk> (1)
+[FIND] <folder> (4)
+[GRAB] <folder> (4)
+[PUTBACK] <folder> (4) <desk> (1)
+[FIND] <folder> (5)
+[GRAB] <folder> (5)
+[PUTBACK] <folder> (5) <desk> (1)

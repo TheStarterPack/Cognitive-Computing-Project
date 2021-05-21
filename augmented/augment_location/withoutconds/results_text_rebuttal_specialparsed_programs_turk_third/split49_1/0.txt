@@ -1,0 +1,22 @@
+Have snack
+Pour soda into a glass. Get pretzels out of bag. Eat and drink
+
+
+[Walk] <kitchen> (1)
+[Walk] <glass> (1)
+[Find] <glass> (1)
+[Grab] <glass> (1)
+[Walk] <box> (1)
+[Open] <box> (1)
+[Find] <juice> (1)
+[Grab] <juice> (1)
+[Pour] <juice> (1) <glass> (1)
+[PutIn] <juice> (1) <box> (1)
+[Close] <box> (1)
+[Walk] <freezer> (1)
+[Open] <freezer> (1)
+[Find] <food_snack> (1)
+[Grab] <food_snack> (1)
+[Close] <freezer> (1)
+[Drink] <glass> (1)
+[Eat] <food_snack> (1)

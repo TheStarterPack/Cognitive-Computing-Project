@@ -1,0 +1,12 @@
+Read book
+Turn on reading light. Bring book to couch. Sit on couch. Fluff pillow. Put pillow behind my back. Read my book.
+
+
+[WALK] <home_office> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <light> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

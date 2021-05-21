@@ -1,0 +1,11 @@
+Write an email
+go to the office and use the computer to write and email
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[FIND] <mail> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

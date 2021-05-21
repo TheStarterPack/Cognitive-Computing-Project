@@ -1,0 +1,21 @@
+Read book
+Sit on couch. Grab book. Open book. Read book.
+
+
+[WALK] <couch> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <controller> (1)
+[GRAB] <controller> (1)
+[RELEASE] <controller> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[RELEASE] <cup> (1)
+[SIT] <couch> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)

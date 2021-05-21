@@ -1,0 +1,12 @@
+Go to toilet
+I walk to bathroom. find closet. Uset It. Clean it. Use Toilet paper
+
+
+[WALK] <bathroom> (1)
+[WALK] <dresser> (1)
+[FIND] <dresser> (1)
+[CLOSE] <dresser> (1)
+[FIND] <toilet_paper> (1)
+[WASH] <dresser> (1)
+[FIND] <toilet_paper> (1)
+[TOUCH] <toilet_paper> (1)

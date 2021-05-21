@@ -1,0 +1,20 @@
+Work
+I go to my home office. I find the computer along with mechanical keyboard on the desk. I sit on chair. I switch on the computer. I type on keyboard and work on the computer.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <desk> (1)
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

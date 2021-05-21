@@ -1,0 +1,7 @@
+Listen to music
+Go to the living room. Find the radio. Turn on the radio.
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)

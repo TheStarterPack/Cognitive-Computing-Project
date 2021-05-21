@@ -1,0 +1,23 @@
+Watch TV
+I sit on the couch and watch TV.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <couch> (1)
+[FIND] <keys> (1)
+[GRAB] <keys> (1)
+[RELEASE] <keys> (1)
+[FIND] <bills> (1)
+[GRAB] <bills> (1)
+[RELEASE] <bills> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[RELEASE] <food_food> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[SIT] <couch> (1)
+[WATCH] <television> (1)

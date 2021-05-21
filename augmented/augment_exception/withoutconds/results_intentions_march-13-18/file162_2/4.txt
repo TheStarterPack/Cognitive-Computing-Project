@@ -1,0 +1,13 @@
+Wash clothes
+Wash the clothes in the washing machine
+
+
+[WALK] <bathroom> (1)
+[WALK] <basket_for_clothes> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[FIND] <washing_machine> (1)
+[PUTBACK] <basket_for_clothes> (1) <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

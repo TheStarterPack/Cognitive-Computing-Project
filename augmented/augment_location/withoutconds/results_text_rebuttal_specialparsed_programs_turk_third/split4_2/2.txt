@@ -1,0 +1,14 @@
+Get dressed
+Pick out the clothes you are going to wear and put them on your body
+
+
+[Walk] <bedroom> (1)
+[Walk] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <clothes_pants> (1)
+[Grab] <clothes_pants> (1)
+[PutOn] <clothes_pants> (1)
+[Find] <clothes_shirt> (1)
+[Grab] <clothes_shirt> (1)
+[PutOn] <clothes_shirt> (1)
+[Close] <dresser> (1)

@@ -1,0 +1,25 @@
+Watch TV
+Walk to living room, walk to TV, grab TV remote, turn on TV, put down the remote, walk to sofa, sit in soft, watch TV
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[WALK] <television> (1)
+[PUTOBJBACK] <remote_control> (1)
+[WALK] <couch> (1)
+[FIND] <diary> (1)
+[GRAB] <diary> (1)
+[RELEASE] <diary> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[RELEASE] <food_food> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[RELEASE] <rag> (1)
+[FIND] <hair> (1)
+[GRAB] <hair> (1)
+[RELEASE] <hair> (1)
+[SIT] <couch> (1)
+[WATCH] <television> (1)

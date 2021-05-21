@@ -1,0 +1,9 @@
+Work
+Find home office. Walk to home office. Find computer. Find chair at desk. Sit in chair. Switch on computer. Work on computer.
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)

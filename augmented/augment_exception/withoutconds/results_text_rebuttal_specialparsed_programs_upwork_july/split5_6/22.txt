@@ -1,0 +1,29 @@
+Text friends while sitting on couch
+Text while sitting
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <coin> (1)
+[GRAB] <coin> (1)
+[RELEASE] <coin> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <hanger> (1)
+[GRAB] <hanger> (1)
+[RELEASE] <hanger> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[TURNTO] <phone> (1)
+[LOOKAT] <phone> (1)
+[FIND] <keyboard> (1)
+[TOUCH] <keyboard> (1)
+[TYPE] <keyboard> (1)

@@ -1,0 +1,14 @@
+Breakfast
+I have breakfast in bed, watching tv.
+
+
+[WALK] <dining_room> (1)
+[WALK] <food_food> (1)
+[GRAB] <food_food> (1)
+[WALK] <bedroom> (1)
+[WALK] <television> (1)
+[WALK] <bed> (1)
+[LIE] <bed> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)
+[EAT] <food_food> (1)

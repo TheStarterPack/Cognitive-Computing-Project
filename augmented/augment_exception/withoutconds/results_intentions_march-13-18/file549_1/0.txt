@@ -1,0 +1,12 @@
+Wash clothes
+Gather dirty clothes together. Proceed to a washing machine. Place clothes inside washicng machine. Add detergent. Start the washing machine.
+
+
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[FIND] <washing_machine> (1)
+[PUTBACK] <basket_for_clothes> (1) <washing_machine> (1)
+[FIND] <detergent> (1)
+[GRAB] <detergent> (1)
+[PUTBACK] <detergent> (1) <washing_machine> (1)
+[WASH] <basket_for_clothes> (1)

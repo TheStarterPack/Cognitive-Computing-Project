@@ -1,0 +1,12 @@
+Watch TV
+Go to the computer.  Log on to streaming service.  Select channel.
+
+
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <mousepad> (1)
+[TOUCH] <mousepad> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[POINTAT] <television> (1)

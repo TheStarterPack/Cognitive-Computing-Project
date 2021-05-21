@@ -1,0 +1,12 @@
+Read book
+Take a book off the bookshelf. Sit down in a chair at the desk. Turn on desk lamp. Read the book.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <floor_lamp> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)

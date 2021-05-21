@@ -1,0 +1,19 @@
+Make coffee
+Walk to kitchen, open coffee maker, find coffee filter, grab coffee filter, put coffee filter in coffee maker, find ground coffee, put ground coffee in coffee maker, pour water in coffee maker, close coffee maker and switch on coffee maker.
+
+
+[WALK] <dining_room> (1)
+[WALK] <coffe_maker> (1)
+[FIND] <coffe_maker> (1)
+[FIND] <coffee_filter> (1)
+[GRAB] <coffee_filter> (1)
+[PUTBACK] <coffee_filter> (1) <coffe_maker> (1)
+[FIND] <ground_coffee> (1)
+[GRAB] <ground_coffee> (1)
+[PUTBACK] <ground_coffee> (1) <coffe_maker> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <coffe_maker> (1)
+[CLOSE] <coffe_maker> (1)
+[SWITCHON] <coffe_maker> (1)

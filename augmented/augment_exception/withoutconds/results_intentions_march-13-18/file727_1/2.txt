@@ -1,0 +1,21 @@
+Listen to music
+Walk to living room. Walk to radio. Switch on the radio. Walk to sofa and sit on it.
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[SWITCHON] <stereo> (1)
+[WALK] <couch> (1)
+[FIND] <video_game_controller> (1)
+[GRAB] <video_game_controller> (1)
+[RELEASE] <video_game_controller> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <homework> (1)
+[GRAB] <homework> (1)
+[RELEASE] <homework> (1)
+[FIND] <band-aids> (1)
+[GRAB] <band-aids> (1)
+[RELEASE] <band-aids> (1)
+[SIT] <couch> (1)

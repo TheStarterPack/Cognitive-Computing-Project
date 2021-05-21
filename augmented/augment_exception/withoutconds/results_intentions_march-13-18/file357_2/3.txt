@@ -1,0 +1,11 @@
+Listen to music
+I go to the living room, switch on the CD player (then choose the music cd and insert into the player) and sit on the sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <cd_player> (1)
+[FIND] <cd_player> (1)
+[PLUGIN] <cd_player> (1)
+[SWITCHON] <cd_player> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)

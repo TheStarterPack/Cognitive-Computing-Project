@@ -1,0 +1,18 @@
+Dust
+Using the duster, lightly dust all hanging pictures on walls in living room. Dust all around surface of picture frame and front of pictures, moving duster back and forth, side to side, until all dust is gone.
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <duster> (1)
+[GRAB] <duster> (1)
+[WALK] <wall> (1)
+[WALK] <picture> (1)
+[WIPE] <picture> (1)
+[WALK] <picture> (2)
+[WIPE] <picture> (2)
+[WALK] <picture> (3)
+[WIPE] <picture> (3)
+[WALK] <filing_cabinet> (1)
+[PUTBACK] <duster> (1) <filing_cabinet> (1)
+[CLOSE] <filing_cabinet> (1)

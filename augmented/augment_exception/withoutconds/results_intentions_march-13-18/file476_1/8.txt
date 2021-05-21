@@ -1,0 +1,21 @@
+Listen to music
+sitting down to listen to music on the radio
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[FIND] <couch> (1)
+[FIND] <deck_of_cards> (1)
+[GRAB] <deck_of_cards> (1)
+[RELEASE] <deck_of_cards> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[RELEASE] <laptop> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[RELEASE] <mail> (1)
+[SIT] <couch> (1)

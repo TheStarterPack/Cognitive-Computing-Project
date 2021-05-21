@@ -1,0 +1,11 @@
+Watch TV
+entering the living room and watching the Tv
+
+
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

@@ -1,0 +1,21 @@
+Wash dishes with dishwasher
+I walk to the kitchen to do the dishes. I put the dirty plate in the dishwasher, add dish soap and turn the machine on. Then when it finishes, I turn the machine off and put the plate on the dish rack to dry.
+
+
+[Walk] <kitchen> (1)
+[Walk] <plate> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[Find] <cupboard> (1)
+[Open] <cupboard> (1)
+[PutBack] <plate> (1) <cupboard> (1)
+[Find] <dish_soap> (1)
+[Grab] <dish_soap> (1)
+[PutBack] <dish_soap> (1) <cupboard> (1)
+[Find] <cupboard> (1)
+[Close] <cupboard> (1)
+[SwitchOn] <cupboard> (1)
+[SwitchOff] <cupboard> (1)
+[Grab] <plate> (1)
+[Find] <dishrack> (1)
+[PutBack] <plate> (1) <dishrack> (1)

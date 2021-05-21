@@ -1,0 +1,9 @@
+Work
+Switch on computer. Plug in keyboard. Type with keyboard. Plug out keyboard. Switch off computer.
+
+
+[FIND] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[PLUGOUT] <keyboard> (1)
+[SWITCHOFF] <computer> (1)

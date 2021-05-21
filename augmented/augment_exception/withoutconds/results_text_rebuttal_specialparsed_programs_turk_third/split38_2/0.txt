@@ -1,0 +1,10 @@
+Prepare Dinner
+Prepare meals for the family
+
+
+[FIND] <oven> (1)
+[TURNTO] <oven> (1)
+[POINTAT] <oven> (1)
+[RINSE] <oven> (1)
+[TURNTO] <oven> (1)
+[LOOKAT] <oven> (1)

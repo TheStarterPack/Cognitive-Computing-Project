@@ -1,0 +1,24 @@
+Read book
+I pick up a book off the self that I want to read. Then, I sit down on the couch, open the book, and begin reading it.
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[WALK] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <shoes> (1)
+[GRAB] <shoes> (1)
+[RELEASE] <shoes> (1)
+[FIND] <dog> (1)
+[GRAB] <dog> (1)
+[RELEASE] <dog> (1)
+[FIND] <novel> (2)
+[GRAB] <novel> (2)
+[RELEASE] <novel> (2)
+[SIT] <couch> (1)
+[READ] <novel> (1)

@@ -1,0 +1,6 @@
+Turn off light
+Walk to the lamp.  Find the switch.  Click the switch off.
+
+
+[WALK] <bedroom> (1)
+[WALK] <floor_lamp> (1)

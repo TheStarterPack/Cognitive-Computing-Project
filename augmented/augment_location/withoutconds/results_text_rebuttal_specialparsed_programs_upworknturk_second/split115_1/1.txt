@@ -1,0 +1,14 @@
+Take off shoes
+Take off my shoes and put them on the shoe rack.
+
+
+[Walk] <entrance_hall> (1)
+[Walk] <shoes> (1)
+[Find] <shoes> (1)
+[Find] <shoes> (1)
+[PutOff] <shoes> (1)
+[Find] <closet> (1)
+[Open] <closet> (1)
+[Grab] <shoes> (1)
+[PutIn] <shoes> (1) <closet> (1)
+[Close] <closet> (1)

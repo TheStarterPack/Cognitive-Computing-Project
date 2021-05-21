@@ -1,0 +1,15 @@
+Drink
+Walk to kitchen, walk to cupboard, open cupboard, grab cup, walk to sink, pour water in cup, drink water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[WALK] <sink> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <cup> (1)
+[DRINK] <cup> (1)

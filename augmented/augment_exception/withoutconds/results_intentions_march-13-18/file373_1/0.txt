@@ -1,0 +1,7 @@
+Work
+go to home office. turn the computer on. begin working
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)

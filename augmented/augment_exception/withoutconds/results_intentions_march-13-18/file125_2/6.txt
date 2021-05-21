@@ -1,0 +1,9 @@
+Turn on light
+turn on the light for room
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)

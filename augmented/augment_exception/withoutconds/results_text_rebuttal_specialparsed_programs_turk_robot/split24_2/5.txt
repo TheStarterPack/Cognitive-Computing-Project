@@ -1,0 +1,11 @@
+Turn on computer
+Find the power button. Press.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[PULL] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

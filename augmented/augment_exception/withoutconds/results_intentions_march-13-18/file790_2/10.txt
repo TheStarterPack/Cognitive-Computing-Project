@@ -1,0 +1,15 @@
+Take shower
+I want to take a shower so I go to the bathroom, turn on the shower, get the soap, lather and wash, then I rinse, turn off shower, get a towel and dry off.
+
+
+[WALK] <bathroom> (1)
+[WALK] <shower> (1)
+[FIND] <faucet> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[WALK] <shower> (1)
+[RINSE] <shower> (1)
+[WALK] <faucet> (1)
+[SWITCHOFF] <faucet> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)

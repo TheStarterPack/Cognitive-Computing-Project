@@ -1,0 +1,14 @@
+Shave
+Pick up razor.  Push the button to turn it on.  Move it in a linear motion against the beard growth.  Make sure to get the bottom of your chin, your cheeks, and mustache area.
+
+
+[WALK] <bathroom> (1)
+[WALK] <electric_shaver> (1)
+[FIND] <electric_shaver> (1)
+[GRAB] <electric_shaver> (1)
+[FIND] <mirror> (1)
+[TURNTO] <mirror> (1)
+[PLUGIN] <electric_shaver> (1)
+[SWITCHON] <electric_shaver> (1)
+[SWITCHOFF] <electric_shaver> (1)
+[PUTOBJBACK] <electric_shaver> (1)

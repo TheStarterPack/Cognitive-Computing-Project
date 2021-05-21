@@ -1,0 +1,9 @@
+Set up table
+stand up, move to dining room, find chair, full chair, walk to coffee table, push chair
+
+
+[FIND] <chair> (1)
+[WALK] <chair> (1)
+[PULL] <chair> (1)
+[WALK] <coffee_table> (1)
+[PUSH] <chair> (1)

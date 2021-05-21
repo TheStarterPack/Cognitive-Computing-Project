@@ -1,0 +1,7 @@
+Write  school paper
+Writing  and drafting a paper for  class work
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[SWITCHOFF] <computer> (1)

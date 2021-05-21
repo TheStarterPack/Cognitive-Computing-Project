@@ -1,0 +1,16 @@
+Shoe removal
+One removes the shoes from their feet/
+
+
+[Walk] <entrance_hall> (1)
+[Walk] <shoes> (1)
+[Find] <shoes> (1)
+[Grab] <shoes> (1)
+[Find] <shoes> (1)
+[Find] <shoes> (1)
+[PutOff] <shoes> (1)
+[Find] <shoes> (2)
+[Find] <shoes> (2)
+[Grab] <shoes> (2)
+[Find] <shoes> (2)
+[PutOff] <shoes> (2)

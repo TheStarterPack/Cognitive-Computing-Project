@@ -1,0 +1,33 @@
+Read book
+I finish of washes dishes, go to the living room, pick my book and read a while
+
+
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[FIND] <cupboard> (1)
+[PUTBACK] <plate> (1) <cupboard> (1)
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <phone> (2)
+[GRAB] <phone> (2)
+[RELEASE] <phone> (2)
+[FIND] <napkin> (1)
+[GRAB] <napkin> (1)
+[RELEASE] <napkin> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <coffee_table> (1)
+[FIND] <coffee_table> (1)
+[TOUCH] <coffee_table> (1)
+[FIND] <spectacles> (1)
+[GRAB] <spectacles> (1)
+[READ] <novel> (1)

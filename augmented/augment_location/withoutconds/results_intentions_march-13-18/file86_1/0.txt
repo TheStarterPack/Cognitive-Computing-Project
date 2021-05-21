@@ -1,0 +1,12 @@
+Read book
+Walk to the Living Room. Look at the Cabinet. Find a Textbook. Grab the textbook. Open the Textbook. Read the textbook.
+
+
+[Walk] <living_room> (1)
+[Walk] <bookshelf> (1)
+[Find] <bookshelf> (1)
+[TurnTo] <bookshelf> (1)
+[LookAt] <bookshelf> (1)
+[Find] <textbook> (1)
+[Grab] <textbook> (1)
+[Read] <textbook> (1)

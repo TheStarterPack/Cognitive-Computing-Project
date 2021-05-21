@@ -1,0 +1,29 @@
+Watch TV
+After listening to music for a while in the bedroom, I now decide I would like to watch some TV in the living room.
+
+
+[STANDUP]
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <television> (1)
+[WALK] <television> (1)
+[WALK] <light> (1)
+[SWITCHOFF] <light> (1)
+[FIND] <couch> (1)
+[WALK] <couch> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <dirt> (1)
+[GRAB] <dirt> (1)
+[RELEASE] <dirt> (1)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[RELEASE] <toy> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)

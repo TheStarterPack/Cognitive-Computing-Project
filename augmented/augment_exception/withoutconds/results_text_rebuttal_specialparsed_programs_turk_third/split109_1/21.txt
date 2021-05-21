@@ -1,0 +1,13 @@
+Play games
+Turn on game.  Use controller
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <video_game_console> (1)
+[SWITCHON] <video_game_console> (1)
+[FIND] <video_game_console> (1)
+[FIND] <video_game_controller> (1)
+[GRAB] <video_game_controller> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)

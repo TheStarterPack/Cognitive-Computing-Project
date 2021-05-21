@@ -1,0 +1,29 @@
+Relax on sofa
+you walk to the living room, open the door, find a comfy sofa, sit on it, read a book or sip a cup of coffee and relax.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <coffee_cup> (1)
+[GRAB] <coffee_cup> (1)
+[WALK] <couch> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <novel> (2)
+[GRAB] <novel> (2)
+[RELEASE] <novel> (2)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[RELEASE] <toy> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)
+[DRINK] <coffee_cup> (1)

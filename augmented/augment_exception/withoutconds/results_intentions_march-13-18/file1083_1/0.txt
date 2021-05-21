@@ -1,0 +1,7 @@
+Turn on light
+walk to living room ,find electrical outlet , switch on eletrical outlet
+
+
+[WALK] <home_office> (1)
+[WALK] <electrical_outlet> (2)
+[FIND] <electrical_outlet> (2)

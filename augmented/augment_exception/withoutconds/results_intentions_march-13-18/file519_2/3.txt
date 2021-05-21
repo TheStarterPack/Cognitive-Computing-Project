@@ -1,0 +1,13 @@
+Pick up phone
+My friend is calling and I want to pick up the phone and chat with him for a little while on the couch.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)
+[LIE] <couch> (1)
+[TYPE] <phone> (1)

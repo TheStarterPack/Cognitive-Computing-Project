@@ -1,0 +1,16 @@
+Draw picture
+Pick up a pad of paper and a pen.  Draw a picture.
+
+
+[Walk] <home_office> (1)
+[Walk] <chair> (1)
+[Find] <chair> (1)
+[Sit] <chair> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <paper> (1)
+[Grab] <paper> (1)
+[PutBack] <paper> (1) <dresser> (1)
+[Find] <pen> (1)
+[Grab] <pen> (1)
+[Close] <dresser> (1)

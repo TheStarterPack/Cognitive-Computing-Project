@@ -1,0 +1,9 @@
+Watch TV
+Walk into the living room. Sit on the couch. Turn on TV.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)

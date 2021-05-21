@@ -1,0 +1,14 @@
+Read book
+Take a book, open it and read it
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[READ] <novel> (1)

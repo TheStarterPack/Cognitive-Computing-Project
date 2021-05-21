@@ -1,0 +1,15 @@
+Drink
+Get a can of beer, open it, sit on couch, relax
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <freezer> (1)
+[FIND] <beer> (1)
+[GRAB] <beer> (1)
+[CLOSE] <freezer> (1)
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[DRINK] <beer> (1)

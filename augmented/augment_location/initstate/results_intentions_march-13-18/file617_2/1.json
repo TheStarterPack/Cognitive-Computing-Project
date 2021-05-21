@@ -1,0 +1,1 @@
+[{"atreach": [["novel", "1"], ["bag", "1"]]}, {"atreach": [["bed", "1"], ["bag", "1"]]}, {"location": [["bag", "1"], ["bedroom", "1"]]}, {"location": [["novel", "1"], ["bedroom", "1"]]}, {"location": [["bed", "1"], ["bedroom", "1"]]}, {"closed": ["bag", "1"]}, {"inside": [["novel", "1"], ["bag", "1"]]}, {"free": ["bed", "1"]}]

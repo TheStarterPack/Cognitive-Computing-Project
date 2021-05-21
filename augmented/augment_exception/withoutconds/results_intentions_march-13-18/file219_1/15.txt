@@ -1,0 +1,14 @@
+Read book
+i bought a book written by my favorite author and im so excited in reading this so i went to my living room and open the book without any disturbances im going to read it fullly
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[STANDUP]
+[WALK] <bookmark> (1)
+[FIND] <bookmark> (1)
+[READ] <novel> (1)

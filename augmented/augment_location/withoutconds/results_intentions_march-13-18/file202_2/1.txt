@@ -1,0 +1,17 @@
+Make coffee
+Make coffee in the kitchen.
+
+
+[Walk] <kitchen> (1)
+[Walk] <cupboard> (1)
+[Find] <cupboard> (1)
+[PlugIn] <cupboard> (1)
+[Open] <cupboard> (1)
+[Find] <coffee_filter> (1)
+[Grab] <coffee_filter> (1)
+[PutBack] <coffee_filter> (1) <cupboard> (1)
+[Find] <ground_coffee> (1)
+[Grab] <ground_coffee> (1)
+[PutBack] <ground_coffee> (1) <cupboard> (1)
+[Close] <cupboard> (1)
+[SwitchOn] <cupboard> (1)

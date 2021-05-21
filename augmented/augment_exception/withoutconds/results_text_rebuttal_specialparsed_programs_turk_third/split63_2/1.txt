@@ -1,0 +1,9 @@
+Clean
+Clean the welcome mat
+
+
+[WALK] <home_office> (1)
+[WALK] <vacuum_cleaner> (1)
+[FIND] <vacuum_cleaner> (1)
+[GRAB] <vacuum_cleaner> (1)
+[SWITCHOFF] <vacuum_cleaner> (1)

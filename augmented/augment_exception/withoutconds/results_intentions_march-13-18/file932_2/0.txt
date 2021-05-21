@@ -1,0 +1,21 @@
+Relax on sofa
+walk to living room, find sofa, sit in sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[WALK] <couch> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[FIND] <controller> (1)
+[GRAB] <controller> (1)
+[RELEASE] <controller> (1)
+[FIND] <form> (1)
+[GRAB] <form> (1)
+[RELEASE] <form> (1)
+[FIND] <dog> (1)
+[GRAB] <dog> (1)
+[RELEASE] <dog> (1)
+[SIT] <couch> (1)

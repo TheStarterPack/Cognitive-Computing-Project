@@ -1,0 +1,20 @@
+Clean sink
+Squirt soap into the sink. Get a wet rag. Wipe out the sink. Rinse out the sink and the rag. Hang the rag out to dry.
+
+
+[WALK] <dining_room> (1)
+[WALK] <rag> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[FIND] <cleaning_solution> (1)
+[GRAB] <cleaning_solution> (1)
+[FIND] <cleaning_solution> (1)
+[WALK] <sink> (1)
+[POUR] <cleaning_solution> (1) <sink> (1)
+[PUTOBJBACK] <cleaning_solution> (1)
+[WIPE] <sink> (1)
+[FIND] <faucet> (1)
+[RINSE] <sink> (1)
+[RINSE] <rag> (1)
+[SWITCHOFF] <faucet> (1)
+[PUTOBJBACK] <rag> (1)

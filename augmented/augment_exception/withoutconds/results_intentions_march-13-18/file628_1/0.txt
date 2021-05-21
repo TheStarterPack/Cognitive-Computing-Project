@@ -1,0 +1,23 @@
+Read book
+I go to the living room, take a book from the shelf, sit in the sofa and read the book
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <tray> (1)
+[GRAB] <tray> (1)
+[RELEASE] <tray> (1)
+[FIND] <shoes> (1)
+[GRAB] <shoes> (1)
+[RELEASE] <shoes> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

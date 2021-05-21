@@ -1,0 +1,18 @@
+Wash clothes
+Walk to Bathroom. Find basket for clothes. Lift clothes dress from basket. Find washing machine. Walk to washing machine. Put clothes in washing machine. Put soap in washing machine. Switch on washing machine.
+
+
+[Walk] <bathroom> (1)
+[Walk] <hanger> (1)
+[Find] <hanger> (1)
+[Find] <clothes_dress> (2)
+[Grab] <clothes_dress> (2)
+[Find] <cabinet> (1)
+[Walk] <cabinet> (1)
+[Open] <cabinet> (1)
+[PutBack] <clothes_dress> (2) <cabinet> (1)
+[Find] <soap> (1)
+[Grab] <soap> (1)
+[PutBack] <soap> (1) <cabinet> (1)
+[Close] <cabinet> (1)
+[SwitchOn] <cabinet> (1)

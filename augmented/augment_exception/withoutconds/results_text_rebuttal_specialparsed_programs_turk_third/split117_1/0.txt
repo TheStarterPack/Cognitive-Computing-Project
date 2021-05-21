@@ -1,0 +1,23 @@
+Have conversation with boyfriend
+Sit on sofa, talk
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[WALK] <couch> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <homework> (1)
+[GRAB] <homework> (1)
+[RELEASE] <homework> (1)
+[FIND] <bookmark> (1)
+[GRAB] <bookmark> (1)
+[RELEASE] <bookmark> (1)
+[SIT] <couch> (1)
+[FIND] <man> (1)
+[GREET] <man> (1)

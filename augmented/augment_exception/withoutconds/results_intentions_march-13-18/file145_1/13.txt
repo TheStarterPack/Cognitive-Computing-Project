@@ -1,0 +1,9 @@
+Browse internet
+I sit at my computer desk and open the browser.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

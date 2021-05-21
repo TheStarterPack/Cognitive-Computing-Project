@@ -1,0 +1,23 @@
+Watch TV
+Sit on couch and watch the tv
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_scarf> (1)
+[GRAB] <clothes_scarf> (1)
+[RELEASE] <clothes_scarf> (1)
+[FIND] <chair> (1)
+[GRAB] <chair> (1)
+[RELEASE] <chair> (1)
+[FIND] <tape> (1)
+[GRAB] <tape> (1)
+[RELEASE] <tape> (1)
+[FIND] <coin> (1)
+[GRAB] <coin> (1)
+[RELEASE] <coin> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

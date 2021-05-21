@@ -1,0 +1,21 @@
+Wash clothes
+Go to bathroom, find washing machine. Open the washing machine and put detergent, water and clothes in it. Close the washing machine and switch on the washing machine.
+
+
+[WALK] <bathroom> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[SWITCHOFF] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <washing_machine> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[PUTBACK] <basket_for_clothes> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

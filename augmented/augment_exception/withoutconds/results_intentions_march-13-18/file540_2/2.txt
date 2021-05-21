@@ -1,0 +1,14 @@
+Drink
+I walk to the kitchen and approach the sink. I take a drinking glass and set it under the faucet. I turn the faucet until the water fills the glass, then turn it back. Finally I lift the glass out of the sink and drink the water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <sink> (1)
+[FIND] <drinking_glass> (1)
+[GRAB] <drinking_glass> (1)
+[PUTBACK] <drinking_glass> (1) <sink> (1)
+[FIND] <faucet> (1)
+[SWITCHOFF] <faucet> (1)
+[GRAB] <drinking_glass> (1)
+[FIND] <water> (1)
+[DRINK] <drinking_glass> (1)

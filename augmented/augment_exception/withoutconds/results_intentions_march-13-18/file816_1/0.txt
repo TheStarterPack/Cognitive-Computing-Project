@@ -1,0 +1,23 @@
+Relax on sofa
+Laying down and falling asleep on the sofa.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[LOOKAT] <couch> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <pajamas> (1)
+[GRAB] <pajamas> (1)
+[RELEASE] <pajamas> (1)
+[FIND] <bowl> (1)
+[GRAB] <bowl> (1)
+[RELEASE] <bowl> (1)
+[FIND] <hanger> (1)
+[GRAB] <hanger> (1)
+[RELEASE] <hanger> (1)
+[LIE] <couch> (1)
+[SLEEP]

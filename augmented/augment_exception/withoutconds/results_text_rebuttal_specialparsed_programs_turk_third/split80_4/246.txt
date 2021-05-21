@@ -1,0 +1,19 @@
+Work
+I work from home on my computer
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <folder> (1)
+[STANDUP]
+[WALK] <check> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[READ] <check> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

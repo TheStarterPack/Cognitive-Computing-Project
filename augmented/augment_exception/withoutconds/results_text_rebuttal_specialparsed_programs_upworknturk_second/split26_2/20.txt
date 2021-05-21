@@ -1,0 +1,24 @@
+Read book
+Sit down in recliner.  Pick up novel off of coffee table.  Open novel to last read page.  Begin reading
+
+
+[WALK] <home_office> (1)
+[WALK] <coffee_table> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[FIND] <purse> (1)
+[GRAB] <purse> (1)
+[RELEASE] <purse> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <coin> (1)
+[GRAB] <coin> (1)
+[RELEASE] <coin> (1)
+[SIT] <couch> (1)
+[FIND] <bookmark> (1)
+[READ] <novel> (1)

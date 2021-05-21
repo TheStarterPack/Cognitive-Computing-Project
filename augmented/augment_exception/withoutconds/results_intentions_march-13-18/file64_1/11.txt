@@ -1,0 +1,14 @@
+Work
+first ill go to my home office adn ill switch on my laptop and with the use of mouse and keyboard il run my computer
+
+
+[WALK] <home_office> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[PLUGIN] <laptop> (1)
+[SWITCHON] <laptop> (1)
+[FIND] <keyboard> (1)
+[GRAB] <keyboard> (1)
+[FIND] <mouse> (1)
+[TOUCH] <mouse> (1)
+[RUN] <laptop> (1)

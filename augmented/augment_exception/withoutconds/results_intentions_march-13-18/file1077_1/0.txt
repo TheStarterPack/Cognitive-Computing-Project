@@ -1,0 +1,22 @@
+Relax on sofa
+walk into living room, look at the sofa which one is available, sit on the sofa, now take relax on the sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[LOOKAT] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <deck_of_cards> (1)
+[GRAB] <deck_of_cards> (1)
+[RELEASE] <deck_of_cards> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[RELEASE] <clothes_shirt> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[SIT] <couch> (1)

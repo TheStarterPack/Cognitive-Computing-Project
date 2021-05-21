@@ -1,0 +1,26 @@
+Relax on sofa
+I walk to the living room and lie down on the couch. Then I grab my phone and use it to browse the web.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_gloves> (1)
+[GRAB] <clothes_gloves> (1)
+[RELEASE] <clothes_gloves> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <board_game> (1)
+[GRAB] <board_game> (1)
+[RELEASE] <board_game> (1)
+[LIE] <couch> (1)
+[STANDUP]
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[TURNTO] <phone> (1)
+[LOOKAT] <phone> (1)

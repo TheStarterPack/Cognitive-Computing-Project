@@ -1,0 +1,22 @@
+Drink
+I am thirsty and need to drink some water. Unfortunately, I am out of water bottles so I must get some tap water from the sink.
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[CLOSE] <cupboard> (1)
+[WALK] <sink> (1)
+[PUTBACK] <water_glass> (1) <sink> (1)
+[FIND] <faucet> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <water> (1)
+[WALK] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[PUTBACK] <water_glass> (1) <sink> (1)
+[GRAB] <water_glass> (1)
+[SWITCHOFF] <faucet> (1)
+[GRAB] <water_glass> (1)
+[DRINK] <water_glass> (1)

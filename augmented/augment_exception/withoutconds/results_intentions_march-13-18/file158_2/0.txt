@@ -1,0 +1,11 @@
+Wash teeth
+In this the person will walk to the bathroom , and look at the sink(as if turning it on, though this option didnt exist), and finally wash their teeth(I assume it meant brushing)
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[TURNTO] <sink> (1)
+[LOOKAT] <sink> (1)
+[FIND] <teeth> (1)
+[WASH] <teeth> (1)

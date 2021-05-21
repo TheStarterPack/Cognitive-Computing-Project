@@ -1,0 +1,28 @@
+Put clothes away
+Separate the clean and folded laundry by owner (which child) and type (pants, pajamas, short-sleeved shirts, etc.). Place each type in the dresser drawer containing the same type of item owned by the same child.
+
+
+[WALK] <bedroom> (1)
+[WALK] <clothes_pants> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[WALK] <dresser> (1)
+[PUTBACK] <clothes_pants> (1) <dresser> (1)
+[CLOSE] <dresser> (1)
+[FIND] <clothes_pants> (2)
+[GRAB] <clothes_pants> (2)
+[WALK] <dresser> (2)
+[PUTBACK] <clothes_pants> (2) <dresser> (2)
+[CLOSE] <dresser> (2)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[WALK] <dresser> (1)
+[OPEN] <dresser> (1)
+[PUTBACK] <clothes_shirt> (1) <dresser> (1)
+[CLOSE] <dresser> (1)
+[FIND] <clothes_shirt> (2)
+[GRAB] <clothes_shirt> (2)
+[WALK] <dresser> (2)
+[OPEN] <dresser> (2)
+[PUTBACK] <clothes_shirt> (2) <dresser> (2)
+[CLOSE] <dresser> (2)

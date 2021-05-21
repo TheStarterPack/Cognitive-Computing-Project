@@ -1,0 +1,11 @@
+Browse internet
+Sit at computer and surf the web
+
+
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <mouse> (1)
+[GRAB] <mouse> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

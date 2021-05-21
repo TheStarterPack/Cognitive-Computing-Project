@@ -1,0 +1,11 @@
+Turn on radio
+Go to the radio.  Switch on the power button.  Tune the station.  Set the volume.  Listen to the music.
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[FIND] <electrical_outlet> (1)
+[TURNTO] <electrical_outlet> (1)
+[PLUGIN] <stereo> (1)
+[SWITCHON] <electrical_outlet> (1)

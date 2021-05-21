@@ -1,0 +1,27 @@
+Organize closet
+Organize the hanging clothes in my closet by color and type and get rid of clothes I don't wear.
+
+
+[WALK] <bedroom> (1)
+[WALK] <dresser> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PULL] <clothes_pants> (1)
+[PUTIN] <clothes_pants> (1) <dresser> (1)
+[FIND] <clothes_pants> (2)
+[GRAB] <clothes_pants> (2)
+[PULL] <clothes_pants> (2)
+[PUTIN] <clothes_pants> (2) <dresser> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUSH] <clothes_shirt> (1)
+[PUTIN] <clothes_shirt> (1) <dresser> (1)
+[FIND] <clothes_shirt> (2)
+[GRAB] <clothes_shirt> (2)
+[PUSH] <clothes_shirt> (2)
+[PUTIN] <clothes_shirt> (2) <dresser> (1)
+[FIND] <clothes_shirt> (3)
+[GRAB] <clothes_shirt> (3)
+[CLOSE] <dresser> (1)
+[WALK] <basket_for_clothes> (1)
+[PUTBACK] <clothes_shirt> (3) <basket_for_clothes> (1)

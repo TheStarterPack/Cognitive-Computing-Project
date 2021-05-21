@@ -1,0 +1,6 @@
+Listen to music
+I walk into the bedroom. I walk to stereo. I turn on stereo.
+
+
+[WALK] <bedroom> (1)
+[WALK] <stereo> (1)

@@ -1,0 +1,7 @@
+Turn light off
+Put the light switch into the down, or off, position.
+
+
+[Walk] <bedroom> (1)
+[Walk] <lightswitch> (1)
+[SwitchOff] <lightswitch> (1)

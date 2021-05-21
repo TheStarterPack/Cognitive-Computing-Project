@@ -1,0 +1,23 @@
+Watch TV
+I sit on my couch and watch TV in my living room
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[TOUCH] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[TOUCH] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[WATCH] <television> (1)
+[WATCH] <television> (1)
+[WATCH] <television> (1)

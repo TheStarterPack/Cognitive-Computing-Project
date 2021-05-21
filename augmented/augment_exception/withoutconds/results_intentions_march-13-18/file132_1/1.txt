@@ -1,0 +1,8 @@
+Turn on light
+Switch on light in home office
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <home_office> (1)

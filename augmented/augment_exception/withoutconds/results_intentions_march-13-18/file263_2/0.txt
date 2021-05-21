@@ -1,0 +1,9 @@
+Browse internet
+Turn on computer, pull up browser, browse the internet
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

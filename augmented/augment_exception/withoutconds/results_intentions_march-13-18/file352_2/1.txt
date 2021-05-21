@@ -1,0 +1,20 @@
+Watch TV
+entering the living room and watching the Tv
+
+
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

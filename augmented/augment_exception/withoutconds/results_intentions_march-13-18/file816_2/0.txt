@@ -1,0 +1,9 @@
+Turn on light
+Coming home turning on lights.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)

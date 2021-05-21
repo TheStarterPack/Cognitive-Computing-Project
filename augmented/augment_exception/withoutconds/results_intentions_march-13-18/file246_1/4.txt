@@ -1,0 +1,14 @@
+Browse internet
+stand up, walk to living room, find computer, walk to computer, switch on computer, find mouse, grab mouse, look at button to scroll
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[WALK] <computer> (1)
+[SWITCHON] <computer> (1)
+[FIND] <mouse> (1)
+[GRAB] <mouse> (1)
+[FIND] <button> (1)
+[TURNTO] <button> (1)
+[LOOKAT] <button> (1)

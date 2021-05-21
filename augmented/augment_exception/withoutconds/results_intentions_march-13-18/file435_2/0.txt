@@ -1,0 +1,25 @@
+Wash clothes
+Washing clothes in a laundry washing machine.
+
+
+[FIND] <washing_machine> (1)
+[SWITCHOFF] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_pants> (2)
+[GRAB] <clothes_pants> (2)
+[PUTBACK] <clothes_pants> (2) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (2)
+[GRAB] <clothes_shirt> (2)
+[PUTBACK] <clothes_shirt> (2) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[PLUGIN] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

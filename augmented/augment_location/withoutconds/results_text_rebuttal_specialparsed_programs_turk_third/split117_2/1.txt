@@ -1,0 +1,11 @@
+Put on coat
+Open closet and grab coat.  Put on coat and fasten the front closed.  Close closet.
+
+
+[Walk] <entrance_hall> (1)
+[Walk] <dresser> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <clothes_shirt> (1)
+[Grab] <clothes_shirt> (1)
+[PutOn] <clothes_shirt> (1)

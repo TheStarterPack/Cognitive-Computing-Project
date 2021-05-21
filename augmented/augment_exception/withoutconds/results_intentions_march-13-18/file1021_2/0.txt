@@ -1,0 +1,27 @@
+Wash clothes
+Wash Clothes
+
+
+[FIND] <washing_machine> (1)
+[SWITCHOFF] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[FIND] <clothes_dress> (1)
+[GRAB] <clothes_dress> (1)
+[PUTBACK] <clothes_dress> (1) <washing_machine> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[PUTBACK] <clothes_skirt> (1) <washing_machine> (1)
+[WALK] <detergent> (1)
+[FIND] <detergent> (1)
+[GRAB] <detergent> (1)
+[POUR] <detergent> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

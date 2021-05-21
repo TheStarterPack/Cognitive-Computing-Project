@@ -1,0 +1,12 @@
+Pet cat
+I sit next to the cat. I hold out my hand. I put my hand on the cat. I pet the cat.
+
+
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TURNTO] <cat> (1)
+[LOOKAT] <cat> (1)
+[TOUCH] <cat> (1)

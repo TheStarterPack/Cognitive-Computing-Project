@@ -1,0 +1,8 @@
+Turn on light
+I walk to the living room. I find the electric outlet. I switch on the light.
+
+
+[WALK] <home_office> (1)
+[WALK] <electrical_outlet> (1)
+[FIND] <electrical_outlet> (1)
+[FIND] <light> (1)

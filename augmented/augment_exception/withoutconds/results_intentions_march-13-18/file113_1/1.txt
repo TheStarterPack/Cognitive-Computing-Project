@@ -1,0 +1,8 @@
+Listen to music
+I find CD player. I turn on CD player. I press play.
+
+
+[FIND] <cd_player> (1)
+[PLUGIN] <cd_player> (1)
+[SWITCHON] <cd_player> (1)
+[TOUCH] <cd_player> (1)

@@ -1,0 +1,24 @@
+Put away toys
+With a child's help (assuming he is old enough) gather the toys played with that day and put them in their proper locations in the room.
+
+
+[FIND] <child> (1)
+[FIND] <toy> (1)
+[WALK] <toy> (1)
+[GRAB] <toy> (1)
+[FIND] <filing_cabinet> (1)
+[WALK] <filing_cabinet> (1)
+[PUTBACK] <toy> (1) <filing_cabinet> (1)
+[FIND] <toy> (2)
+[WALK] <toy> (2)
+[GRAB] <toy> (2)
+[FIND] <filing_cabinet> (1)
+[WALK] <filing_cabinet> (1)
+[PUTBACK] <toy> (2) <filing_cabinet> (1)
+[FIND] <toy> (3)
+[WALK] <toy> (3)
+[GRAB] <toy> (3)
+[FIND] <filing_cabinet> (1)
+[WALK] <filing_cabinet> (1)
+[PUTBACK] <toy> (3) <filing_cabinet> (1)
+[CLOSE] <filing_cabinet> (1)

@@ -1,0 +1,16 @@
+Pet cat
+walk to entrance hall, look at the sofa, sit on the sofa, look at the cat, allow cat to near with you, touch the cat smoothly on it head, now pet the cat smoothly
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[LOOKAT] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TURNTO] <cat> (1)
+[LOOKAT] <cat> (1)
+[TOUCH] <cat> (1)

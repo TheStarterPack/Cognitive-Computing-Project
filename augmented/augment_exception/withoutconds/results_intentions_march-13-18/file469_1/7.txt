@@ -1,0 +1,15 @@
+Work
+I sit down in a chair. I turn on the computer. I type on the keyboard.
+
+
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[STANDUP]
+[WALK] <check> (1)
+[FIND] <check> (1)
+[TURNTO] <check> (1)
+[LOOKAT] <check> (1)

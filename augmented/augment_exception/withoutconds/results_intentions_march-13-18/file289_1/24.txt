@@ -1,0 +1,15 @@
+Change TV channel
+I walk into the living room. I sit on the couch and grab the remote. Then I turn on the TV and change the channel.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)

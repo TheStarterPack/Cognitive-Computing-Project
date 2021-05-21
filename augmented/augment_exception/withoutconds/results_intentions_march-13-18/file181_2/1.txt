@@ -1,0 +1,15 @@
+Drink
+go to kitchen, find water glass and grab it, find fridge and open grab water and pour into it, then drink.
+
+
+[WALK] <dining_room> (1)
+[WALK] <water_glass> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[FIND] <freezer> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <water_glass> (1)
+[CLOSE] <freezer> (1)
+[DRINK] <water_glass> (1)

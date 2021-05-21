@@ -1,0 +1,20 @@
+Grab some juice
+I go to the fridge, and grab some juice out of it. I then get a glass, and pour the juice into the glass.
+
+
+[Walk] <kitchen> (1)
+[Walk] <trashcan> (1)
+[Find] <trashcan> (1)
+[Open] <trashcan> (1)
+[Find] <glass> (1)
+[Grab] <glass> (1)
+[Close] <trashcan> (1)
+[Walk] <mini-fridge> (1)
+[Open] <mini-fridge> (1)
+[Find] <juice> (1)
+[Grab] <juice> (1)
+[Pour] <juice> (1) <glass> (1)
+[PutObjBack] <juice> (1)
+[Close] <mini-fridge> (1)
+[Find] <table> (1)
+[PutBack] <glass> (1) <table> (1)

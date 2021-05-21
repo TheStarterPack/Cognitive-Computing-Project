@@ -1,0 +1,14 @@
+Wash clothes
+grab clothes, walk to kitchen, find washing machine, put clothes in washing machine, put detergent into washing machine, turn on
+
+
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[WALK] <dining_room> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[PLUGIN] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

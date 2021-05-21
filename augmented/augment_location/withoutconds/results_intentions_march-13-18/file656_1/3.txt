@@ -1,0 +1,10 @@
+Put groceries in Fridge
+Walk to kitchen. Open fridge. Put groceries in fridge.
+
+
+[Walk] <closet> (1)
+[Open] <closet> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <closet> (1)
+[Close] <closet> (1)

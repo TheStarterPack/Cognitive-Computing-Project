@@ -1,0 +1,12 @@
+Pick up phone
+reach down, grasp phone, pick up phone
+
+
+[StandUp]
+[Walk] <kitchen> (1)
+[Walk] <love_seat> (1)
+[Find] <love_seat> (1)
+[TurnTo] <love_seat> (1)
+[LookAt] <love_seat> (1)
+[Find] <cellphone> (1)
+[Grab] <cellphone> (1)

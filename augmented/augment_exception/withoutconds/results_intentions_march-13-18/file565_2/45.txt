@@ -1,0 +1,22 @@
+Wash teeth
+I need to rinse my dentures off and put them back in my mouth.
+
+
+[WALK] <bathroom> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[FIND] <teeth> (1)
+[GRAB] <teeth> (1)
+[WASH] <teeth> (1)
+[PUTOBJBACK] <teeth> (1)
+[WALK] <faucet> (1)
+[SWITCHOFF] <faucet> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)
+[FIND] <hands_both> (1)
+[SCRUB] <hands_both> (1)
+[PUTOBJBACK] <towel> (1)
+[WALK] <light> (1)
+[SWITCHOFF] <light> (1)

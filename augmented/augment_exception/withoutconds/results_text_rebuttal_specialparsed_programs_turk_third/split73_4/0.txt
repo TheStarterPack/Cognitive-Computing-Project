@@ -1,0 +1,9 @@
+Eat cheese
+Open fridge.  Get cheese.  Eat it.
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <food_cheese> (1)
+[GRAB] <food_cheese> (1)
+[EAT] <food_cheese> (1)

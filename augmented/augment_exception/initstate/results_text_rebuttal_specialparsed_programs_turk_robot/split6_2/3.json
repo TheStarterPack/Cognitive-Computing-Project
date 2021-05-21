@@ -1,0 +1,1 @@
+[{"closed": ["filing_cabinet", "1"]}, {"inside": [["novel", "1"], ["filing_cabinet", "1"]]}, {"location": [["novel", "1"], ["bedroom", "1"]]}, {"location": [["filing_cabinet", "1"], ["bedroom", "1"]]}, {"location": [["chair", "1"], ["bedroom", "1"]]}, {"location": [["child", "1"], ["bedroom", "1"]]}, {"occupied": ["chair", "1"]}]

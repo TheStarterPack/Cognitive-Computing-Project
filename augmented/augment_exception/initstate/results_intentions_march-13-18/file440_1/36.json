@@ -1,0 +1,1 @@
+[{"atreach": [["chair", "1"], ["computer", "1"]]}, {"atreach": [["chair", "1"], ["desk", "1"]]}, {"atreach": [["chair", "1"], ["keyboard", "1"]]}, {"atreach": [["computer", "1"], ["desk", "1"]]}, {"is_on": ["computer", "1"]}, {"occupied": ["chair", "1"]}]

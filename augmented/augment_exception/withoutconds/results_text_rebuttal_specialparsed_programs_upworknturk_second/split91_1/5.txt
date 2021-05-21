@@ -1,0 +1,25 @@
+Read book
+Sit and read
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[OPEN] <filing_cabinet> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[CLOSE] <filing_cabinet> (1)
+[WALK] <couch> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[RELEASE] <toy> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[RELEASE] <clothes_pants> (1)
+[FIND] <purse> (1)
+[GRAB] <purse> (1)
+[RELEASE] <purse> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

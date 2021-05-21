@@ -1,0 +1,16 @@
+Read book
+Each night before bed I read on my kindle. I lay in bed with my lamp on and read for 30 minutes or so.
+
+
+[FIND] <bed> (1)
+[LIE] <bed> (1)
+[FIND] <floor_lamp> (1)
+[SWITCHON] <floor_lamp> (1)
+[STANDUP]
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)
+[WALK] <bed> (1)
+[PUTBACK] <novel> (1) <bed> (1)
+[SWITCHOFF] <floor_lamp> (1)

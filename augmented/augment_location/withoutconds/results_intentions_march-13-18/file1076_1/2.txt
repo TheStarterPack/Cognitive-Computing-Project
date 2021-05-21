@@ -1,0 +1,10 @@
+Put groceries in Fridge
+Put Groceries in fridge
+
+
+[Find] <cupboard> (1)
+[Open] <cupboard> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <cupboard> (1)
+[Close] <cupboard> (1)

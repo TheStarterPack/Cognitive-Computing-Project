@@ -1,0 +1,16 @@
+Write book
+Writing a book
+
+
+[WALK] <home_office> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[FIND] <electrical_outlet> (1)
+[WALK] <love_seat> (1)
+[SIT] <love_seat> (1)
+[SWITCHON] <laptop> (1)
+[STANDUP]
+[WALK] <keyboard> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

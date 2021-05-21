@@ -1,0 +1,8 @@
+Watch TV
+walk to living room ,find television , switch on remote control
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (2)
+[FIND] <television> (2)
+[FIND] <remote_control> (3)

@@ -1,0 +1,26 @@
+Throw away paper
+Crumple the paper.  Get up from the desk.  Walk to the trash can.  Toss the paper in the trash can.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <desk> (1)
+[TURNTO] <desk> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <check> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[SQUEEZE] <check> (1)
+[WALK] <trashcan> (1)
+[PUTBACK] <check> (1) <trashcan> (1)

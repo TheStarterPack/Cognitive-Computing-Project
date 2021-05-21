@@ -1,0 +1,11 @@
+Listen to music
+Walk to the living and turn to the music stand. Switch on the CD player to listen to music.
+
+
+[WALK] <home_office> (1)
+[WALK] <music_stand> (1)
+[FIND] <music_stand> (1)
+[TURNTO] <music_stand> (1)
+[FIND] <cd_player> (1)
+[PLUGIN] <cd_player> (1)
+[SWITCHON] <cd_player> (1)

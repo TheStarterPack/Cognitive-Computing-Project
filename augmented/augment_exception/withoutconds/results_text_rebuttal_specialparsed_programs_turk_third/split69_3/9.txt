@@ -1,0 +1,9 @@
+Turking
+Do a random variety very small jobs from different clients on mturk.Com
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

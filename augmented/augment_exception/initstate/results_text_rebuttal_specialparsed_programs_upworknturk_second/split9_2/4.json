@@ -1,0 +1,1 @@
+[{"atreach": [["dresser", "1"], ["clothes_jacket", "1"]]}, {"in": [["clothes_jacket", "1"], ["character", 1]]}, {"inside": [["hanger", "1"], ["dresser", "1"]]}, {"location": [["dresser", "1"], ["home_office", "1"]]}, {"location": [["clothes_jacket", "1"], ["home_office", "1"]]}, {"location": [["hanger", "1"], ["home_office", "1"]]}, {"open": ["dresser", "1"]}]

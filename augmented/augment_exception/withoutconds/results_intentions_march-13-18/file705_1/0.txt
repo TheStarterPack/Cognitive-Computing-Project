@@ -1,0 +1,6 @@
+Turn on light
+Walk to the living room, walk to the lamp, switch on the lamp.
+
+
+[WALK] <home_office> (1)
+[WALK] <floor_lamp> (1)

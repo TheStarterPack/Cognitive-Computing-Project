@@ -1,0 +1,16 @@
+Make coffee
+Find coffee maker, plug in coffee maker, open the coffee maker lid, pour water into coffee maker, put coffee filter, put Ground Coffee coffee maker, close the coffee maker, switch on the coffee maker
+
+
+[FIND] <coffe_maker> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <coffe_maker> (1)
+[FIND] <coffee_filter> (1)
+[GRAB] <coffee_filter> (1)
+[PUTBACK] <coffee_filter> (1) <coffe_maker> (1)
+[FIND] <ground_coffee> (1)
+[GRAB] <ground_coffee> (1)
+[PUTBACK] <ground_coffee> (1) <coffe_maker> (1)
+[CLOSE] <coffe_maker> (1)

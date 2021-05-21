@@ -1,0 +1,24 @@
+Check email
+Turn on laptop. Go to email account. Put in my username and password. Check emails. Turn off computer when done.
+
+
+[WALK] <home_office> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[FIND] <desk> (1)
+[OPEN] <desk> (1)
+[PUTBACK] <laptop> (1) <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[SWITCHON] <laptop> (1)
+[TURNTO] <laptop> (1)
+[LOOKAT] <laptop> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[STANDUP]
+[WALK] <mail> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[READ] <mail> (1)
+[SWITCHOFF] <laptop> (1)

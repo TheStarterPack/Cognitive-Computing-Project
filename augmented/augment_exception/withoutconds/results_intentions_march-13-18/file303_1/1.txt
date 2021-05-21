@@ -1,0 +1,17 @@
+Give milk to cat
+Grab milk and pour it into the plate so that the cat can drink
+
+
+[WALK] <home_office> (1)
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TURNTO] <cat> (1)
+[POINTAT] <cat> (1)
+[PULL] <cat> (1)
+[FIND] <milk> (1)
+[GRAB] <milk> (1)
+[FIND] <plate> (1)
+[POUR] <milk> (1) <plate> (1)
+[WALK] <cat> (1)
+[TOUCH] <cat> (1)
+[SCRUB] <cat> (1)

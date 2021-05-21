@@ -1,0 +1,14 @@
+Wash hands
+Walk to the sink, turn on the faucet, put soap on hands, rub hands together under the water, rinse off hands, turn off faucet, dry hands
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[WALK] <sink> (1)
+[FIND] <soap> (1)
+[FIND] <faucet> (1)
+[FIND] <hands_both> (1)
+[WASH] <hands_both> (1)
+[RINSE] <hands_both> (1)
+[SWITCHOFF] <faucet> (1)

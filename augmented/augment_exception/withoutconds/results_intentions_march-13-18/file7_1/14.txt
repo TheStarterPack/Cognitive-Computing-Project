@@ -1,0 +1,16 @@
+Browse internet
+I go to the office and sit in a chair, I turn on the computer and grab the mouse. I type on the keyboard and starting working on the computer.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[FIND] <mouse> (1)
+[GRAB] <mouse> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

@@ -1,0 +1,10 @@
+Change TV channel
+TV is powered on and connected to antenna or cable box.  A remote control is nearby my.  I reach for the remote, press the "channel up" button.  I set down the remote.
+
+
+[FIND] <television> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)
+[PUTOBJBACK] <remote_control> (1)

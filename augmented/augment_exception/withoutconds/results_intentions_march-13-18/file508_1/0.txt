@@ -1,0 +1,9 @@
+Turn on light
+approach the light switch, raise hand to the switch, flip the switch
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)

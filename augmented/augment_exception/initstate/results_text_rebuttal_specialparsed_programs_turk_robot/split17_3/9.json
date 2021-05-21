@@ -1,0 +1,1 @@
+[{"inside": [["vacuum_cleaner", "1"], ["filing_cabinet", "1"]]}, {"is_off": ["vacuum_cleaner", "1"]}, {"location": [["filing_cabinet", "1"], ["home_office", "1"]]}, {"location": [["vacuum_cleaner", "1"], ["dining_room", "1"]]}, {"location": [["vacuum_cleaner", "1"], ["home_office", "1"]]}, {"open": ["filing_cabinet", "1"]}, {"unplugged": ["vacuum_cleaner", "1"]}]

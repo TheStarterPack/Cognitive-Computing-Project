@@ -1,0 +1,12 @@
+Put groceries in Fridge
+Open the fridge, and put groceries in the fridge. Close the fridge.
+
+
+[Walk] <kitchen> (1)
+[Walk] <microwave> (1)
+[Find] <microwave> (1)
+[Open] <microwave> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <microwave> (1)
+[Close] <microwave> (1)

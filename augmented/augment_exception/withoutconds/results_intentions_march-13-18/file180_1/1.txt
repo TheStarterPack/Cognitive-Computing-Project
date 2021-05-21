@@ -1,0 +1,9 @@
+Pick up phone
+Find the phone
+
+
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[TOUCH] <phone> (1)
+[TURNTO] <phone> (1)
+[POINTAT] <phone> (1)

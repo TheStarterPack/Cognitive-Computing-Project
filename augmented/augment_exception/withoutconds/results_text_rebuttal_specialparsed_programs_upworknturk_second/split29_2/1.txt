@@ -1,0 +1,9 @@
+Make coffee
+Making coffee
+
+
+[WALK] <dining_room> (1)
+[WALK] <coffe_maker> (1)
+[FIND] <coffe_maker> (1)
+[PLUGIN] <coffe_maker> (1)
+[SWITCHON] <coffe_maker> (1)

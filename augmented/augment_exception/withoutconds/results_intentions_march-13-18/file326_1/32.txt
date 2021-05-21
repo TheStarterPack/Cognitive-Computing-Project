@@ -1,0 +1,28 @@
+Watch TV
+walk to living room, find remote, turn on TV, sit in chair, turn to desired channel, watch TV
+
+
+[WALK] <home_office> (1)
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)
+[WALK] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <button> (2)
+[FIND] <button> (2)
+[PUSH] <button> (2)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

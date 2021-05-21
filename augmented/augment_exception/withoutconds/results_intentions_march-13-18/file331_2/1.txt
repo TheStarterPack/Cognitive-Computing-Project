@@ -1,0 +1,7 @@
+Turn on light
+switching on light in an area
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)

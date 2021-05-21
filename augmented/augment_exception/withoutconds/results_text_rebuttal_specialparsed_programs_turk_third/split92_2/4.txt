@@ -1,0 +1,23 @@
+Clean
+Walk in.Wipe off table.Pull out chairs.Wipe out chairs.Sweep floor.Put back chairs.Clean windows.Polish silverware.
+
+
+[WALK] <dining_room> (1)
+[WALK] <rag> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[WALK] <table> (1)
+[FIND] <chair> (1)
+[PULL] <chair> (1)
+[WIPE] <chair> (1)
+[PUSH] <chair> (1)
+[FIND] <chair> (2)
+[PULL] <chair> (2)
+[WIPE] <chair> (2)
+[PUSH] <chair> (2)
+[WALK] <table> (1)
+[WIPE] <table> (1)
+[PUTOBJBACK] <rag> (1)
+[FIND] <broom> (1)
+[GRAB] <broom> (1)
+[PUTOBJBACK] <broom> (1)

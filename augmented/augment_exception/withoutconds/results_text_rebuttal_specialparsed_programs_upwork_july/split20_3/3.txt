@@ -1,0 +1,14 @@
+Read book
+Pick up a book and open to the last page you were on. Read the book.
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <bookmark> (1)
+[FIND] <bookmark> (1)
+[READ] <novel> (1)

@@ -1,0 +1,1 @@
+[{"unplugged": ["stereo", "1"]}, {"is_off": ["lightswitch", "1"]}, {"is_off": ["stereo", "1"]}, {"plugged": ["lightswitch", "1"]}, {"location": [["lightswitch", "1"], ["living_room", "1"]]}, {"location": [["stereo", "1"], ["living_room", "1"]]}, {"location": [["sofa", "1"], ["living_room", "1"]]}, {"free": ["sofa", "1"]}]

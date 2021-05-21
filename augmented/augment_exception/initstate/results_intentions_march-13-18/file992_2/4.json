@@ -1,0 +1,1 @@
+[{"closed": ["coffe_maker", "1"]}, {"inside": [["coffee", "1"], ["coffe_maker", "1"]]}, {"inside": [["water", "1"], ["coffe_maker", "1"]]}, {"is_on": ["coffe_maker", "1"]}, {"unplugged": ["coffe_maker", "1"]}]

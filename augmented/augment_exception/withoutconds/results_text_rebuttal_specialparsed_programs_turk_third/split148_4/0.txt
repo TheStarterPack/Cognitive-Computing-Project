@@ -1,0 +1,17 @@
+Take off shoes
+Bend down to reach your feet. Shift balance to one leg. Grab the shoe of the foot of the other leg, it is best to use one hand to grip near the front, and one towards the heel. Pull the shoe down toward the ground while also pushing on the heel away from the body. Repeat with other shoe. Place shoes in a designated area.
+
+
+[WALK] <bedroom> (1)
+[WALK] <shoes> (1)
+[FIND] <shoes> (1)
+[GRAB] <shoes> (1)
+[PULL] <shoes> (1)
+[WALK] <dresser> (1)
+[PUTIN] <shoes> (1) <dresser> (1)
+[FIND] <shoes> (2)
+[GRAB] <shoes> (2)
+[PULL] <shoes> (2)
+[WALK] <dresser> (1)
+[PUTIN] <shoes> (2) <dresser> (1)
+[CLOSE] <dresser> (1)

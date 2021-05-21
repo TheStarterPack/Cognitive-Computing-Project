@@ -1,0 +1,16 @@
+Brush teeth
+getting ready for bed
+
+
+[WALK] <bathroom_counter> (1)
+[FIND] <toothbrush> (1)
+[GRAB] <toothbrush> (1)
+[PUTBACK] <toothbrush> (1) <bathroom_counter> (1)
+[FIND] <tooth_paste> (1)
+[SQUEEZE] <tooth_paste> (1)
+[WALK] <toothbrush> (1)
+[GRAB] <toothbrush> (1)
+[SCRUB] <toothbrush> (1)
+[RINSE] <toothbrush> (1)
+[FIND] <toothbrush_holder> (1)
+[PUTBACK] <toothbrush> (1) <toothbrush_holder> (1)

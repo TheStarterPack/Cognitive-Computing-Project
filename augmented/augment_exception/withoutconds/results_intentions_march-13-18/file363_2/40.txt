@@ -1,0 +1,24 @@
+Listen to music
+Walking to Living room. Grab the music player. Switch on player. Put CD into the player. Sit the chair and Listening music
+
+
+[WALK] <home_office> (1)
+[WALK] <music_stand> (1)
+[FIND] <music_stand> (1)
+[FIND] <dvd_player> (1)
+[TURNTO] <dvd_player> (1)
+[LOOKAT] <dvd_player> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[SWITCHON] <dvd_player> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)

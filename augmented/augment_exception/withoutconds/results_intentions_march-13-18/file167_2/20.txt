@@ -1,0 +1,13 @@
+Work
+Sit in front of the computer, switch on the computer and start typing (Work)
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

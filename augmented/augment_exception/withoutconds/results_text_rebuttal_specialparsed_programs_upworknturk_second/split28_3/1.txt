@@ -1,0 +1,10 @@
+Shredding
+Shred old documents
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[WALK] <shredder> (1)
+[PUTBACK] <check> (1) <shredder> (1)

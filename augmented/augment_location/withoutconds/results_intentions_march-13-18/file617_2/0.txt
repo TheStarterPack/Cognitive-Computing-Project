@@ -1,0 +1,14 @@
+Read book
+Go to the bedroom. Grab the book out of the nightstand. Lay down in bed. Open the book. Read the book.
+
+
+[Walk] <bedroom> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Open] <cabinet> (1)
+[Find] <book> (1)
+[Grab] <book> (1)
+[Find] <bed> (1)
+[TurnTo] <bed> (1)
+[Sit] <bed> (1)
+[Read] <book> (1)

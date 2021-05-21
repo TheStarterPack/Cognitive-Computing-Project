@@ -1,0 +1,5 @@
+Browse internet
+Find the computer. Switch on. Point to browser.  Open browser.
+
+
+[FIND] <computer> (1)

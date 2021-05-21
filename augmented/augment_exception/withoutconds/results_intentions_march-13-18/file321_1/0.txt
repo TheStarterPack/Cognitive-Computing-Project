@@ -1,0 +1,13 @@
+Relax on sofa
+Drink a glass of water in the sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <water_glass> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[DRINK] <water_glass> (1)

@@ -1,0 +1,14 @@
+Get dressed
+I pull clothes from my drawer to put on my body.
+
+
+[Find] <closet> (1)
+[TurnTo] <closet> (1)
+[LookAt] <closet> (1)
+[Open] <closet> (1)
+[Find] <clothes_pants> (1)
+[Grab] <clothes_pants> (1)
+[PutOn] <clothes_pants> (1)
+[Find] <clothes_shirt> (1)
+[Grab] <clothes_shirt> (1)
+[PutOn] <clothes_shirt> (1)

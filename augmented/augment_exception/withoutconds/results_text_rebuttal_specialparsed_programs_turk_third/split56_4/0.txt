@@ -1,0 +1,6 @@
+Turn on computer
+Push power button.
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)

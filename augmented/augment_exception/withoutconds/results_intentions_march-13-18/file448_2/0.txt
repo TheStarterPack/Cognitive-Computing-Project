@@ -1,0 +1,24 @@
+Wash clothes
+Put clothes into washing machine. Add detergent.  Run washing machine. Put clothes in dryer. Add dryer sheet. Run Dryer. Fold Clothes.
+
+
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[FIND] <washing_machine> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[PUTBACK] <clothes_underwear> (1) <washing_machine> (1)
+[FIND] <clothes_socks> (1)
+[GRAB] <clothes_socks> (1)
+[PUTBACK] <clothes_socks> (1) <washing_machine> (1)
+[FIND] <clothes_socks> (2)
+[GRAB] <clothes_socks> (2)
+[PUTBACK] <clothes_socks> (2) <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[RUN] <washing_machine> (1)

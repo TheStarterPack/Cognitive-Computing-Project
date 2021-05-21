@@ -1,0 +1,27 @@
+Wash face
+Turn the faucet on. Wet the face. Take facial cleanser out of packaging. Lather on face. Rinse face with water. Turn off the faucet. Dry face with towel.
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <face> (1)
+[WASH] <face> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[RINSE] <rag> (1)
+[FIND] <facial_cleanser> (1)
+[GRAB] <facial_cleanser> (1)
+[POUR] <facial_cleanser> (1) <rag> (1)
+[PUTOBJBACK] <facial_cleanser> (1)
+[SCRUB] <face> (1)
+[RINSE] <rag> (1)
+[PUTOBJBACK] <rag> (1)
+[RINSE] <face> (1)
+[WALK] <faucet> (1)
+[SWITCHOFF] <faucet> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)
+[WIPE] <face> (1)
+[PUTOBJBACK] <towel> (1)

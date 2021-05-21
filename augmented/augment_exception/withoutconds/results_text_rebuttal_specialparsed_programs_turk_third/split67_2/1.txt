@@ -1,0 +1,13 @@
+Drink
+I go into the kitchen with clean hands and open the fridge. I get the jug of juice and pour it into the glass. I drink the juice gently in sips.
+
+
+[WALK] <dining_room> (1)
+[WALK] <water_glass> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[FIND] <freezer> (1)
+[FIND] <juice> (1)
+[GRAB] <juice> (1)
+[POUR] <juice> (1) <water_glass> (1)
+[DRINK] <juice> (1)

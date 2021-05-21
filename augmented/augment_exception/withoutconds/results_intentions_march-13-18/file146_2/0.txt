@@ -1,0 +1,21 @@
+Relax on sofa
+I sit on the sofa. I put my legs on the sofa and recline.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[RELEASE] <clothes_pants> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[RELEASE] <laptop> (1)
+[FIND] <brush> (1)
+[GRAB] <brush> (1)
+[RELEASE] <brush> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[SIT] <couch> (1)
+[LIE] <couch> (1)

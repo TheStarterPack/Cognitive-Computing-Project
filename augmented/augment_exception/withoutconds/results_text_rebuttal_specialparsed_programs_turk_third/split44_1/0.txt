@@ -1,0 +1,13 @@
+Take off shoes
+Untie one shoe and slip it off. Untie the other shoe and slip it off as well. Place the shoes off to the side.
+
+
+[WALK] <home_office> (1)
+[WALK] <shoes> (1)
+[FIND] <shoes> (1)
+[FIND] <shoes> (1)
+[PUTOFF] <shoes> (1)
+[WALK] <dresser> (1)
+[GRAB] <shoes> (1)
+[PUTIN] <shoes> (1) <dresser> (1)
+[CLOSE] <dresser> (1)

@@ -1,0 +1,14 @@
+Wash clothes
+Get clothes.  Go to laundry room.  Put clothes in washer. turn on washer.
+
+
+[Find] <basket_for_clothes> (1)
+[Grab] <basket_for_clothes> (1)
+[Find] <dishwasher> (1)
+[Open] <dishwasher> (1)
+[PutBack] <basket_for_clothes> (1) <dishwasher> (1)
+[Find] <soap> (1)
+[Grab] <soap> (1)
+[PutBack] <soap> (1) <dishwasher> (1)
+[Close] <dishwasher> (1)
+[SwitchOn] <dishwasher> (1)

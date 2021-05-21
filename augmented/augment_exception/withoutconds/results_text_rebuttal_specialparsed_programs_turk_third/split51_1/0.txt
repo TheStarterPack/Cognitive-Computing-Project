@@ -1,0 +1,22 @@
+Read book
+Pick a book from the bookshelf, lie in the couch, read.
+
+
+[WALK] <home_office> (1)
+[WALK] <bookshelf> (1)
+[FIND] <bookshelf> (1)
+[TURNTO] <bookshelf> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[WALK] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <chessboard> (1)
+[GRAB] <chessboard> (1)
+[RELEASE] <chessboard> (1)
+[LIE] <couch> (1)
+[READ] <novel> (1)

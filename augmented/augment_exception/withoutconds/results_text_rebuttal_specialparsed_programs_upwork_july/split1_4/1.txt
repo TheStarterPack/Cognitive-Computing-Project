@@ -1,0 +1,12 @@
+Research
+I read different articles online to gain a better understanding of a particular business, industry, method, terminology, etc.
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[READ] <check> (1)

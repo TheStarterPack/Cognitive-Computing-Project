@@ -1,0 +1,12 @@
+Cook some food
+I prepare meals and cook them on the stove.
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <food_vegetable> (1)
+[GRAB] <food_vegetable> (1)
+[CLOSE] <freezer> (1)
+[FIND] <oven> (1)
+[SWITCHON] <oven> (1)
+[SWITCHOFF] <oven> (1)

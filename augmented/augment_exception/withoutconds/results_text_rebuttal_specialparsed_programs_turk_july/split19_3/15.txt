@@ -1,0 +1,24 @@
+Use computer
+Type on computer for work.
+
+
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[RUN] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <desk> (1)
+[FIND] <desk> (1)
+[PUTBACK] <laptop> (1) <desk> (1)
+[PLUGIN] <laptop> (1)
+[SWITCHON] <laptop> (1)
+[TOUCH] <laptop> (1)

@@ -1,0 +1,8 @@
+Turn on light
+Standing up in the kitchen, walking to the light and turning it on.
+
+
+[WALK] <dining_room> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <light> (1)

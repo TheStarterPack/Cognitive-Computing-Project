@@ -1,0 +1,20 @@
+Cook some food
+Cook some pasta on the stove
+
+
+[WALK] <dining_room> (1)
+[WALK] <kitchen_cabinet> (1)
+[FIND] <kitchen_cabinet> (1)
+[FIND] <pasta> (1)
+[GRAB] <pasta> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[FIND] <sauce_pan> (1)
+[POUR] <water> (1) <sauce_pan> (1)
+[FIND] <oven> (1)
+[WALK] <sauce_pan> (1)
+[PUTBACK] <pasta> (1) <sauce_pan> (1)
+[FIND] <sauce_pan> (1)
+[GRAB] <sauce_pan> (1)
+[WALK] <oven> (1)
+[PUTBACK] <sauce_pan> (1) <oven> (1)

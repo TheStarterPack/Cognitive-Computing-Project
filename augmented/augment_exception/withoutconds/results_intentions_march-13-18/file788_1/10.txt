@@ -1,0 +1,18 @@
+Drink
+I go to the kitchen to get a glass from the cabinet. I turn on the faucet and fill up the glass. I take a drink.
+
+
+[WALK] <dining_room> (1)
+[WALK] <kitchen_cabinet> (1)
+[FIND] <kitchen_cabinet> (1)
+[OPEN] <kitchen_cabinet> (1)
+[FIND] <drinking_glass> (1)
+[GRAB] <drinking_glass> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[PUTBACK] <drinking_glass> (1) <sink> (1)
+[FIND] <water> (1)
+[GRAB] <drinking_glass> (1)
+[PUTBACK] <drinking_glass> (1) <sink> (1)
+[GRAB] <drinking_glass> (1)
+[DRINK] <drinking_glass> (1)

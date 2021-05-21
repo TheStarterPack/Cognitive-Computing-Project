@@ -1,0 +1,33 @@
+Take nap
+Fixed pillow that cover with pretty pillow case,  lay down on the soft pillow top mattress covered with soft sheet, Bed has elegant construction frame bed connecting with classic style of head and foot bed with cover pretty and warm blanket, close eyes and have a sweet and romantic dream.
+
+
+[WALK] <bedroom> (1)
+[WALK] <pillow> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[FIND] <bed> (1)
+[PUTBACK] <pillow> (1) <bed> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <pillow> (2)
+[GRAB] <pillow> (2)
+[RELEASE] <pillow> (2)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[FIND] <sheets> (2)
+[GRAB] <sheets> (2)
+[RELEASE] <sheets> (2)
+[FIND] <pillow> (3)
+[GRAB] <pillow> (3)
+[RELEASE] <pillow> (3)
+[FIND] <controller> (1)
+[GRAB] <controller> (1)
+[RELEASE] <controller> (1)
+[FIND] <pajamas> (1)
+[GRAB] <pajamas> (1)
+[RELEASE] <pajamas> (1)
+[LIE] <bed> (1)
+[SLEEP]

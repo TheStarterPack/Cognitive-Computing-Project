@@ -1,0 +1,9 @@
+Listen to music
+Listen to music
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[PLUGIN] <stereo> (1)
+[SWITCHON] <stereo> (1)

@@ -1,0 +1,15 @@
+Wash dishes with dishwasher
+I go to the dishwasher and put dish soap. I close the dishwasher and turn it on.
+
+
+[Walk] <kitchen> (1)
+[Walk] <cupboard> (1)
+[Find] <cupboard> (1)
+[Open] <cupboard> (1)
+[Find] <dish_soap> (1)
+[Grab] <dish_soap> (1)
+[PutBack] <dish_soap> (1) <cupboard> (1)
+[Grab] <dish_soap> (1)
+[PutBack] <dish_soap> (1) <cupboard> (1)
+[Close] <cupboard> (1)
+[SwitchOn] <cupboard> (1)

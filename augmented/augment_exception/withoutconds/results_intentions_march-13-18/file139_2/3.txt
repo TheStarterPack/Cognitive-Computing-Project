@@ -1,0 +1,22 @@
+Relax on sofa
+Walk to the living room, find the sofa and sit in the sofa and find pillow. lie down in sofa.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <stereo> (1)
+[GRAB] <stereo> (1)
+[RELEASE] <stereo> (1)
+[FIND] <newspaper> (1)
+[GRAB] <newspaper> (1)
+[RELEASE] <newspaper> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[RELEASE] <clothes_shirt> (1)
+[SIT] <couch> (1)
+[FIND] <pillow> (1)
+[LIE] <couch> (1)

@@ -1,0 +1,22 @@
+Fix snack
+Open fridge. Take out carrots and other vegetables. Put vegetables on a plate. Put away carrots and celery. Close fridge.
+
+
+[Walk] <kitchen> (1)
+[Walk] <sink> (1)
+[Find] <sink> (1)
+[Open] <sink> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[Close] <sink> (1)
+[Walk] <trashcan> (1)
+[Open] <trashcan> (1)
+[Find] <food_carrot> (1)
+[Grab] <food_carrot> (1)
+[PutBack] <food_carrot> (1) <plate> (1)
+[Find] <food_vegetable> (1)
+[Grab] <food_vegetable> (1)
+[PutBack] <food_vegetable> (1) <plate> (1)
+[Close] <trashcan> (1)
+[Walk] <table> (1)
+[PutBack] <plate> (1) <table> (1)

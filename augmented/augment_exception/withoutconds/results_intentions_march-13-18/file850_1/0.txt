@@ -1,0 +1,19 @@
+Wash clothes
+Walk into laundry room. Open washing machine door. Put dirty clothes into washing machine. Measure laundry detergent and place into washing machine. Turn dial to appropriate wash setting. Power on.
+
+
+[WALK] <bathroom> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[WALK] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[PLUGIN] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

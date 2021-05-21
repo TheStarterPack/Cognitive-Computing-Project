@@ -1,0 +1,26 @@
+Read book
+A person brings a book into the living room and sits down in a comfortable chair.  If it is dark in the room the person turns on the lamp. The book is opened to the next page to be read.  The person begins reading the book until they need to stop for some reason.
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <couch> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <check> (2)
+[GRAB] <check> (2)
+[RELEASE] <check> (2)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[RELEASE] <toy> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (1)
+[READ] <novel> (1)

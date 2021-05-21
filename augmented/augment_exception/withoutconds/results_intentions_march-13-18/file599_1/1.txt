@@ -1,0 +1,9 @@
+Listen to music
+Find the playback device you want to listen to. turn on. press play. enjoyu music.
+
+
+[WALK] <bedroom> (1)
+[WALK] <cd_player> (1)
+[FIND] <cd_player> (1)
+[PLUGIN] <cd_player> (1)
+[SWITCHON] <cd_player> (1)

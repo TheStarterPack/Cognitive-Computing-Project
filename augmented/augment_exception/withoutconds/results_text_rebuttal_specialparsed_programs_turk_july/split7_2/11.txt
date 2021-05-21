@@ -1,0 +1,20 @@
+Vacuum
+Plug in vacuum. Walk around with vacuum, covering all of the floor. Unplug vacuum.
+
+
+[WALK] <bedroom> (1)
+[WALK] <dresser> (1)
+[FIND] <vacuum_cleaner> (1)
+[GRAB] <vacuum_cleaner> (1)
+[PULL] <vacuum_cleaner> (1)
+[PULL] <vacuum_cleaner> (1)
+[PUSH] <vacuum_cleaner> (1)
+[PULL] <vacuum_cleaner> (1)
+[PUSH] <vacuum_cleaner> (1)
+[PULL] <vacuum_cleaner> (1)
+[PUSH] <vacuum_cleaner> (1)
+[SWITCHOFF] <vacuum_cleaner> (1)
+[PLUGOUT] <vacuum_cleaner> (1)
+[WALK] <dresser> (1)
+[PUTIN] <vacuum_cleaner> (1) <dresser> (1)
+[CLOSE] <dresser> (1)

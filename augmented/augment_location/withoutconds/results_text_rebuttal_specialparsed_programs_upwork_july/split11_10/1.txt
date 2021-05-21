@@ -1,0 +1,12 @@
+Put away groceries
+Place groceries in refrigerator from shopping at the grocery store.
+
+
+[Walk] <kitchen> (1)
+[Walk] <trashcan> (1)
+[Find] <trashcan> (1)
+[Open] <trashcan> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <trashcan> (1)
+[Close] <trashcan> (1)

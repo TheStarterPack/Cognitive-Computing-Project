@@ -1,0 +1,22 @@
+Wash hands
+Turn on the water faucet. Wet my hands and turn off the faucet. Put soap on my hands. Rub hands together, making sure the soap covers all areas of the hands. Scrub hands for about 20 seconds. Turn on the water water faucet. Rinse hands under the running water. Turn off the water faucet. Dry hands with a towel.
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[TURNTO] <sink> (1)
+[FIND] <faucet> (1)
+[FIND] <hands_both> (1)
+[WASH] <hands_both> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[SCRUB] <hands_both> (1)
+[PUTOBJBACK] <soap> (1)
+[RINSE] <hands_both> (1)
+[WALK] <faucet> (1)
+[SWITCHOFF] <faucet> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)
+[WIPE] <hands_both> (1)
+[PUTOBJBACK] <towel> (1)

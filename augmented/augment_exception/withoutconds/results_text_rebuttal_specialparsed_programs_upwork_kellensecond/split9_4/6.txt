@@ -1,0 +1,17 @@
+Get something to drink
+Walk into the kitchen and to the cupboard to get a cup, walk to the fridge to look for a beverage to enjoy, open the freezer and get ice, pour beverage and enjoy
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[OPEN] <cupboard> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[CLOSE] <cupboard> (1)
+[WALK] <freezer> (1)
+[FIND] <milk> (1)
+[GRAB] <milk> (1)
+[CLOSE] <freezer> (1)
+[POUR] <milk> (1) <cup> (1)
+[DRINK] <cup> (1)

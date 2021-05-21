@@ -1,0 +1,16 @@
+Watch TV
+Find living room. Walk to living room. Find tv. Turn on tv. Sit in chair. Watch tv
+
+
+[FIND] <television> (1)
+[WALK] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <chair> (1)
+[WALK] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

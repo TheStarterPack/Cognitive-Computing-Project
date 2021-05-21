@@ -1,0 +1,6 @@
+Turn off TV
+Walk over to tv and press power button
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)

@@ -1,0 +1,18 @@
+Drink
+Go to kitchen, open cabinet, get glass, close cabinet, put glass under faucet, turn on water, turn off water when glass has 85% water, lift glass to mouth, open mouth and put on glass, tilt glass up and swallow water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <kitchen_cabinet> (1)
+[FIND] <kitchen_cabinet> (1)
+[TURNTO] <kitchen_cabinet> (1)
+[LOOKAT] <kitchen_cabinet> (1)
+[FIND] <drinking_glass> (1)
+[GRAB] <drinking_glass> (1)
+[FIND] <faucet> (1)
+[FIND] <water> (1)
+[FIND] <sink> (1)
+[PUTBACK] <drinking_glass> (1) <sink> (1)
+[GRAB] <drinking_glass> (1)
+[SWITCHOFF] <faucet> (1)
+[DRINK] <drinking_glass> (1)

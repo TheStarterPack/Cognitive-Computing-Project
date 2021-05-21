@@ -1,0 +1,22 @@
+Wash clothes
+Walk to bathroom, open wash-machine, lift laundry basket, grab cloth and put into wash-machine one by one, put down laundry basket, pour detergent, close wash-machine, turn on wash-machine.
+
+
+[WALK] <bathroom> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[PUTOBJBACK] <basket_for_clothes> (1)
+[WALK] <laundry_detergent> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[POUR] <laundry_detergent> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

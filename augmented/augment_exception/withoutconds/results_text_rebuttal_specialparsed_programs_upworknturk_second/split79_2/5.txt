@@ -1,0 +1,21 @@
+Make coffee
+I place measured amounts of coffee and water into the coffee maker and brew a fresh pot of coffee to be enjoyed prior to work.
+
+
+[WALK] <dining_room> (1)
+[WALK] <coffee_filter> (1)
+[FIND] <coffee_filter> (1)
+[GRAB] <coffee_filter> (1)
+[FIND] <coffe_maker> (1)
+[SWITCHOFF] <coffe_maker> (1)
+[OPEN] <coffe_maker> (1)
+[PUTBACK] <coffee_filter> (1) <coffe_maker> (1)
+[FIND] <ground_coffee> (1)
+[GRAB] <ground_coffee> (1)
+[PUTBACK] <ground_coffee> (1) <coffe_maker> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <coffe_maker> (1)
+[PLUGIN] <coffe_maker> (1)
+[SWITCHON] <coffe_maker> (1)

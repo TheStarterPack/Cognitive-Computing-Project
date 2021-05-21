@@ -1,0 +1,13 @@
+Get dressed
+I pull clothes from my drawer to put on my body.
+
+
+[FIND] <dresser> (1)
+[TURNTO] <dresser> (1)
+[LOOKAT] <dresser> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTON] <clothes_pants> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTON] <clothes_shirt> (1)

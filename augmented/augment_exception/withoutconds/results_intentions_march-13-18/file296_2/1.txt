@@ -1,0 +1,11 @@
+Wash dishes with dishwasher
+Walk to Kitchen. Take the dishes from the sink. Apply dish washer, scrub and then wash with water.
+
+
+[WALK] <sink> (1)
+[FIND] <bowl> (1)
+[GRAB] <bowl> (1)
+[FIND] <dishwasher> (1)
+[SCRUB] <dishwasher> (1)
+[RINSE] <bowl> (1)
+[WASH] <bowl> (1)

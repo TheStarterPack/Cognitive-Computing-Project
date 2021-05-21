@@ -1,0 +1,8 @@
+Turn on light
+Turning on lights
+
+
+[WALK] <bedroom> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <bathroom> (1)

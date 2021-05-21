@@ -1,0 +1,15 @@
+Sleep
+Getting my bed put my pajamas on and go to sleep
+
+
+[Walk] <bedroom> (1)
+[Walk] <basket_for_clothes> (1)
+[Find] <basket_for_clothes> (1)
+[Open] <basket_for_clothes> (1)
+[Find] <pajamas> (1)
+[Grab] <pajamas> (1)
+[PutOn] <pajamas> (1)
+[Close] <basket_for_clothes> (1)
+[Walk] <bed> (1)
+[Lie] <bed> (1)
+[Sleep]

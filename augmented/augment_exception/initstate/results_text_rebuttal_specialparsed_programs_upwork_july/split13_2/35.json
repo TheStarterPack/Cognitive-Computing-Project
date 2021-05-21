@@ -1,0 +1,1 @@
+[{"free": ["chair", "2"]}, {"free": ["chair", "3"]}, {"is_on": ["stereo", "1"]}, {"location": [["chair", "1"], ["home_office", "1"]]}, {"location": [["chair", "2"], ["home_office", "1"]]}, {"location": [["chair", "3"], ["home_office", "1"]]}, {"location": [["stereo", "1"], ["home_office", "1"]]}, {"occupied": ["chair", "1"]}, {"plugged": ["stereo", "1"]}]

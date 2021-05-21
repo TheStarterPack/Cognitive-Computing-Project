@@ -1,0 +1,19 @@
+Pick up toys
+Bend down and pick up the toys off of the floor.
+
+
+[WALK] <bedroom> (1)
+[WALK] <toy> (1)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[WALK] <dresser> (1)
+[PUTIN] <toy> (1) <dresser> (1)
+[FIND] <toy> (2)
+[GRAB] <toy> (2)
+[WALK] <dresser> (1)
+[PUTIN] <toy> (2) <dresser> (1)
+[FIND] <toy> (3)
+[WALK] <dresser> (1)
+[GRAB] <toy> (3)
+[PUTIN] <toy> (3) <dresser> (1)
+[CLOSE] <dresser> (1)

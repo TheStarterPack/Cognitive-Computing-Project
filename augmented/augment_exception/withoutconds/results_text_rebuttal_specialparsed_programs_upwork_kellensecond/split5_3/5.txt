@@ -1,0 +1,19 @@
+Grab some juice
+I go to the fridge, and grab some juice out of it. I then get a glass, and pour the juice into the glass.
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[CLOSE] <cupboard> (1)
+[WALK] <freezer> (1)
+[OPEN] <freezer> (1)
+[FIND] <juice> (1)
+[GRAB] <juice> (1)
+[POUR] <juice> (1) <cup> (1)
+[PUTOBJBACK] <juice> (1)
+[CLOSE] <freezer> (1)
+[FIND] <table> (1)
+[PUTBACK] <cup> (1) <table> (1)

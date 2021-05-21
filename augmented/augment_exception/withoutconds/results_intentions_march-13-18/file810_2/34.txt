@@ -1,0 +1,19 @@
+Drink
+Going to the kitchen to get a drink of water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[WALK] <faucet> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <water> (1)
+[FIND] <sink> (1)
+[PUTBACK] <water_glass> (1) <sink> (1)
+[GRAB] <water_glass> (1)
+[SWITCHOFF] <faucet> (1)
+[DRINK] <water_glass> (1)
+[FIND] <kitchen_counter> (1)
+[PUTBACK] <water_glass> (1) <kitchen_counter> (1)

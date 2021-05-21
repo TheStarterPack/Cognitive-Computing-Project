@@ -1,0 +1,27 @@
+Watch  TV
+Sit on my couch  directly opposite  my tv , switch  on my tv with the  remote control  and watch
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <newspaper> (1)
+[GRAB] <newspaper> (1)
+[RELEASE] <newspaper> (1)
+[FIND] <folder> (1)
+[GRAB] <folder> (1)
+[RELEASE] <folder> (1)
+[FIND] <newspaper> (2)
+[GRAB] <newspaper> (2)
+[RELEASE] <newspaper> (2)
+[FIND] <newspaper> (3)
+[GRAB] <newspaper> (3)
+[RELEASE] <newspaper> (3)
+[SIT] <couch> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[SWITCHON] <television> (1)
+[PUTOBJBACK] <remote_control> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

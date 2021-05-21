@@ -1,0 +1,21 @@
+Greet guests
+Go to the kitchen, greet your family members
+
+
+[WALK] <dining_room> (1)
+[WALK] <child> (1)
+[FIND] <child> (1)
+[GREET] <child> (1)
+[FIND] <woman> (1)
+[GREET] <woman> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)

@@ -1,0 +1,19 @@
+Wash dishes with dishwasher
+Go to the kitchen.  Find the dishwasher.  Open the dishwasher.  Find the plates.  Load the plates into the dishwasher.  Find the soap.  Load the soap into the dishwasher.  Close the dishwasher.  Turn on the dishwasher.
+
+
+[Walk] <kitchen> (1)
+[Walk] <sink> (1)
+[Find] <sink> (1)
+[Open] <sink> (1)
+[Find] <plate> (1)
+[Grab] <plate> (1)
+[PutBack] <plate> (1) <sink> (1)
+[Find] <plate> (2)
+[Grab] <plate> (2)
+[PutBack] <plate> (2) <sink> (1)
+[Find] <dish_soap> (1)
+[Grab] <dish_soap> (1)
+[PutBack] <dish_soap> (1) <sink> (1)
+[Close] <sink> (1)
+[SwitchOn] <sink> (1)

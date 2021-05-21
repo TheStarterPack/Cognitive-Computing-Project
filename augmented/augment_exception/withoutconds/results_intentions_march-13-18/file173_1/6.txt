@@ -1,0 +1,9 @@
+Listen to music
+Find player and switch on to headphones
+
+
+[WALK] <bedroom> (1)
+[WALK] <cd_player> (1)
+[FIND] <cd_player> (1)
+[FIND] <headset> (1)
+[GRAB] <headset> (1)

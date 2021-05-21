@@ -1,0 +1,1 @@
+[{"is_off": ["computer", "1"]}, {"atreach": [["chair", "1"], ["computer", "1"]]}, {"atreach": [["chair", "1"], ["mail", "1"]]}, {"atreach": [["mail", "1"], ["computer", "1"]]}, {"closed": ["mail", "1"]}, {"free": ["chair", "1"]}]

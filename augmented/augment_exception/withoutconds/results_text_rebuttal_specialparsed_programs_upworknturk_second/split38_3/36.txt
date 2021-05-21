@@ -1,0 +1,21 @@
+Make bed
+Pull up the sheets. Pull up the comforter. Arrange pillows on the bed. Arrange stuffed animals on the bed.
+
+
+[WALK] <bedroom> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[FIND] <bed> (1)
+[PUTBACK] <sheets> (1) <bed> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[PUTBACK] <sheets> (1) <bed> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[WALK] <bed> (1)
+[PUTBACK] <pillow> (1) <bed> (1)
+[FIND] <toy> (1)
+[GRAB] <toy> (1)
+[WALK] <bed> (1)
+[PUTBACK] <toy> (1) <bed> (1)

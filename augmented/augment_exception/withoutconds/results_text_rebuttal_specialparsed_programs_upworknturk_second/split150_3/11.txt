@@ -1,0 +1,21 @@
+Watch TV
+Turn TV on to TV channel and sit down on the couch and watch TV.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[WALK] <couch> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[RELEASE] <mail> (1)
+[FIND] <napkin> (1)
+[GRAB] <napkin> (1)
+[RELEASE] <napkin> (1)
+[FIND] <homework> (1)
+[GRAB] <homework> (1)
+[RELEASE] <homework> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[SIT] <couch> (1)
+[WATCH] <television> (1)

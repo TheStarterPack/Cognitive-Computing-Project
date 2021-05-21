@@ -1,0 +1,16 @@
+Get drink
+I go to the fridge and open the door. I look for the water pitcher, and take it out, making sure to close the fridge door behind me. Then I take a pint glass out of the upper cabinet over the sink and use the water pitcher to pour a full glass of water. Then I return the pitcher to the fridge and shut the door again, and take my glass of water out of the kitche.
+
+
+[WALK] <dining_room> (1)
+[WALK] <sink> (1)
+[FIND] <kitchen_cabinet> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[CLOSE] <kitchen_cabinet> (1)
+[WALK] <freezer> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <cup> (1)
+[WALK] <freezer> (1)

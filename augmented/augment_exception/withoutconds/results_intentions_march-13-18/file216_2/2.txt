@@ -1,0 +1,12 @@
+Pick up phone
+first when i hear the ringing sound i will run to my living room and picks up and i will say hello
+
+
+[RUN] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)

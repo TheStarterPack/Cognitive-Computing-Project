@@ -1,0 +1,16 @@
+Play games
+Turn on the television. Turn on the video game system. Insert desired game into gaming system. Follow directions on game to and push needed buttons on video  game remote controller.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <video_game_console> (1)
+[FIND] <video_game_controller> (1)
+[GRAB] <video_game_controller> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

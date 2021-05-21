@@ -1,0 +1,22 @@
+Change TV channel
+I go in the living room. Then I find the remote, sit on the couch and turn on the television. Then I use the remote the change the TV channel.
+
+
+[WALK] <home_office> (1)
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <bookmark> (1)
+[GRAB] <bookmark> (1)
+[RELEASE] <bookmark> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[RELEASE] <clothes_pants> (1)
+[FIND] <napkin> (1)
+[GRAB] <napkin> (1)
+[RELEASE] <napkin> (1)
+[SIT] <couch> (1)
+[FIND] <television> (1)

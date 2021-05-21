@@ -1,0 +1,19 @@
+Relax on sofa
+Walk into the living room. Walk up to the sofa. Sit down on the sofa.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <shoes> (1)
+[GRAB] <shoes> (1)
+[RELEASE] <shoes> (1)
+[FIND] <dog> (1)
+[GRAB] <dog> (1)
+[RELEASE] <dog> (1)
+[FIND] <deck_of_cards> (1)
+[GRAB] <deck_of_cards> (1)
+[RELEASE] <deck_of_cards> (1)
+[FIND] <shoes> (2)
+[GRAB] <shoes> (2)
+[RELEASE] <shoes> (2)
+[SIT] <couch> (1)

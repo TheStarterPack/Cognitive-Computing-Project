@@ -1,0 +1,19 @@
+Make coffee
+Get my coffee pot going
+
+
+[WALK] <dining_room> (1)
+[WALK] <coffee_pot> (1)
+[FIND] <coffee_pot> (1)
+[GRAB] <coffee_pot> (1)
+[WALK] <water> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[POUR] <water> (1) <coffee_pot> (1)
+[FIND] <ground_coffee> (1)
+[GRAB] <ground_coffee> (1)
+[PUTBACK] <ground_coffee> (1) <coffee_pot> (1)
+[GRAB] <ground_coffee> (1)
+[PUTOBJBACK] <ground_coffee> (1)
+[WALK] <oven> (1)
+[PUTBACK] <coffee_pot> (1) <oven> (1)

@@ -1,0 +1,11 @@
+Read book
+Put child in bed, sit down,read book.
+
+
+[WALK] <bedroom> (1)
+[WALK] <dresser> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <bed> (1)
+[SIT] <bed> (1)
+[READ] <novel> (1)

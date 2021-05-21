@@ -1,0 +1,27 @@
+Watch TV
+I am sitting in the living room.  I turn on the television.  I select a channel using the remote control.  I set down the remote control.  I watch the television.
+
+
+[FIND] <couch> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[RELEASE] <clothes_shirt> (1)
+[FIND] <band-aids> (1)
+[GRAB] <band-aids> (1)
+[RELEASE] <band-aids> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[RELEASE] <laptop> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <remote_control> (1)
+[FIND] <remote_control> (1)
+[GRAB] <remote_control> (1)
+[FIND] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <button> (1)
+[PUSH] <button> (1)
+[PUTOBJBACK] <remote_control> (1)

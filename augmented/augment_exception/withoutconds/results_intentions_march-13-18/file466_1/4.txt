@@ -1,0 +1,23 @@
+Watch TV
+I walk into the living room and sit on the sofa to watch tv
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <folder> (1)
+[GRAB] <folder> (1)
+[RELEASE] <folder> (1)
+[FIND] <cat> (1)
+[GRAB] <cat> (1)
+[RELEASE] <cat> (1)
+[FIND] <chessboard> (1)
+[GRAB] <chessboard> (1)
+[RELEASE] <chessboard> (1)
+[SIT] <couch> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

@@ -1,0 +1,17 @@
+Work
+I walk in. Turn on the light. Set in my chair. Turn on lap top. And start to work.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[SWITCHON] <light> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)

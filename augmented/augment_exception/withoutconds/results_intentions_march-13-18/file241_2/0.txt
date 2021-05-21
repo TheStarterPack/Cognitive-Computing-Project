@@ -1,0 +1,11 @@
+Read book
+Find book. Pick up book. Open book. Read the book.
+
+
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[TURNTO] <novel> (1)
+[LOOKAT] <novel> (1)
+[READ] <novel> (1)

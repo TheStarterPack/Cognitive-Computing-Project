@@ -1,0 +1,20 @@
+Relax on sofa
+go to the living room,find the sofa,sat down in the sofa,take some relaxation.
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <phone> (2)
+[GRAB] <phone> (2)
+[RELEASE] <phone> (2)
+[SIT] <couch> (1)

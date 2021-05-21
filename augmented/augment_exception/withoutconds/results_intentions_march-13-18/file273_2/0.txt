@@ -1,0 +1,7 @@
+Write an email
+Switch on computer. Connect to internet. Login email. Write text body and send mail.
+
+
+[FIND] <computer> (1)
+[FIND] <keyboard> (1)
+[TOUCH] <keyboard> (1)

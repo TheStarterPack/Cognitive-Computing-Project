@@ -1,0 +1,18 @@
+Clean room
+Tidy the room
+
+
+[WALK] <home_office> (1)
+[WALK] <rag> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[FIND] <coffee_table> (1)
+[WIPE] <coffee_table> (1)
+[FIND] <couch> (1)
+[WIPE] <couch> (1)
+[FIND] <television> (1)
+[WIPE] <television> (1)
+[FIND] <instrument_piano> (1)
+[WIPE] <instrument_piano> (1)
+[WALK] <coffee_table> (1)
+[PUTOBJBACK] <rag> (1)

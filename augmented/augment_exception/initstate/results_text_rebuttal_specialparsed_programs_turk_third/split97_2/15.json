@@ -1,0 +1,1 @@
+[{"atreach": [["couch", "1"], ["man", "1"]]}, {"atreach": [["couch", "1"], ["woman", "1"]]}, {"atreach": [["man", "1"], ["couch", "1"]]}, {"atreach": [["woman", "1"], ["man", "1"]]}, {"location": [["couch", "1"], ["home_office", "1"]]}, {"location": [["man", "1"], ["home_office", "1"]]}, {"location": [["woman", "1"], ["home_office", "1"]]}, {"occupied": ["couch", "1"]}]

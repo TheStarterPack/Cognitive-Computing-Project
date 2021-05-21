@@ -1,0 +1,22 @@
+Watch TV
+We sit all around the television and watch a program.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[FIND] <couch> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <hairbrush> (1)
+[GRAB] <hairbrush> (1)
+[RELEASE] <hairbrush> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RELEASE] <novel> (1)
+[FIND] <clothes_scarf> (1)
+[GRAB] <clothes_scarf> (1)
+[RELEASE] <clothes_scarf> (1)
+[SIT] <couch> (1)
+[WATCH] <television> (1)

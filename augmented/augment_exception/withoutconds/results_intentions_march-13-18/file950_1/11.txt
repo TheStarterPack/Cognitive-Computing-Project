@@ -1,0 +1,11 @@
+Browse internet
+Browse the internet
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <chair> (1)
+[LOOKAT] <chair> (1)

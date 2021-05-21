@@ -1,0 +1,1 @@
+[{"atreach": [["washing_machine", "1"], ["laundry_detergent", "1"]]}, {"inside": [["sheets", "1"], ["washing_machine", "1"]]}, {"location": [["laundry_detergent", "1"], ["bathroom", "1"]]}, {"location": [["sheets", "1"], ["bathroom", "1"]]}, {"location": [["washing_machine", "1"], ["bathroom", "1"]]}, {"open": ["washing_machine", "1"]}]

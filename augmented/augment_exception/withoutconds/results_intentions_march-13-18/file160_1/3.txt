@@ -1,0 +1,12 @@
+Turn on light
+Go to the living room, find the switches (buttons or controllers) for light 1 and light 2 and switch on both the lights one by one.
+
+
+[WALK] <home_office> (1)
+[WALK] <controller> (1)
+[FIND] <controller> (1)
+[FIND] <controller> (2)
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)
+[FIND] <light> (2)

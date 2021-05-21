@@ -1,0 +1,1 @@
+[{"closed": ["oven", "1"]}, {"inside": [["food_pizza", "1"], ["oven", "1"]]}, {"is_on": ["oven", "1"]}, {"location": [["food_pizza", "1"], ["dining_room", "1"]]}, {"location": [["freezer", "1"], ["dining_room", "1"]]}, {"location": [["oven", "1"], ["dining_room", "1"]]}, {"open": ["freezer", "1"]}, {"unplugged": ["oven", "1"]}]

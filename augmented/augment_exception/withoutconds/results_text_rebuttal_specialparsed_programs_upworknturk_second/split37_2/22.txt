@@ -1,0 +1,18 @@
+File documents
+Take papers of completed work and file them in the filing cabinet
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <folder> (1)
+[GRAB] <folder> (1)
+[OPEN] <folder> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[PUTIN] <check> (1) <folder> (1)
+[FIND] <check> (2)
+[GRAB] <check> (2)
+[PUTIN] <check> (2) <folder> (1)
+[CLOSE] <folder> (1)
+[FIND] <filing_cabinet> (1)
+[PUTIN] <folder> (1) <filing_cabinet> (1)

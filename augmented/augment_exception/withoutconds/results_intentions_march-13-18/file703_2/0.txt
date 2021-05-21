@@ -1,0 +1,10 @@
+Put groceries in Fridge
+walk to kitchen and seprate the groceries and arrange in fridge.
+
+
+[WALK] <dining_room> (1)
+[WALK] <food_food> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[FIND] <freezer> (1)
+[PUTIN] <food_food> (1) <freezer> (1)

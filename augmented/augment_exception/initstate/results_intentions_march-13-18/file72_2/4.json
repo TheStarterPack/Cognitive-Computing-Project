@@ -1,0 +1,1 @@
+[{"atreach": [["water", "1"], ["sink", "1"]]}, {"in": [["faucet", "1"], ["sink", "1"]]}, {"is_on": ["faucet", "1"]}, {"location": [["cup", "1"], ["dining_room", "1"]]}, {"location": [["faucet", "1"], ["dining_room", "1"]]}, {"location": [["sink", "1"], ["dining_room", "1"]]}, {"location": [["water", "1"], ["dining_room", "1"]]}]

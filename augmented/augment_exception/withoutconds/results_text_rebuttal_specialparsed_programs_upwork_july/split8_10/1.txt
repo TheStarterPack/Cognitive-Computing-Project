@@ -1,0 +1,16 @@
+Iron shirt
+Set up an ironing board and an iron.  Lay a shirt on board.  Run iron over shirt until it is free of wrinkles.
+
+
+[WALK] <bedroom> (1)
+[WALK] <ironing_board> (1)
+[FIND] <ironing_board> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[WALK] <ironing_board> (1)
+[PUTBACK] <clothes_shirt> (1) <ironing_board> (1)
+[FIND] <iron> (1)
+[GRAB] <iron> (1)
+[PLUGIN] <iron> (1)
+[PLUGOUT] <iron> (1)
+[PUTOBJBACK] <iron> (1)

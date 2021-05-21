@@ -1,0 +1,24 @@
+Read book
+Grab book.  Read it.
+
+
+[WALK] <home_office> (1)
+[WALK] <dresser> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[CLOSE] <dresser> (1)
+[FIND] <couch> (1)
+[FIND] <controller> (1)
+[GRAB] <controller> (1)
+[RELEASE] <controller> (1)
+[FIND] <cards> (1)
+[GRAB] <cards> (1)
+[RELEASE] <cards> (1)
+[FIND] <cards> (2)
+[GRAB] <cards> (2)
+[RELEASE] <cards> (2)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[RELEASE] <cup> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

@@ -1,0 +1,11 @@
+Turn on light
+walk to wall, find light switch, turn on lights
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <floor_lamp> (1)
+[WALK] <bedroom> (1)
+[WALK] <light> (1)
+[SWITCHON] <light> (1)

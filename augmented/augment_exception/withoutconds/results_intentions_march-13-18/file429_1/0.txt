@@ -1,0 +1,24 @@
+Pet cat
+I see my cat on the couch so I walk over, sit down and pet the cat.
+
+
+[WALK] <home_office> (1)
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TURNTO] <cat> (1)
+[LOOKAT] <cat> (1)
+[FIND] <couch> (1)
+[FIND] <clothes_dress> (1)
+[GRAB] <clothes_dress> (1)
+[RELEASE] <clothes_dress> (1)
+[FIND] <tape> (1)
+[GRAB] <tape> (1)
+[RELEASE] <tape> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[RELEASE] <food_food> (1)
+[SIT] <couch> (1)
+[TOUCH] <cat> (1)

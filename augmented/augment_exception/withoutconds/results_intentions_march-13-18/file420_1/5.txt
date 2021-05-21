@@ -1,0 +1,9 @@
+Listen to music
+Walk to the Living room. Find the radio. Plug in the radio. Switch on the radio. Sit in the chair.
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)

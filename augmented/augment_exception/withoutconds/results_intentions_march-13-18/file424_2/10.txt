@@ -1,0 +1,11 @@
+Listen to music
+I go into my bedroom and see my stereo. I decide to play music. I walk over to the stereo and turn it on. I sit down on the bed to listen to the music.
+
+
+[WALK] <bedroom> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[TURNTO] <stereo> (1)
+[LOOKAT] <stereo> (1)
+[FIND] <bed> (1)
+[SIT] <bed> (1)

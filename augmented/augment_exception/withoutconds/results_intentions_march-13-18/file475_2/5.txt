@@ -1,0 +1,9 @@
+Work
+I walk into home office. I walk to desk. I sit at chair. I turn on computer.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)

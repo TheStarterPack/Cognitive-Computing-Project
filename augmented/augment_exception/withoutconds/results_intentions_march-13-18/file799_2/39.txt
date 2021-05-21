@@ -1,0 +1,27 @@
+Browse internet
+I go to the home office. I put the laptop on the desk. I sit on the chair. I switch on my laptop and I type on the keyboard and browse the internet.
+
+
+[WALK] <home_office> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[FIND] <desk> (1)
+[PUTBACK] <laptop> (1) <desk> (1)
+[FIND] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[TURNTO] <laptop> (1)
+[LOOKAT] <laptop> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[TURNTO] <laptop> (1)
+[LOOKAT] <laptop> (1)

@@ -1,0 +1,12 @@
+Clean
+Clean lamp
+
+
+[WALK] <home_office> (1)
+[WALK] <paper_towel> (1)
+[FIND] <paper_towel> (1)
+[GRAB] <paper_towel> (1)
+[WALK] <floor_lamp> (1)
+[WIPE] <floor_lamp> (1)
+[FIND] <trashcan> (1)
+[PUTBACK] <paper_towel> (1) <trashcan> (1)

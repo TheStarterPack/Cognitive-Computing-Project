@@ -1,0 +1,22 @@
+Relax on sofa
+Relax on the sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[WALK] <couch> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[RELEASE] <basket_for_clothes> (1)
+[FIND] <envelope> (1)
+[GRAB] <envelope> (1)
+[RELEASE] <envelope> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[RELEASE] <clothes_pants> (1)
+[FIND] <button> (1)
+[GRAB] <button> (1)
+[RELEASE] <button> (1)
+[SIT] <couch> (1)
+[SLEEP]

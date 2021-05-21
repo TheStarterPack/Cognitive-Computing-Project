@@ -1,0 +1,12 @@
+Read book
+Sit and read
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[CLOSE] <filing_cabinet> (1)
+[WALK] <couch> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

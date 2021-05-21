@@ -1,0 +1,12 @@
+Study
+Study norwegian
+
+
+[WALK] <home_office> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[READ] <novel> (1)

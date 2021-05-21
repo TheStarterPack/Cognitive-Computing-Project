@@ -1,0 +1,19 @@
+Wash clothes
+Get dirty clothes out of basket for clothes in bedroom, carry dirty clothes to laundry room, place dirty clothes in washing machine, add laundry detergent to washing machine, turn washing machine on, set type of wash, start washing machine
+
+
+[WALK] <bedroom> (1)
+[WALK] <basket_for_clothes> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[WALK] <bathroom> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[PUTBACK] <basket_for_clothes> (1) <washing_machine> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[PUTBACK] <soap> (1) <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

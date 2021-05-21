@@ -1,0 +1,12 @@
+Drink
+go to the kitchen
+
+
+[Walk] <kitchen> (1)
+[Walk] <bathroom_cabinet> (1)
+[Find] <bathroom_cabinet> (1)
+[Open] <bathroom_cabinet> (1)
+[Find] <drinking_glass> (1)
+[Grab] <drinking_glass> (1)
+[Find] <water> (1)
+[Drink] <drinking_glass> (1)

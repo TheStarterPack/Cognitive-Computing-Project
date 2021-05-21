@@ -1,0 +1,1 @@
+[{"atreach": [["creditcard", "1"], ["scissors", "1"]]}, {"inside": [["creditcard", "1"], ["envelope", "1"]]}, {"location": [["creditcard", "1"], ["home_office", "1"]]}, {"location": [["envelope", "1"], ["home_office", "1"]]}, {"location": [["envelope", "1"], ["home_office", "1"]]}, {"location": [["scissors", "1"], ["home_office", "1"]]}, {"open": ["envelope", "1"]}]

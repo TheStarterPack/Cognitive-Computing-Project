@@ -1,0 +1,12 @@
+Cook some food
+Walk Into Kitchen. Open Refrigerator. Grab Food. Walk to Microwave. Insert food into microwave. Cook until warm.
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <food_food> (1)
+[CLOSE] <freezer> (1)
+[WALK] <microwave> (1)
+[PLUGIN] <microwave> (1)
+[SWITCHON] <microwave> (1)
+[SWITCHOFF] <microwave> (1)

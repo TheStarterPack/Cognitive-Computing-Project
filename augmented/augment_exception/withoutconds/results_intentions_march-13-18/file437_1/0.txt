@@ -1,0 +1,14 @@
+Pet cat
+I walk into the living room. I see my cat on the couch. I go sit next to the cat on the couch. I pet the cat on the back.
+
+
+[WALK] <home_office> (1)
+[WALK] <cat> (1)
+[FIND] <cat> (1)
+[TURNTO] <cat> (1)
+[LOOKAT] <cat> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <cat> (1)
+[TOUCH] <cat> (1)

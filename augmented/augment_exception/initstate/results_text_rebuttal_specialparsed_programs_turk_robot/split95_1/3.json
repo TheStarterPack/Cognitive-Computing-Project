@@ -1,0 +1,1 @@
+[{"inside": [["vacuum_cleaner", "1"], ["dresser", "1"]]}, {"is_on": ["vacuum_cleaner", "1"]}, {"location": [["dresser", "1"], ["bedroom", "1"]]}, {"location": [["vacuum_cleaner", "1"], ["bedroom", "1"]]}, {"open": ["dresser", "1"]}, {"unplugged": ["vacuum_cleaner", "1"]}]

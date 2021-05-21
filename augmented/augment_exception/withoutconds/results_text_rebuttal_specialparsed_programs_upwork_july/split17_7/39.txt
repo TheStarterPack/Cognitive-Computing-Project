@@ -1,0 +1,20 @@
+Try yourself off
+After your shower, go into your bedroom and use a towel to dry water off of yourself before dressing.
+
+
+[WALK] <bedroom> (1)
+[WALK] <dresser> (1)
+[FIND] <dresser> (1)
+[FIND] <towel> (1)
+[GRAB] <towel> (1)
+[CLOSE] <dresser> (1)
+[FIND] <face> (1)
+[WIPE] <face> (1)
+[FIND] <arms_both> (1)
+[WIPE] <arms_both> (1)
+[FIND] <legs_both> (1)
+[WIPE] <legs_both> (1)
+[FIND] <feet_both> (1)
+[WIPE] <feet_both> (1)
+[FIND] <basket_for_clothes> (1)
+[PUTBACK] <towel> (1) <basket_for_clothes> (1)

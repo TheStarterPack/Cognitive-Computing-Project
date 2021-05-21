@@ -1,0 +1,1 @@
+[{"closed": ["desk", "1"]}, {"inside": [["check", "1"], ["desk", "1"]]}, {"inside": [["pencil", "1"], ["desk", "1"]]}, {"location": [["chair", "1"], ["home_office", "1"]]}, {"location": [["desk", "1"], ["home_office", "1"]]}, {"location": [["check", "1"], ["home_office", "1"]]}, {"location": [["pencil", "1"], ["home_office", "1"]]}, {"occupied": ["chair", "1"]}]

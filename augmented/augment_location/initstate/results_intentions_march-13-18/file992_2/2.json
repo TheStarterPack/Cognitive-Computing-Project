@@ -1,0 +1,1 @@
+[{"is_off": ["microwave", "1"]}, {"plugged": ["microwave", "1"]}, {"atreach": [["microwave", "1"], ["water", "1"]]}, {"atreach": [["cup", "1"], ["water", "1"]]}, {"closed": ["microwave", "1"]}, {"inside": [["coffee", "1"], ["microwave", "1"]]}, {"inside": [["water", "1"], ["microwave", "1"]]}]

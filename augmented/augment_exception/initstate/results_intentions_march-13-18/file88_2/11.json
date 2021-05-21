@@ -1,0 +1,1 @@
+[{"atreach": [["dishwasher", "1"], ["sink", "1"]]}, {"in": [["dish_soap", "1"], ["sink", "1"]]}, {"is_off": ["dishwasher", "1"]}, {"location": [["dish_soap", "1"], ["dining_room", "1"]]}, {"location": [["dishwasher", "1"], ["dining_room", "1"]]}, {"location": [["sink", "1"], ["dining_room", "1"]]}, {"open": ["dishwasher", "1"]}]

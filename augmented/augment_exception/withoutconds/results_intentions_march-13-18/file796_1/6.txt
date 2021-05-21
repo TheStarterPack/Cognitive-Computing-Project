@@ -1,0 +1,23 @@
+Take shower
+I turn on the shower. I take off my clothing. I step into the shower. I wash myself.
+
+
+[WALK] <bathroom> (1)
+[WALK] <shower> (1)
+[FIND] <shower> (1)
+[TURNTO] <shower> (1)
+[WALK] <clothes_pants> (1)
+[FIND] <clothes_pants> (1)
+[FIND] <clothes_pants> (1)
+[FIND] <clothes_pants> (1)
+[PUTOFF] <clothes_pants> (1)
+[WALK] <clothes_shirt> (1)
+[FIND] <clothes_shirt> (1)
+[FIND] <clothes_shirt> (1)
+[FIND] <clothes_shirt> (1)
+[PUTOFF] <clothes_shirt> (1)
+[WALK] <shower> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[FIND] <water> (1)
+[TURNTO] <water> (1)

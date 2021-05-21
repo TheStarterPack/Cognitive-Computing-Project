@@ -1,0 +1,1 @@
+[{"atreach": [["bookshelf", "1"], ["toy", "1"]]}, {"inside": [["toy", "2"], ["bookshelf", "1"]]}, {"location": [["bookshelf", "1"], ["bedroom", "1"]]}, {"location": [["toy", "1"], ["bedroom", "1"]]}, {"location": [["toy", "2"], ["bedroom", "1"]]}, {"open": ["bookshelf", "1"]}]

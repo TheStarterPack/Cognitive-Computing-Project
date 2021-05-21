@@ -1,0 +1,25 @@
+Listen to music
+i feel little bit depressed and i want to hear some songs so im going to my bedroom an switch on my radio to hear some good songs
+
+
+[WALK] <bedroom> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[GRAB] <stereo> (1)
+[FIND] <bed> (1)
+[FIND] <pillow> (2)
+[GRAB] <pillow> (2)
+[RELEASE] <pillow> (2)
+[FIND] <pillow> (3)
+[GRAB] <pillow> (3)
+[RELEASE] <pillow> (3)
+[FIND] <pillow> (4)
+[GRAB] <pillow> (4)
+[RELEASE] <pillow> (4)
+[LIE] <bed> (1)
+[STANDUP]
+[WALK] <pillow> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[FIND] <music_stand> (1)
+[PUTBACK] <stereo> (1) <music_stand> (1)

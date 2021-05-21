@@ -1,0 +1,18 @@
+Read book
+Use right arm and hand to pick up the book, sit down on the chair and use both hands to open the book, use eyes to read the open book and hands to turn the pages until the book is finished.
+
+
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[READ] <novel> (1)

@@ -1,0 +1,11 @@
+Read
+Read a book in the living room
+
+
+[Walk] <living_room> (1)
+[Walk] <folder> (1)
+[Open] <folder> (1)
+[Find] <book> (1)
+[Grab] <book> (1)
+[Close] <folder> (1)
+[Read] <book> (1)

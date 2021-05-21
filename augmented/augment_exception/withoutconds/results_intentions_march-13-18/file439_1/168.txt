@@ -1,0 +1,26 @@
+Work
+SIT DOWN BOOT UP AND DO SOME OF THE BROWSER
+
+
+[FIND] <chair> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[FIND] <keyboard> (1)
+[GRAB] <keyboard> (1)
+[FIND] <desk> (1)
+[OPEN] <desk> (1)
+[PUTBACK] <keyboard> (1) <desk> (1)
+[STANDUP]
+[WALK] <console> (1)
+[FIND] <console> (1)
+[SWITCHON] <console> (1)
+[WALK] <keyboard> (1)

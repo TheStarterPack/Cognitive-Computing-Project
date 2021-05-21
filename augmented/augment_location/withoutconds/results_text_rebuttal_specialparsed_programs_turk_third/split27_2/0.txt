@@ -1,0 +1,9 @@
+Make bed
+Straighten the different sheets on the bed So that they are staight and in line with the frame and mattress
+
+
+[Walk] <bedroom> (1)
+[Walk] <love_seat> (1)
+[Find] <sheets> (1)
+[Grab] <sheets> (1)
+[Pull] <sheets> (1)

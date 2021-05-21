@@ -1,0 +1,15 @@
+Put groceries in Fridge
+after shopping putting perishables away in the fridge
+
+
+[FIND] <food_apple> (1)
+[GRAB] <food_apple> (1)
+[FIND] <freezer> (1)
+[PUTIN] <food_apple> (1) <freezer> (1)
+[FIND] <food_egg> (1)
+[GRAB] <food_egg> (1)
+[PUTIN] <food_egg> (1) <freezer> (1)
+[FIND] <food_fish> (1)
+[GRAB] <food_fish> (1)
+[PUTIN] <food_fish> (1) <freezer> (1)
+[CLOSE] <freezer> (1)

@@ -1,0 +1,11 @@
+Wash hands
+go to the bathroom and wash your hands
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[FIND] <soap> (1)
+[SQUEEZE] <soap> (1)
+[FIND] <hands_both> (1)
+[WASH] <hands_both> (1)

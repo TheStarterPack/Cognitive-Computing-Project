@@ -1,0 +1,5 @@
+Listen to music
+Find radio. Turn on radio. Find a station that you like by switching through the channels. Listen.
+
+
+[FIND] <stereo> (1)

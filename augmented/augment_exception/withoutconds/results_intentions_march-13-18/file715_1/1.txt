@@ -1,0 +1,11 @@
+Pick up phone
+reach down, grasp phone, pick up phone
+
+
+[WALK] <dining_room> (1)
+[WALK] <kitchen_counter> (1)
+[FIND] <kitchen_counter> (1)
+[TURNTO] <kitchen_counter> (1)
+[LOOKAT] <kitchen_counter> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)

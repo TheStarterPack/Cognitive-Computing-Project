@@ -1,0 +1,22 @@
+Watch TV
+I come home and go to the sofa for turn off the tv and relax
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <sheets> (1)
+[GRAB] <sheets> (1)
+[RELEASE] <sheets> (1)
+[FIND] <instrument_violin> (1)
+[GRAB] <instrument_violin> (1)
+[RELEASE] <instrument_violin> (1)
+[FIND] <video_game_controller> (1)
+[GRAB] <video_game_controller> (1)
+[RELEASE] <video_game_controller> (1)
+[FIND] <keys> (1)
+[GRAB] <keys> (1)
+[RELEASE] <keys> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <television> (1)
+[FIND] <television> (1)

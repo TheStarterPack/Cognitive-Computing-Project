@@ -1,0 +1,14 @@
+Sleep
+I sleep in my bed in my bedroom
+
+
+[Walk] <bedroom> (1)
+[Walk] <washing_machine> (1)
+[Find] <washing_machine> (1)
+[Open] <washing_machine> (1)
+[Find] <pajamas> (1)
+[Grab] <pajamas> (1)
+[Close] <washing_machine> (1)
+[Find] <bed> (1)
+[Lie] <bed> (1)
+[Sleep]

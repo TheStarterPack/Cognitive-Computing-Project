@@ -1,0 +1,1 @@
+[{"is_off": ["oven", "1"]}, {"plugged": ["oven", "1"]}, {"atreach": [["oven", "1"], ["water", "1"]]}, {"atreach": [["cup", "1"], ["water", "1"]]}, {"closed": ["oven", "1"]}, {"inside": [["coffee", "1"], ["oven", "1"]]}, {"inside": [["water", "1"], ["oven", "1"]]}]

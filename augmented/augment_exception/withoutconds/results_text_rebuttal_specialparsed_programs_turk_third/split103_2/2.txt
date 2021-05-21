@@ -1,0 +1,27 @@
+Read book
+Sitting and  reading a hardcover book in a recliner
+
+
+[RUN] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[RUN] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[FIND] <bookmark> (1)
+[GRAB] <bookmark> (1)
+[DROP] <bookmark> (1)
+[TURNTO] <novel> (1)
+[LOOKAT] <novel> (1)
+[READ] <novel> (1)
+[READ] <novel> (1)
+[READ] <novel> (1)

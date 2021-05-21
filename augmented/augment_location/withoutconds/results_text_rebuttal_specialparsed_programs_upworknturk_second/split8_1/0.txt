@@ -1,0 +1,26 @@
+Chop vegetables
+Cut up veggies with knife
+
+
+[Walk] <kitchen> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Open] <cabinet> (1)
+[Find] <knife> (1)
+[Grab] <knife> (1)
+[Find] <cutting_board> (1)
+[Grab] <cutting_board> (1)
+[Close] <cabinet> (1)
+[Walk] <table> (1)
+[PutBack] <knife> (1) <table> (1)
+[PutBack] <cutting_board> (1) <table> (1)
+[Walk] <trashcan> (1)
+[Open] <trashcan> (1)
+[Find] <food_vegetable> (1)
+[Grab] <food_vegetable> (1)
+[Close] <trashcan> (1)
+[Walk] <table> (1)
+[PutBack] <food_vegetable> (1) <cutting_board> (1)
+[Grab] <knife> (1)
+[Cut] <food_vegetable> (1)
+[PutObjBack] <knife> (1)

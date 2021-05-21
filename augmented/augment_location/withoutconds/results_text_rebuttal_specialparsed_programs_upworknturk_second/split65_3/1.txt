@@ -1,0 +1,11 @@
+Hang up car keys
+Open the front door. Enter the entrance hall. Take out car keys from purse. Hang car keys up on hook on the wall.
+
+
+[Walk] <entrance_hall> (1)
+[Walk] <dresser> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <keys> (1)
+[Grab] <keys> (1)
+[Close] <dresser> (1)

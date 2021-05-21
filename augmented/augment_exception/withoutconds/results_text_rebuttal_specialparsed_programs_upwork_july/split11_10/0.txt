@@ -1,0 +1,11 @@
+Put away groceries
+Place groceries in refrigerator from shopping at the grocery store.
+
+
+[WALK] <dining_room> (1)
+[WALK] <freezer> (1)
+[FIND] <freezer> (1)
+[FIND] <food_food> (1)
+[GRAB] <food_food> (1)
+[PUTIN] <food_food> (1) <freezer> (1)
+[CLOSE] <freezer> (1)

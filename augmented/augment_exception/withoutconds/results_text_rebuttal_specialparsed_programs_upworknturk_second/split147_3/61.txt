@@ -1,0 +1,12 @@
+Turn on light
+Flip switch and turn on overhead light. Turn on lamps in the corner. Turn on lamps on the shelves. Flip switch to turn on lights in the china cabinet.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[FIND] <floor_lamp> (1)
+[FIND] <floor_lamp> (2)
+[SWITCHON] <floor_lamp> (2)
+[FIND] <floor_lamp> (3)
+[SWITCHON] <floor_lamp> (3)

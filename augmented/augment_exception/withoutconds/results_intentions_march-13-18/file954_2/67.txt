@@ -1,0 +1,27 @@
+Wash clothes
+I need to get the dirty clothes basket.  Walk to bathroom.  Put all the clothes in washing machine.  Add soap.  Turn on machine.
+
+
+[WALK] <basket_for_clothes> (1)
+[WALK] <bathroom> (1)
+[WALK] <washing_machine> (1)
+[FIND] <washing_machine> (1)
+[OPEN] <washing_machine> (1)
+[FIND] <clothes_dress> (1)
+[GRAB] <clothes_dress> (1)
+[PUTBACK] <clothes_dress> (1) <washing_machine> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[PUTBACK] <clothes_underwear> (1) <washing_machine> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[PUTBACK] <soap> (1) <washing_machine> (1)
+[CLOSE] <washing_machine> (1)
+[PLUGIN] <washing_machine> (1)
+[SWITCHON] <washing_machine> (1)

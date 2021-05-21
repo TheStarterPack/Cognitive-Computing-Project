@@ -1,0 +1,19 @@
+Play games
+Sit in comfortable position, turn on television, turn on console, pick up remote to play
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[WALK] <television> (1)
+[PLUGIN] <television> (1)
+[SWITCHON] <television> (1)
+[FIND] <video_game_console> (1)
+[SWITCHON] <video_game_console> (1)
+[FIND] <video_game_controller> (1)
+[GRAB] <video_game_controller> (1)
+[FIND] <chair> (1)
+[WALK] <chair> (1)
+[SIT] <chair> (1)
+[TURNTO] <television> (1)
+[LOOKAT] <television> (1)

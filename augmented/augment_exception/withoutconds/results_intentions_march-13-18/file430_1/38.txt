@@ -1,0 +1,24 @@
+Write an email
+I need to send an email to my friend so I go into my office and sit down at the desk. I turn on the computer and type the email.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <desk> (1)
+[TURNTO] <desk> (1)
+[LOOKAT] <desk> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

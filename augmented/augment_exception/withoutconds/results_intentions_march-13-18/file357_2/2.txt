@@ -1,0 +1,21 @@
+Listen to music
+I go to the living room, switch on the CD player (then choose the music cd and insert into the player) and sit on the sofa
+
+
+[WALK] <home_office> (1)
+[WALK] <cd_player> (1)
+[FIND] <cd_player> (1)
+[FIND] <couch> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <cat> (1)
+[GRAB] <cat> (1)
+[RELEASE] <cat> (1)
+[FIND] <creditcard> (1)
+[GRAB] <creditcard> (1)
+[RELEASE] <creditcard> (1)
+[FIND] <creditcard> (2)
+[GRAB] <creditcard> (2)
+[RELEASE] <creditcard> (2)
+[SIT] <couch> (1)

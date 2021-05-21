@@ -1,0 +1,11 @@
+Read
+I like to read books in my bedroom.
+
+
+[Walk] <bedroom> (1)
+[Walk] <love_seat> (1)
+[Find] <book> (1)
+[Grab] <book> (1)
+[Walk] <bed> (1)
+[Lie] <bed> (1)
+[Read] <book> (1)

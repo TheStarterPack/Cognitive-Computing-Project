@@ -1,0 +1,23 @@
+Pay bills
+Pay my my bills that are due
+
+
+[WALK] <home_office> (1)
+[WALK] <filing_cabinet> (1)
+[FIND] <bills> (1)
+[GRAB] <bills> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[TURNTO] <bills> (1)
+[LOOKAT] <bills> (1)
+[FIND] <desk> (1)
+[PUTBACK] <bills> (1) <desk> (1)
+[FIND] <creditcard> (1)
+[GRAB] <creditcard> (1)
+[TURNTO] <creditcard> (1)
+[LOOKAT] <creditcard> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[PUTOBJBACK] <creditcard> (1)

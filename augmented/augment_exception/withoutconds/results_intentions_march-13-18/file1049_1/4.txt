@@ -1,0 +1,27 @@
+Listen to music
+walk to living room, look at the DVD player, switch on the dvd player, look at the sofa, sit on the sofa and listen the music
+
+
+[WALK] <home_office> (1)
+[WALK] <dvd_player> (1)
+[FIND] <dvd_player> (1)
+[TURNTO] <dvd_player> (1)
+[LOOKAT] <dvd_player> (1)
+[PLUGIN] <dvd_player> (1)
+[SWITCHON] <dvd_player> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[LOOKAT] <couch> (1)
+[FIND] <button> (1)
+[GRAB] <button> (1)
+[RELEASE] <button> (1)
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[RELEASE] <check> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <plate> (1)
+[GRAB] <plate> (1)
+[RELEASE] <plate> (1)
+[SIT] <couch> (1)

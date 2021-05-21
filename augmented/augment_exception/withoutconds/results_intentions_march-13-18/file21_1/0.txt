@@ -1,0 +1,13 @@
+Wash hands
+I go to bathroom, go to sink, turn the water on via faucet, grab soap, use the soap to scrub my hands, put the soap back and wash my hands. Then I stop the water with faucet.
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[FIND] <hands_both> (1)
+[SCRUB] <hands_both> (1)
+[PUTOBJBACK] <soap> (1)
+[WASH] <hands_both> (1)

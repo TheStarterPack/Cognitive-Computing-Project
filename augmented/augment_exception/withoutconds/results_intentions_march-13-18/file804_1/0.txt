@@ -1,0 +1,14 @@
+Wash clothes
+Pick up my dirty clothes, load the washer, add detergent, turn on washer
+
+
+[WALK] <bedroom> (1)
+[WALK] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[WALK] <home_office> (1)
+[WALK] <washing_machine> (1)
+[PUTBACK] <basket_for_clothes> (1) <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[RUN] <washing_machine> (1)

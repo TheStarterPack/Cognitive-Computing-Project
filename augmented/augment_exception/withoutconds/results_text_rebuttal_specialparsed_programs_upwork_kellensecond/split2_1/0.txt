@@ -1,0 +1,11 @@
+Put away keys
+Return keys into a bag
+
+
+[WALK] <home_office> (1)
+[WALK] <keys> (1)
+[FIND] <keys> (1)
+[GRAB] <keys> (1)
+[FIND] <bag> (1)
+[PUTBACK] <keys> (1) <bag> (1)
+[CLOSE] <bag> (1)

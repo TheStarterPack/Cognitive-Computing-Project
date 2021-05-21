@@ -1,0 +1,16 @@
+Browse internet
+I use the computer within my home office to look through the internet. To do this, I use my mouse and keyboard as well as sit in a comfortable chair.
+
+
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[FIND] <computer> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[TYPE] <keyboard> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)

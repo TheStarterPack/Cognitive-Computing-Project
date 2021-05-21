@@ -1,0 +1,10 @@
+Turn on lights
+Walk to your lamp, switch it on, and lay on your bed
+
+
+[WALK] <bedroom> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (1)
+[TURNTO] <floor_lamp> (1)
+[FIND] <bed> (1)
+[LIE] <bed> (1)

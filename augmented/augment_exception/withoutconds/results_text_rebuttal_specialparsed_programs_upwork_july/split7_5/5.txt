@@ -1,0 +1,16 @@
+Work
+I work on my HP computer.
+
+
+[WALK] <bedroom> (1)
+[WALK] <laptop> (1)
+[FIND] <laptop> (1)
+[GRAB] <laptop> (1)
+[WALK] <bed> (1)
+[SIT] <bed> (1)
+[PLUGIN] <laptop> (1)
+[SWITCHON] <laptop> (1)
+[TURNTO] <laptop> (1)
+[LOOKAT] <laptop> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)

@@ -1,0 +1,19 @@
+Wash hands
+Walk to kitchen. Find sink. Walk to sink. Find soap. Put soap on sink. Pour water into hands. Scrub soap. Wash water.
+
+
+[WALK] <dining_room> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[WALK] <sink> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[PUTBACK] <soap> (1) <sink> (1)
+[FIND] <water> (1)
+[GRAB] <water> (1)
+[FIND] <hands_both> (1)
+[POUR] <water> (1) <hands_both> (1)
+[WALK] <soap> (1)
+[SCRUB] <soap> (1)
+[WALK] <water> (1)
+[WASH] <water> (1)

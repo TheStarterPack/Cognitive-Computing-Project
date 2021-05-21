@@ -1,0 +1,22 @@
+Drink
+Go to the kitchen, grab a cup from the cupboard, go to the sink, put cup under faucet, turn on faucet til cup is full, turn off faucet, drink from cup
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[OPEN] <cupboard> (1)
+[FIND] <cup> (1)
+[GRAB] <cup> (1)
+[WALK] <sink> (1)
+[FIND] <faucet> (1)
+[TURNTO] <faucet> (1)
+[PUTBACK] <cup> (1) <sink> (1)
+[SWITCHON] <faucet> (1)
+[FIND] <water> (1)
+[WALK] <cup> (1)
+[GRAB] <cup> (1)
+[PUTBACK] <cup> (1) <sink> (1)
+[GRAB] <cup> (1)
+[SWITCHOFF] <faucet> (1)
+[DRINK] <cup> (1)

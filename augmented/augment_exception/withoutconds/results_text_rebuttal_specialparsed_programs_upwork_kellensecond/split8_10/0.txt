@@ -1,0 +1,14 @@
+Read magazine
+Get magazine off coffee table. Sit in arm chair. Open magazine to first page. Read until finished.
+
+
+[WALK] <home_office> (1)
+[WALK] <coffee_table> (1)
+[FIND] <newspaper> (1)
+[GRAB] <newspaper> (1)
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[READ] <newspaper> (1)
+[STANDUP]
+[WALK] <coffee_table> (1)
+[PUTBACK] <newspaper> (1) <coffee_table> (1)

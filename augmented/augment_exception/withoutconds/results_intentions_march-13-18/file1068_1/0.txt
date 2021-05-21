@@ -1,0 +1,7 @@
+Work
+walk to home office ,find computer ,switch on computer and work
+
+
+[WALK] <home_office> (1)
+[WALK] <computer> (2)
+[FIND] <computer> (2)

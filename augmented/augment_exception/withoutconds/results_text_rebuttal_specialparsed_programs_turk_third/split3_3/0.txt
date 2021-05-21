@@ -1,0 +1,12 @@
+Read newspaper
+I go outside to get the newspaper.I come back inside and sit down at the dining room table and read it.
+
+
+[FIND] <chair> (1)
+[TURNTO] <chair> (1)
+[POINTAT] <chair> (1)
+[WASH] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[SIT] <chair> (1)

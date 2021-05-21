@@ -1,0 +1,16 @@
+Relax on sofa
+I finish my homework, I take my cell phone, turn on the radio, lie down on the sofa
+
+
+[FIND] <check> (1)
+[GRAB] <check> (1)
+[DROP] <check> (1)
+[WALK] <home_office> (1)
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[FIND] <stereo> (1)
+[FIND] <couch> (1)
+[LIE] <couch> (1)
+[TURNTO] <phone> (1)
+[LOOKAT] <phone> (1)

@@ -1,0 +1,19 @@
+Wash clothes
+I go to the bedroom to find and grab basket of clothes. I then go to the bathroom and find the washing machine. I put clothes inside the washing machine and put washing powder. I switch on the washing machine.
+
+
+[Walk] <bedroom> (1)
+[Walk] <basket_for_clothes> (1)
+[Find] <basket_for_clothes> (1)
+[Grab] <basket_for_clothes> (1)
+[Walk] <bathroom> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Open] <cabinet> (1)
+[PutBack] <basket_for_clothes> (1) <cabinet> (1)
+[Find] <soap> (1)
+[Grab] <soap> (1)
+[PutBack] <soap> (1) <cabinet> (1)
+[Find] <cabinet> (1)
+[Close] <cabinet> (1)
+[SwitchOn] <cabinet> (1)

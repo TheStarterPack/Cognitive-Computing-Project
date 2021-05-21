@@ -1,0 +1,17 @@
+Re arrange office
+Walk in.Turn on light.Move furniture. Change the room
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)
+[WALK] <desk> (1)
+[PUSH] <desk> (1)
+[WALK] <chair> (1)
+[PUSH] <chair> (1)
+[WALK] <couch> (1)
+[PUSH] <couch> (1)
+[WALK] <filing_cabinet> (1)
+[PUSH] <filing_cabinet> (1)

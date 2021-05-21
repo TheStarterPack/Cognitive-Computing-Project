@@ -1,0 +1,16 @@
+Shred receipts
+Take old receipts and put through the shredder
+
+
+[Walk] <home_office> (1)
+[Walk] <dresser> (1)
+[Find] <dresser> (1)
+[Open] <dresser> (1)
+[Find] <receipt> (1)
+[Grab] <receipt> (1)
+[Close] <dresser> (1)
+[Find] <electrical_outlet> (1)
+[Find] <shredder> (1)
+[PlugIn] <shredder> (1)
+[SwitchOn] <shredder> (1)
+[PutBack] <receipt> (1) <shredder> (1)

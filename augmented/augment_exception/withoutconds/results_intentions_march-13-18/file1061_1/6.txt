@@ -1,0 +1,16 @@
+Wash hands
+I walk to the bathroom and find the sink. I grab the soap and rub some on my hands. I turn the faucet on and put my hands in the water. I rinse my hands and then turn off the faucet. Then I dry my hands on a paper towel.
+
+
+[WALK] <bathroom> (1)
+[WALK] <sink> (1)
+[FIND] <sink> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[FIND] <hands_both> (1)
+[SCRUB] <hands_both> (1)
+[FIND] <faucet> (1)
+[RINSE] <hands_both> (1)
+[FIND] <paper_towel> (1)
+[GRAB] <paper_towel> (1)
+[WIPE] <hands_both> (1)

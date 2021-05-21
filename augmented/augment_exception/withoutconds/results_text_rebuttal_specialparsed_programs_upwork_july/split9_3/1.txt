@@ -1,0 +1,23 @@
+Read book
+Grab a book from the bookshelf. Sit down on a chair or couch. Open book and start reading the book.
+
+
+[WALK] <home_office> (1)
+[WALK] <bookshelf> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[WALK] <couch> (1)
+[FIND] <clothes_skirt> (1)
+[GRAB] <clothes_skirt> (1)
+[RELEASE] <clothes_skirt> (1)
+[FIND] <pencil> (1)
+[GRAB] <pencil> (1)
+[RELEASE] <pencil> (1)
+[FIND] <stereo> (1)
+[GRAB] <stereo> (1)
+[RELEASE] <stereo> (1)
+[FIND] <rag> (1)
+[GRAB] <rag> (1)
+[RELEASE] <rag> (1)
+[SIT] <couch> (1)
+[READ] <novel> (1)

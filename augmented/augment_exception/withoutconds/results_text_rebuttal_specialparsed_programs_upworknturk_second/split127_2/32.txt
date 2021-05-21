@@ -1,0 +1,26 @@
+Take off outerwear
+Take off jacket, hat etc.
+
+
+[WALK] <home_office> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[SWITCHON] <light> (1)
+[FIND] <clothes_hat> (1)
+[FIND] <clothes_hat> (1)
+[PUTOFF] <clothes_hat> (1)
+[GRAB] <clothes_hat> (1)
+[FIND] <hanger> (1)
+[FIND] <clothes_jacket> (1)
+[PUTBACK] <clothes_hat> (1) <hanger> (1)
+[FIND] <clothes_jacket> (1)
+[PUTOFF] <clothes_jacket> (1)
+[FIND] <shoes> (1)
+[GRAB] <clothes_jacket> (1)
+[PUTBACK] <clothes_jacket> (1) <hanger> (1)
+[FIND] <shoes> (1)
+[PUTOFF] <shoes> (1)
+[FIND] <dresser> (1)
+[GRAB] <shoes> (1)
+[PUTIN] <shoes> (1) <dresser> (1)
+[CLOSE] <dresser> (1)

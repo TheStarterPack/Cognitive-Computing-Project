@@ -1,0 +1,17 @@
+Wash clothes
+Washing pants with washing machine
+
+
+[Find] <clothes_pants> (1)
+[Grab] <clothes_pants> (1)
+[Walk] <bathroom> (1)
+[Walk] <cabinet> (1)
+[Find] <cabinet> (1)
+[Open] <cabinet> (1)
+[PutBack] <clothes_pants> (1) <cabinet> (1)
+[Walk] <laundry_detergent> (1)
+[Find] <laundry_detergent> (1)
+[Grab] <laundry_detergent> (1)
+[Pour] <laundry_detergent> (1) <cabinet> (1)
+[Close] <cabinet> (1)
+[SwitchOn] <cabinet> (1)

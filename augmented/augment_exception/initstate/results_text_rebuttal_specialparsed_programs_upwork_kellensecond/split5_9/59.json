@@ -1,0 +1,1 @@
+[{"atreach": [["chair", "1"], ["remote_control", "1"]]}, {"atreach": [["television", "1"], ["chair", "1"]]}, {"is_on": ["television", "1"]}, {"location": [["chair", "1"], ["home_office", "1"]]}, {"location": [["remote_control", "1"], ["home_office", "1"]]}, {"location": [["television", "1"], ["home_office", "1"]]}, {"occupied": ["chair", "1"]}, {"unplugged": ["television", "1"]}]

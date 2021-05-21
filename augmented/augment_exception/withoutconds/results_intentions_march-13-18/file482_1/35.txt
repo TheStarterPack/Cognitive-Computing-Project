@@ -1,0 +1,28 @@
+Wash clothes
+I grab the basket for clothes from the bedroom. I carry it and walk to the washing machine. I open the washing machine. I grab the dirty clothes. I put the clothes in the washing machine. I grab the laundry detergent and put it in the washing machine. I close the washing machine. I switch on the washing machine.
+
+
+[WALK] <bedroom> (1)
+[WALK] <basket_for_clothes> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[WALK] <washing_machine> (1)
+[DROP] <basket_for_clothes> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[PUTBACK] <clothes_pants> (1) <washing_machine> (1)
+[FIND] <clothes_shirt> (1)
+[GRAB] <clothes_shirt> (1)
+[PUTBACK] <clothes_shirt> (1) <washing_machine> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[PUTBACK] <clothes_underwear> (1) <washing_machine> (1)
+[FIND] <clothes_socks> (1)
+[GRAB] <clothes_socks> (1)
+[PUTBACK] <clothes_socks> (1) <washing_machine> (1)
+[FIND] <laundry_detergent> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTBACK] <laundry_detergent> (1) <washing_machine> (1)
+[GRAB] <laundry_detergent> (1)
+[PUTOBJBACK] <laundry_detergent> (1)
+[CLOSE] <washing_machine> (1)

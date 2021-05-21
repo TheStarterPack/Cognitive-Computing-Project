@@ -1,0 +1,13 @@
+Wash teeth
+Wash the teeth
+
+
+[WALK] <bathroom> (1)
+[WALK] <faucet> (1)
+[FIND] <faucet> (1)
+[FIND] <water> (1)
+[TURNTO] <water> (1)
+[POINTAT] <water> (1)
+[FIND] <teeth> (1)
+[WASH] <teeth> (1)
+[SWITCHOFF] <faucet> (1)

@@ -1,0 +1,26 @@
+Read book
+"walk to entrance" "walk to living room" "look for book" "find book" "pick up book" "look for chair" "find chair" "sit in chair" "read book"
+
+
+[WALK] <home_office> (1)
+[WALK] <home_office> (1)
+[WALK] <novel> (1)
+[FIND] <novel> (1)
+[TURNTO] <novel> (1)
+[LOOKAT] <novel> (1)
+[FIND] <novel> (1)
+[FIND] <chair> (1)
+[TURNTO] <chair> (1)
+[LOOKAT] <chair> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[SIT] <chair> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)

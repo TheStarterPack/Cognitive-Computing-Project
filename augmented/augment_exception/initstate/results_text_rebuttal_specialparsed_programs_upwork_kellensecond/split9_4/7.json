@@ -1,0 +1,1 @@
+[{"inside": [["cup", "1"], ["cupboard", "1"]]}, {"inside": [["milk", "1"], ["freezer", "1"]]}, {"location": [["cupboard", "1"], ["dining_room", "1"]]}, {"location": [["freezer", "1"], ["dining_room", "1"]]}, {"location": [["cup", "1"], ["dining_room", "1"]]}, {"location": [["milk", "1"], ["dining_room", "1"]]}, {"open": ["cupboard", "1"]}, {"open": ["freezer", "1"]}]

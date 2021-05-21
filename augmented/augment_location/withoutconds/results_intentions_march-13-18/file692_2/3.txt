@@ -1,0 +1,10 @@
+Put groceries in Fridge
+Open fridge, grab groceries, put groceries in fridge, close fridge
+
+
+[Find] <kitchen_cabinet> (1)
+[Open] <kitchen_cabinet> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <kitchen_cabinet> (1)
+[Close] <kitchen_cabinet> (1)

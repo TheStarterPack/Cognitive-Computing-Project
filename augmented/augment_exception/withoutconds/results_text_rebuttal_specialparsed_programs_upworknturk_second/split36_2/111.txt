@@ -1,0 +1,27 @@
+Manage emails
+Check the email account for new mails or sending to others.
+
+
+[WALK] <home_office> (1)
+[WALK] <desk> (1)
+[FIND] <computer> (1)
+[SWITCHON] <computer> (1)
+[FIND] <chair> (1)
+[FIND] <bag> (1)
+[GRAB] <bag> (1)
+[RELEASE] <bag> (1)
+[FIND] <clothes_underwear> (1)
+[GRAB] <clothes_underwear> (1)
+[RELEASE] <clothes_underwear> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[SIT] <chair> (1)
+[TURNTO] <computer> (1)
+[LOOKAT] <computer> (1)
+[FIND] <mail> (1)
+[GRAB] <mail> (1)
+[READ] <mail> (1)
+[FIND] <keyboard> (1)
+[TYPE] <keyboard> (1)
+[SWITCHOFF] <computer> (1)

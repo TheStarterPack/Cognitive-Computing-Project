@@ -1,0 +1,27 @@
+Listen to music
+go to the living room, turn on the radio, sit on the sofa, use my cell phone
+
+
+[WALK] <home_office> (1)
+[WALK] <stereo> (1)
+[FIND] <stereo> (1)
+[TURNTO] <stereo> (1)
+[FIND] <couch> (1)
+[FIND] <hanger> (1)
+[GRAB] <hanger> (1)
+[RELEASE] <hanger> (1)
+[FIND] <tape> (1)
+[GRAB] <tape> (1)
+[RELEASE] <tape> (1)
+[FIND] <phone> (2)
+[GRAB] <phone> (2)
+[RELEASE] <phone> (2)
+[FIND] <newspaper> (1)
+[GRAB] <newspaper> (1)
+[RELEASE] <newspaper> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <phone> (1)
+[FIND] <phone> (1)
+[TURNTO] <phone> (1)
+[LOOKAT] <phone> (1)

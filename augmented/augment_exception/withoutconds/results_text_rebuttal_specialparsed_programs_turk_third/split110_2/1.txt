@@ -1,0 +1,10 @@
+Change clothes
+Switch your clothes.
+
+
+[WALK] <bedroom> (1)
+[WALK] <dresser> (1)
+[FIND] <clothes_dress> (1)
+[GRAB] <clothes_dress> (1)
+[PUTON] <clothes_dress> (1)
+[CLOSE] <dresser> (1)

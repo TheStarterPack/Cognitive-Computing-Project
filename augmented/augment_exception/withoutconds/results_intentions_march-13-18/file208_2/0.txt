@@ -1,0 +1,10 @@
+Read book
+Turn a light on and read a book in the bedroom.
+
+
+[WALK] <bedroom> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (1)
+[FIND] <novel> (1)
+[GRAB] <novel> (1)
+[READ] <novel> (1)

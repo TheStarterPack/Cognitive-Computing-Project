@@ -1,0 +1,1 @@
+[{"atreach": [["bed", "1"], ["dresser", "1"]]}, {"inside": [["pajamas", "1"], ["dresser", "1"]]}, {"location": [["bed", "1"], ["bedroom", "1"]]}, {"location": [["dresser", "1"], ["bedroom", "1"]]}, {"location": [["pajamas", "1"], ["bedroom", "1"]]}, {"occupied": ["bed", "1"]}, {"open": ["dresser", "1"]}]

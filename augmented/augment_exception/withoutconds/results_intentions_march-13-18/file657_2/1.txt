@@ -1,0 +1,13 @@
+Drink
+go to kitchen, get a glass, turn on faucet, fill glass, turn off faucet, drink water from glass, put glass back
+
+
+[WALK] <dining_room> (1)
+[WALK] <water_glass> (1)
+[FIND] <water_glass> (1)
+[GRAB] <water_glass> (1)
+[FIND] <faucet> (1)
+[RINSE] <water_glass> (1)
+[SWITCHOFF] <faucet> (1)
+[DRINK] <water_glass> (1)
+[PUTOBJBACK] <water_glass> (1)

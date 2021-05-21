@@ -1,0 +1,1 @@
+[{"atreach": [["broom", "1"], ["table", "1"]]}, {"free": ["chair", "2"]}, {"location": [["broom", "1"], ["dining_room", "1"]]}, {"location": [["chair", "1"], ["dining_room", "1"]]}, {"location": [["chair", "2"], ["dining_room", "1"]]}, {"location": [["rag", "1"], ["dining_room", "1"]]}, {"location": [["table", "1"], ["dining_room", "1"]]}, {"occupied": ["chair", "1"]}]

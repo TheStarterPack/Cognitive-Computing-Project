@@ -1,0 +1,9 @@
+Turn on light
+Find the light circuit breaker in the kitchen
+
+
+[WALK] <dining_room> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)

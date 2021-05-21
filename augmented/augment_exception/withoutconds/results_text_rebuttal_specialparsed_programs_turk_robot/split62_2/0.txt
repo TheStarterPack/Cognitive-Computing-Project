@@ -1,0 +1,7 @@
+Turn on light
+Twist the lamp switch until the light goes on.
+
+
+[WALK] <home_office> (1)
+[WALK] <floor_lamp> (1)
+[FIND] <floor_lamp> (1)

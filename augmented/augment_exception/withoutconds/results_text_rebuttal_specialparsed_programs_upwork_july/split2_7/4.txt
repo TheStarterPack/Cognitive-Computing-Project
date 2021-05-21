@@ -1,0 +1,16 @@
+Shampoo hair
+I shampoo my hair, rinse it and hop out
+
+
+[WALK] <bathroom> (1)
+[WALK] <shampoo> (1)
+[FIND] <shampoo> (1)
+[GRAB] <shampoo> (1)
+[FIND] <faucet> (1)
+[WALK] <sink> (1)
+[FIND] <hands_both> (1)
+[POUR] <shampoo> (1) <hands_both> (1)
+[PUTOBJBACK] <shampoo> (1)
+[FIND] <hair> (1)
+[WASH] <hair> (1)
+[SWITCHOFF] <faucet> (1)

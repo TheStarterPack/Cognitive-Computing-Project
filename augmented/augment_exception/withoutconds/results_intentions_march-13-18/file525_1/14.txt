@@ -1,0 +1,23 @@
+Watch TV
+walk to living room, find couch, sit on couch, find remote control , turn on tv by pressing button
+
+
+[WALK] <home_office> (1)
+[WALK] <couch> (1)
+[FIND] <couch> (1)
+[FIND] <pillow> (1)
+[GRAB] <pillow> (1)
+[RELEASE] <pillow> (1)
+[FIND] <phone> (1)
+[GRAB] <phone> (1)
+[RELEASE] <phone> (1)
+[FIND] <dog> (1)
+[GRAB] <dog> (1)
+[RELEASE] <dog> (1)
+[FIND] <dirt> (1)
+[GRAB] <dirt> (1)
+[RELEASE] <dirt> (1)
+[SIT] <couch> (1)
+[FIND] <remote_control> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)

@@ -1,0 +1,9 @@
+Watch TV
+Walk to living room. Sit on sofa. Switch on Television and start watching.
+
+
+[FIND] <couch> (1)
+[SIT] <couch> (1)
+[FIND] <television> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

@@ -1,0 +1,14 @@
+Read newspaper
+Sit in my chair at my desk. Open up newspaper. Read about current events.
+
+
+[WALK] <home_office> (1)
+[WALK] <chair> (1)
+[FIND] <chair> (1)
+[SIT] <chair> (1)
+[STANDUP]
+[WALK] <newspaper> (1)
+[FIND] <newspaper> (1)
+[GRAB] <newspaper> (1)
+[OPEN] <newspaper> (1)
+[READ] <newspaper> (1)

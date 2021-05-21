@@ -1,0 +1,16 @@
+Wash hands
+I go into the bathroom and turn on the light. I walk to the sink and turn on the water. I grab the soap and wash my hands
+
+
+[WALK] <bathroom> (1)
+[WALK] <light> (1)
+[FIND] <light> (1)
+[WALK] <sink> (1)
+[FIND] <soap> (1)
+[GRAB] <soap> (1)
+[FIND] <faucet> (1)
+[FIND] <hands_both> (1)
+[WASH] <hands_both> (1)
+[RINSE] <hands_both> (1)
+[PUTOBJBACK] <soap> (1)
+[SWITCHOFF] <faucet> (1)

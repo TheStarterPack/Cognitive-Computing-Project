@@ -1,0 +1,12 @@
+Put groceries in Fridge
+I walk to the kitchen, open the fridge and put the groceries in the fridge. Then I close the fridge.
+
+
+[Walk] <kitchen> (1)
+[Walk] <trashcan> (1)
+[Find] <trashcan> (1)
+[Open] <trashcan> (1)
+[Find] <groceries> (1)
+[Grab] <groceries> (1)
+[PutIn] <groceries> (1) <trashcan> (1)
+[Close] <trashcan> (1)

@@ -1,0 +1,25 @@
+Listen to music
+walk to living room, look at the DVD player, switch on the dvd player, look at the sofa, sit on the sofa and listen the music
+
+
+[WALK] <home_office> (1)
+[WALK] <dvd_player> (1)
+[FIND] <dvd_player> (1)
+[TURNTO] <dvd_player> (1)
+[LOOKAT] <dvd_player> (1)
+[FIND] <couch> (1)
+[TURNTO] <couch> (1)
+[LOOKAT] <couch> (1)
+[FIND] <basket_for_clothes> (1)
+[GRAB] <basket_for_clothes> (1)
+[RELEASE] <basket_for_clothes> (1)
+[FIND] <clothes_pants> (1)
+[GRAB] <clothes_pants> (1)
+[RELEASE] <clothes_pants> (1)
+[FIND] <basket_for_clothes> (2)
+[GRAB] <basket_for_clothes> (2)
+[RELEASE] <basket_for_clothes> (2)
+[FIND] <chessboard> (1)
+[GRAB] <chessboard> (1)
+[RELEASE] <chessboard> (1)
+[SIT] <couch> (1)

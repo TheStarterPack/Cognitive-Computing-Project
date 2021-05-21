@@ -1,0 +1,9 @@
+Shut off alarm
+Shutting of the alarm clock
+
+
+[WALK] <bedroom> (1)
+[WALK] <alarm_clock> (1)
+[FIND] <alarm_clock> (1)
+[GRAB] <alarm_clock> (1)
+[PUTOBJBACK] <alarm_clock> (1)

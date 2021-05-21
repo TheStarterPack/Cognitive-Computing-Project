@@ -1,0 +1,12 @@
+Watch TV
+Go to entrance hall, switch on TV, sit back in a chair and using remote watch your favorite program.
+
+
+[WALK] <home_office> (1)
+[WALK] <television> (1)
+[FIND] <television> (1)
+[WALK] <chair> (1)
+[SIT] <chair> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)
+[SWITCHOFF] <television> (1)

@@ -1,0 +1,17 @@
+Wash clothes
+walk to the bathroom, grab the basket for clothes, find soap, put in washing machine, turn on
+
+
+[Walk] <bathroom> (1)
+[Walk] <basket_for_clothes> (1)
+[Find] <basket_for_clothes> (1)
+[Grab] <basket_for_clothes> (1)
+[Walk] <bag> (1)
+[Open] <bag> (1)
+[PutBack] <basket_for_clothes> (1) <bag> (1)
+[Find] <soap> (1)
+[Grab] <soap> (1)
+[Walk] <bag> (1)
+[PutBack] <soap> (1) <bag> (1)
+[Close] <bag> (1)
+[SwitchOn] <bag> (1)

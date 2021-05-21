@@ -1,0 +1,24 @@
+Watch TV
+Walk to living room. Sit on sofa. Switch on Television and start watching.
+
+
+[FIND] <couch> (1)
+[FIND] <instrument_guitar> (1)
+[GRAB] <instrument_guitar> (1)
+[RELEASE] <instrument_guitar> (1)
+[FIND] <homework> (1)
+[GRAB] <homework> (1)
+[RELEASE] <homework> (1)
+[FIND] <instrument_guitar> (2)
+[GRAB] <instrument_guitar> (2)
+[RELEASE] <instrument_guitar> (2)
+[FIND] <board_game> (1)
+[GRAB] <board_game> (1)
+[RELEASE] <board_game> (1)
+[SIT] <couch> (1)
+[STANDUP]
+[WALK] <television> (1)
+[FIND] <television> (1)
+[SWITCHON] <television> (1)
+[TURNTO] <television> (1)
+[WATCH] <television> (1)

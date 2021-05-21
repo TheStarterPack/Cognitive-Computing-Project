@@ -1,0 +1,7 @@
+Turn on light
+Find light switch. Flip the light switch on.
+
+
+[FIND] <light> (1)
+[PLUGIN] <light> (1)
+[SWITCHON] <light> (1)

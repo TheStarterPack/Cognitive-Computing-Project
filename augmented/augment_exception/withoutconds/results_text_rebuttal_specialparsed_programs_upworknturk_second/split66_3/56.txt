@@ -1,0 +1,28 @@
+Cutting
+Cutting and slicing vegetables,meats and food
+
+
+[WALK] <dining_room> (1)
+[WALK] <cupboard> (1)
+[FIND] <cupboard> (1)
+[FIND] <cutting_board> (1)
+[GRAB] <cutting_board> (1)
+[FIND] <chef_knife> (1)
+[GRAB] <chef_knife> (1)
+[CLOSE] <cupboard> (1)
+[FIND] <table> (1)
+[PUTBACK] <cutting_board> (1) <table> (1)
+[PUTBACK] <chef_knife> (1) <table> (1)
+[FIND] <freezer> (1)
+[OPEN] <freezer> (1)
+[FIND] <food_vegetable> (1)
+[GRAB] <food_vegetable> (1)
+[FIND] <food_vegetable> (2)
+[GRAB] <food_vegetable> (2)
+[CLOSE] <freezer> (1)
+[PUTBACK] <food_vegetable> (1) <cutting_board> (1)
+[PUTBACK] <food_vegetable> (2) <cutting_board> (1)
+[GRAB] <chef_knife> (1)
+[CUT] <food_vegetable> (1)
+[CUT] <food_vegetable> (2)
+[PUTOBJBACK] <chef_knife> (1)
