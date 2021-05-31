@@ -4,7 +4,8 @@ import re
 from src.model.Action import Action
 from src.model.ActionSequence import ActionSequence
 
-AUGMENTED_PATHS = ["augmented/augment_exception/withoutconds", "augmented/augment_location/withoutconds"]
+AUGMENTED_PATHS = ["augmented/augment_exception/withoutconds",
+                   "augmented/augment_location/withoutconds"]
 DEFAULT_PATHS = ["programs_processed_precond_nograb_morepreconds/withoutconds"]
 
 ROOT_PATH = os.path.curdir + "/../"
@@ -12,7 +13,7 @@ ROOT_PATH = os.path.curdir + "/../"
 
 class ActionSeqParser:
 
-    def __init__(self, include_augmented, include_default):
+    def __init__(self, include_augmented: bool, include_default: bool):
         paths = []
         if include_augmented:
             paths += AUGMENTED_PATHS

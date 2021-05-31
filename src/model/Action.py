@@ -1,5 +1,5 @@
 class Action:
-    def __init__(self, action, targets):
+    def __init__(self, action: str, targets: [str]):
         self.action = action
         self.targets = tuple(targets)
 
@@ -11,3 +11,9 @@ class Action:
 
     def __hash__(self):
         return hash(self.__key())
+
+    def __str__(self):
+        return f"Action: {self.action} Target: {self.targets}"
+
+    def __repr__(self):
+        return f"Action: {self.action} Target: {self.targets}"
