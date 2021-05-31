@@ -1,8 +1,8 @@
 import os
 import re
 
-from src.model.Action import Action
-from src.model.ActionSequence import ActionSequence
+from .Action import Action
+from .ActionSequence import ActionSequence
 
 AUGMENTED_PATHS = ["augmented/augment_exception/withoutconds",
                    "augmented/augment_location/withoutconds"]
