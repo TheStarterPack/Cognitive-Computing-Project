@@ -8,8 +8,6 @@ AUGMENTED_PATHS = ["augmented/augment_exception/withoutconds",
                    "augmented/augment_location/withoutconds"]
 DEFAULT_PATHS = ["programs_processed_precond_nograb_morepreconds/withoutconds"]
 
-ROOT_PATH = os.path.curdir + "/../"
-
 
 class ActionSeqParser:
 
@@ -25,7 +23,7 @@ class ActionSeqParser:
     def read_action_seq_corpus(self):
         action_sequences = []
         for path in self.paths:
-            full_path = ROOT_PATH + path
+            full_path = str(path)
 
             for root, subdirs, files in os.walk(full_path):
                 for filename in files:
@@ -41,6 +39,6 @@ class ActionSeqParser:
         self.action_sequences = action_sequences
         return action_sequences
 
-    def get_tokenization(self):
+    def get_action_to_id_dict(self):
         unique_actions = {action for seq in self.action_sequences for action in seq.actions}
-        return dict(zip(range(len(unique_actions)), unique_actions))
+        return {k: v for k, v in zip(unique_actions, range(len(unique_actions)))}
