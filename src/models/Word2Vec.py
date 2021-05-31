@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.data as data
 import numpy as np
+from matplotlib import pyplot as plt
+import tqdm
 
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
@@ -40,7 +42,7 @@ class CustomWord2Vec(nn.Module):
         loss.backward()
         self.opti.step()
 
-        return loss.item(),
+        return loss.item()
 
     def configure_optimizer(self):
         self.opti = T.optim.Adam([self.centers, self.contexts])
@@ -55,19 +57,32 @@ class CustomWord2Vec(nn.Module):
         self.centers.to(self.device)
         self.contexts.to(self.device)
         for epoch in range(epochs):
-            for batch_idx, batch in enumerate(train_loader):
+            t = tqdm.tqdm(train_loader)
+            for b_idx, batch in enumerate(t):
                 for b in batch:
                     b.to(self.device)
-                ret = self.training_step(batch)
+                loss = self.training_step(batch)
 
                 # PRINT
-                if not batch_idx % print_every:
-                    print(f"e{epoch} b{batch_idx}:", end="")
-                    print(*ret)
+                if not b_idx % print_every:
+                    msg = f"epoch {epoch} loss {round(loss, 3)}"
+                    t.set_description(msg)
 
     def data_loader_from_numpy(self, centers, contexts, batch_size=32, shuffle=True):
         dataset = data.TensorDataset(T.from_numpy(centers), T.from_numpy(contexts))
         return data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
+
+    def plot_logs(self, keys):
+        for key in keys:
+            if self.log[key]:
+                plt.clf()
+                values = self.get_moving_avg(self.log[key], n=30)
+                plt.plot(values)
+                plt.show()
+
+    def get_moving_avg(self, x, n=10):
+        cumsum = np.cumsum(x)
+        return (cumsum[n:] - cumsum[:-n]) / n
 
 
 if __name__=="__main__":
