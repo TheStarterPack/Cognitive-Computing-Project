@@ -2,7 +2,7 @@ import torch as T
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.utils.data as data
-import numpy as np
+
 
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
@@ -70,8 +70,7 @@ class CustomWord2Vec(nn.Module):
         return data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     model = CustomWord2Vec()
     model.configure_optimizer()
     model.train(model.get_dummy_loader())
-    
