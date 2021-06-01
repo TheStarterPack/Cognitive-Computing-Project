@@ -2,8 +2,8 @@ import os
 import re
 from pathlib import Path
 
-from .Action import Action
-from .ActionSequence import ActionSequence
+from .action import Action
+from .actionSequence import ActionSequence
 
 AUGMENTED_PATHS = [Path("augmented/augment_exception/withoutconds"),
                    Path("augmented/augment_location/withoutconds")]
