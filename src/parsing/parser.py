@@ -1,12 +1,13 @@
 import os
 import re
+from pathlib import Path
 
-from .Action import Action
-from .ActionSequence import ActionSequence
+from .action import Action
+from .actionSequence import ActionSequence
 
-AUGMENTED_PATHS = ["augmented/augment_exception/withoutconds",
-                   "augmented/augment_location/withoutconds"]
-DEFAULT_PATHS = ["programs_processed_precond_nograb_morepreconds/withoutconds"]
+AUGMENTED_PATHS = [Path("augmented/augment_exception/withoutconds"),
+                   Path("augmented/augment_location/withoutconds")]
+DEFAULT_PATHS = [Path("programs_processed_precond_nograb_morepreconds/withoutconds")]
 
 
 class ActionSeqParser:
@@ -25,13 +26,13 @@ class ActionSeqParser:
         for path in self.paths:
             full_path = str(path)
 
-            for root, subdirs, files in os.walk(full_path):
+            for root, _, files in os.walk(full_path):
                 for filename in files:
                     with open(os.path.join(root, filename)) as file:
                         action_sequence = []
                         actions = map(lambda x: x.strip(), file.readlines()[4:])
                         for action in actions:
-                            title = re.findall("\[(.+?)\]", action)
+                            title = re.findall("\[(.+?)]", action)
                             targets = re.findall("<(.+?)>", action)
                             if title:
                                 action_sequence.append(Action(title[0], targets))

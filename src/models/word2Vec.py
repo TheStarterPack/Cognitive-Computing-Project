@@ -44,16 +44,16 @@ class CustomWord2Vec(nn.Module):
 
         return loss.item()
 
-    def configure_optimizer(self):
+    def configure_optimizer(self) -> None:
         self.opti = T.optim.Adam([self.centers, self.contexts])
 
-    def get_dummy_loader(self):
+    def get_dummy_loader(self) -> data.DataLoader:
         CE = T.randint(0, self.vocab_size, size=(1000,))
         CO = T.randint(0, self.vocab_size, size=(1000, 4))
         dataset = data.TensorDataset(CE, CO)
         return data.DataLoader(dataset, batch_size=32, shuffle=True)
 
-    def train(self, train_loader: data.DataLoader, epochs=10, print_every=20):
+    def train(self, train_loader: data.DataLoader, epochs=10, print_every=20) -> None:
         self.centers.to(self.device)
         self.contexts.to(self.device)
         for epoch in range(epochs):
@@ -68,7 +68,8 @@ class CustomWord2Vec(nn.Module):
                     msg = f"epoch {epoch} loss {round(loss, 3)}"
                     t.set_description(msg)
 
-    def data_loader_from_numpy(self, centers, contexts, batch_size=32, shuffle=True):
+    def data_loader_from_numpy(self, centers, contexts, batch_size=32,
+                               shuffle=True) -> data.DataLoader:
         dataset = data.TensorDataset(T.from_numpy(centers), T.from_numpy(contexts))
         return data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
@@ -85,8 +86,7 @@ class CustomWord2Vec(nn.Module):
         return (cumsum[n:] - cumsum[:-n]) / n
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     model = CustomWord2Vec()
     model.configure_optimizer()
     model.train(model.get_dummy_loader())
-    

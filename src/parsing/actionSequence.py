@@ -1,5 +1,6 @@
-from .Action import Action
+from .action import Action
 import numpy as np
+
 
 class ActionSequence:
 
@@ -14,6 +15,7 @@ class ActionSequence:
 
     def __getitem__(self, item):
         return self.actions[item]
+
 
 def generate_contexts(action_sequences: [ActionSequence], context_length: int = 2):
     assert context_length >= 1

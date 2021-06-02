@@ -1,22 +1,22 @@
-from parsing import Parser, ActionSequence as AS
-from models import Word2Vec
+from parsing import parser, actionSequence as AS
+from models import word2Vec
 import argparse
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
     argpar = argparse.ArgumentParser()
     argpar.add_argument("--epochs", default=30)
-    args = argpar.parse_args()    
+    args = argpar.parse_args()  
 
-    #SETUP ACTION PARSER
-    myparser = Parser.ActionSeqParser(include_augmented=False, include_default=True)
-    action_sequences = myparser.read_action_seq_corpus()
-    action_to_id = myparser.get_action_to_id_dict()
+    # SETUP PARSER
+    parser = parser.ActionSeqParser(include_augmented=False, include_default=True)
+    action_sequences = parser.read_action_seq_corpus()
+    action_to_id = parser.get_action_to_id_dict()
 
     # SETUP MODEL
-    vocab_size = max(action_to_id.values())+1
-    print("Vocab Size (max token id + 1):", vocab_size)
-    model = Word2Vec.CustomWord2Vec(vocab_size=vocab_size)
+    vocab_size = len(action_to_id)
+    print(f"vocab size: {vocab_size}")
+    model = word2Vec.CustomWord2Vec(vocab_size=vocab_size)
     model.configure_optimizer()
 
     # SETUP TRAIN DATA
