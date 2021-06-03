@@ -1,6 +1,24 @@
 from parsing import parser, actionSequence as AS
 from models import word2Vec
 import argparse
+import jsonpickle
+
+EMBEDDING_PATH = 'embeddings/'
+
+
+def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
+                             action_to_id: dict, approach_name='first') -> None:
+    id_to_action = {v: k for k, v in action_to_id.items()}
+    actions_to_embedding = {}
+    for idx in range(len(model.contexts)):
+        action = id_to_action[idx]
+        actions_to_embedding[action] = model.idx_to_center_vec(idx)
+
+    json_string = jsonpickle.encode(id_to_action)
+
+    with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
+        file.write(json_string)
+
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
@@ -8,7 +26,7 @@ if __name__ == '__main__':
     argpar.add_argument("--epochs", default=30)
     argpar.add_argument("-noload", action="store_true")
     argpar.add_argument("-train", action="store_true")
-    args = argpar.parse_args()  
+    args = argpar.parse_args()
 
     # SETUP PARSER
     parser = parser.ActionSeqParser(include_augmented=False, include_default=True)
@@ -23,7 +41,7 @@ if __name__ == '__main__':
     loaded_model_flag = False
     if not args.noload:
         loaded_model_flag = model.load_model()
-    
+
     # SETUP DATA
     contexts, centers = AS.generate_contexts(action_sequences)
     np_contexts = AS.actions_to_tokenized_np_arrays(contexts, action_to_id)
@@ -36,13 +54,15 @@ if __name__ == '__main__':
         model.train(data_loader, epochs=args.epochs)
         model.plot_logs(["loss"])
 
+    write_embeddings_to_file(model, action_to_id)
+
     # TESTING
-    #TODO: way to get action from idxs
+    # TODO: way to get action from idxs
     # maybe juts this:?
     idx_to_action = lambda idx: list(action_to_id.keys())[list(action_to_id.values()).index(idx)]
     print("action for idx 12", idx_to_action(12))
 
-    #TODO then maybe something like this:
+    # TODO then maybe something like this:
     vec12 = model.idx_to_center_vec(12)
     vec15 = model.idx_to_center_vec(15)
     delta_vec = vec12 - vec15
@@ -51,7 +71,6 @@ if __name__ == '__main__':
     print(model.get_most_similar_idxs(idx=12))
     print(model.get_most_similar_idxs(idx=15))
 
-    #TODO clustering of embedding vectors?
+    # TODO clustering of embedding vectors?
     # cluster(model.centers)
     # cluster(model.contexts)
-

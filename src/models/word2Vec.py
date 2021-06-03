@@ -7,13 +7,14 @@ from matplotlib import pyplot as plt
 import tqdm
 import os
 
+
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
                  name: str = "default-word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
-        self.path = "res/models/"+name+"/"
+        self.path = "res/models/" + name + "/"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
         self.log = {"loss": []}
@@ -22,7 +23,7 @@ class CustomWord2Vec(nn.Module):
         self.save_every = 5
         self.plot_every = 1
 
-    def training_step(self, batch):
+    def training_step(self, batch: [T.Tensor]):
         # BATCH
         center_idxs, context_idxs = batch
         n_contexts = context_idxs.shape[1]
@@ -59,7 +60,7 @@ class CustomWord2Vec(nn.Module):
     def train(self, train_loader: data.DataLoader, epochs=10, print_every=20) -> None:
         self.centers.to(self.device)
         self.contexts.to(self.device)
-        for epoch in range(1, epochs+1):
+        for epoch in range(1, epochs + 1):
             t = tqdm.tqdm(train_loader)
             for b_idx, batch in enumerate(t):
                 for b in batch:
@@ -71,11 +72,10 @@ class CustomWord2Vec(nn.Module):
                     msg = f"epoch {epoch} loss {round(loss, 3)}"
                     t.set_description(msg)
 
-            if not epoch%self.plot_every:
+            if not epoch % self.plot_every:
                 self.plot_logs(["loss"])
-            if not epoch%self.save_every:
+            if not epoch % self.save_every:
                 self.save_model()
-        
 
     def data_loader_from_numpy(self, centers, contexts, batch_size=32,
                                shuffle=True) -> data.DataLoader:
@@ -91,7 +91,7 @@ class CustomWord2Vec(nn.Module):
                 plt.plot(values, label=key)
                 if show:
                     plt.show()
-                plt.savefig(self.path+"plots.png")
+                plt.savefig(self.path + "plots.png")
 
     def get_moving_avg(self, x, n=10):
         cumsum = np.cumsum(x)
@@ -112,21 +112,21 @@ class CustomWord2Vec(nn.Module):
 
         norm = T.norm(vec)
         all_norms = T.norm(vectors, dim=1)
-        sims = vec.matmul(vectors.T)/(norm*all_norms)
-        top = T.topk(sims, top_n+contained)[1][contained:10+contained]
+        sims = vec.matmul(vectors.T) / (norm * all_norms)
+        top = T.topk(sims, top_n + contained)[1][contained:10 + contained]
         return top.tolist()
 
     def save_model(self):
-        os.makedirs(self.path,  exist_ok=True)
+        os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers, self.path+"centers.pt")
-        T.save(self.contexts, self.path+"contexts.pt")
+        T.save(self.centers, self.path + "centers.pt")
+        T.save(self.contexts, self.path + "contexts.pt")
 
     def load_model(self):
         if os.path.exists(self.path):
             print(f"loading model from {self.path}")
-            self.centers = T.load(self.path+"centers.pt")
-            self.contexts = T.load(self.path+"contexts.pt")
+            self.centers = T.load(self.path + "centers.pt")
+            self.contexts = T.load(self.path + "contexts.pt")
             return True
         else:
             print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
