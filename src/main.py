@@ -3,18 +3,20 @@ from models import word2Vec
 import argparse
 import jsonpickle
 
+from src.models.torchUtils import data_loader_from_numpy
+
 EMBEDDING_PATH = 'embeddings/'
 
 
 def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
-                             action_to_id: dict, approach_name='first') -> None:
+                             action_to_id: dict, approach_name) -> None:
     id_to_action = {v: k for k, v in action_to_id.items()}
-    actions_to_embedding = {}
+    actions_to_idx_and_embedding = {}
     for idx in range(len(model.contexts)):
         action = id_to_action[idx]
-        actions_to_embedding[action] = model.idx_to_center_vec(idx)
+        actions_to_idx_and_embedding[action] = (idx, model.idx_to_center_vec(idx))
 
-    json_string = jsonpickle.encode(id_to_action)
+    json_string = jsonpickle.encode(actions_to_idx_and_embedding)
 
     with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
         file.write(json_string)
@@ -46,7 +48,7 @@ if __name__ == '__main__':
     contexts, centers = AS.generate_contexts(action_sequences)
     np_contexts = AS.actions_to_tokenized_np_arrays(contexts, action_to_id)
     np_centers = AS.actions_to_tokenized_np_arrays(centers, action_to_id)
-    data_loader = model.data_loader_from_numpy(np_centers.squeeze(), np_contexts)
+    data_loader = data_loader_from_numpy(np_centers.squeeze(), np_contexts)
 
     # TRAINING
     if not loaded_model_flag or args.train:
@@ -54,7 +56,7 @@ if __name__ == '__main__':
         model.train(data_loader, epochs=args.epochs)
         model.plot_logs(["loss"])
 
-    write_embeddings_to_file(model, action_to_id)
+    write_embeddings_to_file(model, action_to_id, 'action_target_embedding')
 
     # TESTING
     # TODO: way to get action from idxs
