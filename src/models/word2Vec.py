@@ -1,6 +1,6 @@
 import os
 
-from torchUtils import get_dummy_loader
+from src.models.torchUtils import get_dummy_loader
 
 import torch as T
 import torch.nn as nn

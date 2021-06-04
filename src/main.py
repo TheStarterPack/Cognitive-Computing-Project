@@ -16,7 +16,7 @@ def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
         action = id_to_action[idx]
         actions_to_idx_and_embedding[action] = (idx, model.idx_to_center_vec(idx))
 
-    json_string = jsonpickle.encode(actions_to_idx_and_embedding)
+    json_string = jsonpickle.encode(actions_to_idx_and_embedding,  keys=True, unpicklable=True)
 
     with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
         file.write(json_string)
