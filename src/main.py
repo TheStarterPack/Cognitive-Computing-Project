@@ -1,5 +1,6 @@
 from parsing import parser, actionSequence as AS
 from models import word2Vec
+from evaluation import visualization
 import argparse
 import jsonpickle
 from pathlib import Path
@@ -78,3 +79,6 @@ if __name__ == '__main__':
     # TODO clustering of embedding vectors?
     # cluster(model.centers)
     # cluster(model.contexts)
+
+    ## EVALUATION ##
+    visualization.visualize_model_pca(model, idx_to_action)
