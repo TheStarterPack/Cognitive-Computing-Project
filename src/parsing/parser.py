@@ -4,16 +4,19 @@ from pathlib import Path
 
 from .action import Action
 from .actionSequence import ActionSequence
+import os
 
-AUGMENTED_PATHS = [Path("augmented/augment_exception/withoutconds"),
-                   Path("augmented/augment_location/withoutconds")]
-DEFAULT_PATHS = [Path("programs_processed_precond_nograb_morepreconds/withoutconds")]
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
+AUGMENTED_PATHS = [Path(f"{dir_path}/../../augmented/augment_exception/withoutconds"),
+                   Path(f"{dir_path}/../../augmented/augment_location/withoutconds")]
+DEFAULT_PATHS = [Path(f"{dir_path}/../../programs_processed_precond_nograb_morepreconds/withoutconds")]
 
 class ActionSeqParser:
 
     def __init__(self, include_augmented: bool, include_default: bool):
         paths = []
+        print(f"{dir_path}/../augmented/augment_exception/withoutconds")
         if include_augmented:
             paths += AUGMENTED_PATHS
         if include_default:

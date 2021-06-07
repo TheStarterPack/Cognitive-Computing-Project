@@ -8,13 +8,15 @@ import tqdm
 import os
 
 
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
                  name: str = "default-word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
-        self.path = "res/models/" + name + "/"
+        self.path = f"{dir_path}/../res/models/" + name + "/"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
         self.log = {"loss": []}

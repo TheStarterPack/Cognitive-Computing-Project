@@ -2,8 +2,11 @@ from parsing import parser, actionSequence as AS
 from models import word2Vec
 import argparse
 import jsonpickle
+from pathlib import Path
+import os
 
-EMBEDDING_PATH = 'embeddings/'
+dir_path = os.path.dirname(os.path.realpath(__file__))
+EMBEDDING_PATH = f"{dir_path}/../embeddings/"
 
 
 def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
@@ -16,6 +19,7 @@ def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
 
     json_string = jsonpickle.encode(id_to_action)
 
+    Path(EMBEDDING_PATH).mkdir(parents=True, exist_ok=True)
     with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
         file.write(json_string)
 
