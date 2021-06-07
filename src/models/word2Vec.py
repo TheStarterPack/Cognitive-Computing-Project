@@ -7,8 +7,8 @@ from matplotlib import pyplot as plt
 import tqdm
 import os
 
-
 dir_path = os.path.dirname(os.path.realpath(__file__))
+
 
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
@@ -16,7 +16,7 @@ class CustomWord2Vec(nn.Module):
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
-        self.path = f"{dir_path}/../res/models/" + name + "/"
+        self.path = f"{dir_path}/../../res/models/" + name + "/"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
         self.log = {"loss": []}
@@ -133,6 +133,9 @@ class CustomWord2Vec(nn.Module):
         else:
             print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
             return False
+
+    def get_averaged_embeddings(self):
+        return (self.centers + self.contexts) / 2
 
 
 if __name__ == "__main__":
