@@ -111,14 +111,14 @@ class CustomWord2Vec(nn.Module):
     def save_model(self):
         os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers, self.path + "centers.pt")
-        T.save(self.contexts, self.path + "contexts.pt")
+        T.save(self.centers, self.path + "x.pt")
+        T.save(self.contexts, self.path + "y.pt")
 
     def load_model(self):
         if os.path.exists(self.path):
             print(f"loading model from {self.path}")
-            self.centers = T.load(self.path + "centers.pt")
-            self.contexts = T.load(self.path + "contexts.pt")
+            self.centers = T.load(self.path + "x.pt")
+            self.contexts = T.load(self.path + "y.pt")
             return True
         else:
             print(f"Couldn't find save files in path {self.path} -> nothing loaded!")

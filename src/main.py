@@ -1,26 +1,9 @@
 from parsing import parser, actionSequence as AS
 from models import word2Vec
 import argparse
-import jsonpickle
 
 from src.models.torchUtils import data_loader_from_numpy
-
-EMBEDDING_PATH = 'embeddings/'
-
-
-def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
-                             action_to_id: dict, approach_name) -> None:
-    id_to_action = {v: k for k, v in action_to_id.items()}
-    actions_to_idx_and_embedding = {}
-    for idx in range(len(model.contexts)):
-        action = id_to_action[idx]
-        actions_to_idx_and_embedding[action] = (idx, model.idx_to_center_vec(idx))
-
-    json_string = jsonpickle.encode(actions_to_idx_and_embedding,  keys=True, unpicklable=True)
-
-    with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
-        file.write(json_string)
-
+from src.models.torchUtils import write_embeddings_to_file, read_embeddings_dict
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
@@ -58,6 +41,8 @@ if __name__ == '__main__':
 
     write_embeddings_to_file(model, action_to_id, 'action_target_embedding')
 
+    test = read_embeddings_dict('action_target_embedding')
+
     # TESTING
     # TODO: way to get action from idxs
     # maybe juts this:?
@@ -74,5 +59,5 @@ if __name__ == '__main__':
     print(model.get_most_similar_idxs(idx=15))
 
     # TODO clustering of embedding vectors?
-    # cluster(model.centers)
-    # cluster(model.contexts)
+    # cluster(model.x)
+    # cluster(model.y)
