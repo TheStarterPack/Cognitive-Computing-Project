@@ -1,28 +1,8 @@
 from parsing import parser, actionSequence as AS
 from models import word2Vec
 import argparse
-import jsonpickle
-from pathlib import Path
-import os
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-EMBEDDING_PATH = f"{dir_path}/../embeddings/"
-
-
-def write_embeddings_to_file(model: word2Vec.CustomWord2Vec,
-                             action_to_id: dict, approach_name='first') -> None:
-    id_to_action = {v: k for k, v in action_to_id.items()}
-    actions_to_embedding = {}
-    for idx in range(len(model.contexts)):
-        action = id_to_action[idx]
-        actions_to_embedding[action] = model.idx_to_center_vec(idx)
-
-    json_string = jsonpickle.encode(id_to_action)
-
-    Path(EMBEDDING_PATH).mkdir(parents=True, exist_ok=True)
-    with open(f'{EMBEDDING_PATH}{approach_name}.json', 'w+') as file:
-        file.write(json_string)
-
+from src.models.torchUtils import write_embeddings_to_file
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
@@ -58,7 +38,7 @@ if __name__ == '__main__':
         model.train(data_loader, epochs=args.epochs)
         model.plot_logs(["loss"])
 
-    write_embeddings_to_file(model, action_to_id)
+    write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
 
     # TESTING
     # TODO: way to get action from idxs

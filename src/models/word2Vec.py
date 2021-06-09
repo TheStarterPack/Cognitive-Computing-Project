@@ -1,3 +1,7 @@
+import os
+
+from src.models.torchUtils import get_dummy_loader
+
 import torch as T
 import torch.nn as nn
 import torch.nn.functional as F
@@ -5,7 +9,6 @@ import torch.utils.data as data
 import numpy as np
 from matplotlib import pyplot as plt
 import tqdm
-import os
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -16,7 +19,7 @@ class CustomWord2Vec(nn.Module):
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
-        self.path = f"{dir_path}/../../res/models/" + name + "/"
+        self.path = "res/models/" + name + "/"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
         self.log = {"loss": []}
@@ -53,12 +56,6 @@ class CustomWord2Vec(nn.Module):
     def configure_optimizer(self) -> None:
         self.opti = T.optim.Adam([self.centers, self.contexts])
 
-    def get_dummy_loader(self) -> data.DataLoader:
-        CE = T.randint(0, self.vocab_size, size=(1000,))
-        CO = T.randint(0, self.vocab_size, size=(1000, 4))
-        dataset = data.TensorDataset(CE, CO)
-        return data.DataLoader(dataset, batch_size=32, shuffle=True)
-
     def train(self, train_loader: data.DataLoader, epochs=10, print_every=20) -> None:
         self.centers.to(self.device)
         self.contexts.to(self.device)
@@ -78,11 +75,6 @@ class CustomWord2Vec(nn.Module):
                 self.plot_logs(["loss"])
             if not epoch % self.save_every:
                 self.save_model()
-
-    def data_loader_from_numpy(self, centers, contexts, batch_size=32,
-                               shuffle=True) -> data.DataLoader:
-        dataset = data.TensorDataset(T.from_numpy(centers), T.from_numpy(contexts))
-        return data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
     def plot_logs(self, keys, show=False):
         os.makedirs(self.path, exist_ok=True)
@@ -121,14 +113,14 @@ class CustomWord2Vec(nn.Module):
     def save_model(self):
         os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers, self.path + "centers.pt")
-        T.save(self.contexts, self.path + "contexts.pt")
+        T.save(self.centers, self.path + "x.pt")
+        T.save(self.contexts, self.path + "y.pt")
 
     def load_model(self):
         if os.path.exists(self.path):
             print(f"loading model from {self.path}")
-            self.centers = T.load(self.path + "centers.pt")
-            self.contexts = T.load(self.path + "contexts.pt")
+            self.centers = T.load(self.path + "x.pt")
+            self.contexts = T.load(self.path + "y.pt")
             return True
         else:
             print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
@@ -141,4 +133,4 @@ class CustomWord2Vec(nn.Module):
 if __name__ == "__main__":
     model = CustomWord2Vec()
     model.configure_optimizer()
-    model.train(model.get_dummy_loader())
+    model.train(get_dummy_loader(1000, 1000, 4))

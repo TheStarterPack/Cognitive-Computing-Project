@@ -6,14 +6,8 @@ class Action:
     def __eq__(self, other):
         return self.action == other.action and self.targets == other.targets
 
-    def __key(self):
-        return self.action, self.targets
-
-    def __hash__(self):
-        return hash(self.__key())
+    def __hash__(self) -> int:
+        return hash((self.action, self.targets))
 
     def __str__(self):
-        return f"Action: {self.action} Target: {self.targets}"
-
-    def __repr__(self):
-        return f"Action: {self.action} Target: {self.targets}"
+        return str((self.action, str(self.targets)))
