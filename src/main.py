@@ -81,4 +81,5 @@ if __name__ == '__main__':
     # cluster(model.contexts)
 
     ## EVALUATION ##
-    visualization.visualize_model_pca(model, idx_to_action)
+    visualization.cluster_by_actions(model, idx_to_action)
+    #visualization.visualize_model_pca(model, idx_to_action)

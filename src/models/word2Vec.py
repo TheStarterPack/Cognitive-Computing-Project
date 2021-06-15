@@ -10,6 +10,19 @@ import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
+class TrainedEmbedding:
+    def __init__(self, center, contexts, action):
+        self.center,
+        self.context,
+        self.action,
+
+    def get_averaged_vector(self):
+        return (self.centers + self.contexts) / 2
+
+    def get_action_name(self):
+        return self.action.action
+
+
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
                  name: str = "default-word2vec") -> None:
@@ -134,8 +147,11 @@ class CustomWord2Vec(nn.Module):
             print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
             return False
 
-    def get_averaged_embeddings(self):
-        return (self.centers + self.contexts) / 2
+    def get_centers(self):
+        return self.centers.detach().numpy()
+
+    def get_contexts(self):
+        return self.contexts.detach().numpy()
 
 
 if __name__ == "__main__":
