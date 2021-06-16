@@ -1,13 +1,13 @@
 from parsing import parser, actionSequence as AS
 from models import word2Vec
 import argparse
-
+from src.models.torchUtils import data_loader_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
     argpar = argparse.ArgumentParser()
-    argpar.add_argument("--epochs", default=30)
+    argpar.add_argument("--epochs", type=int, default=30)
     argpar.add_argument("-noload", action="store_true")
     argpar.add_argument("-train", action="store_true")
     args = argpar.parse_args()
@@ -30,7 +30,7 @@ if __name__ == '__main__':
     contexts, centers = AS.generate_contexts(action_sequences)
     np_contexts = AS.actions_to_tokenized_np_arrays(contexts, action_to_id)
     np_centers = AS.actions_to_tokenized_np_arrays(centers, action_to_id)
-    data_loader = model.data_loader_from_numpy(np_centers.squeeze(), np_contexts)
+    data_loader = data_loader_from_numpy(np_centers.squeeze(), np_contexts)
 
     # TRAINING
     if not loaded_model_flag or args.train:
