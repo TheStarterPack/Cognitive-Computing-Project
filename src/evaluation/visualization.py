@@ -29,8 +29,16 @@ def get_avg_embedding(centers, contexts):
 def get_action_names(idx_to_action, embedding_num):
     labels = []
     for i in range(embedding_num):
-        action = idx_to_action(i)
+        action = idx_to_action[i]
         labels.append(action.action)
+    return labels
+
+
+def get_params(idx_to_action, embedding_num):
+    labels = []
+    for i in range(embedding_num):
+        action = idx_to_action[i]
+        labels.append(action.targets)
     return labels
 
 
@@ -56,7 +64,7 @@ def compute_cos_distance(embedding1, embedding2):
     return np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
 
 
-def cluster_by_actions(model: CustomWord2Vec, idx_to_action):
+def outer_inner_distances(model: CustomWord2Vec, idx_to_action):
     embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
     action_names = get_action_names(idx_to_action, len(embeddings))
 

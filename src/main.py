@@ -64,8 +64,8 @@ if __name__ == '__main__':
     # TESTING
     # TODO: way to get action from idxs
     # maybe juts this:?
-    idx_to_action = lambda idx: list(action_to_id.keys())[list(action_to_id.values()).index(idx)]
-    print("action for idx 12", idx_to_action(12))
+    idx_to_action = {v: k for k, v in action_to_id.items()}
+    #print("action for idx 12", idx_to_action(12))
 
     # TODO then maybe something like this:
     vec12 = model.idx_to_center_vec(12)
@@ -81,5 +81,6 @@ if __name__ == '__main__':
     # cluster(model.contexts)
 
     ## EVALUATION ##
-    visualization.cluster_by_actions(model, idx_to_action)
+    # visualization.cluster_by_actions(model, idx_to_action)
+    visualization.outer_inner_distances(model, idx_to_action)
     #visualization.visualize_model_pca(model, idx_to_action)
