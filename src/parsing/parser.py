@@ -10,7 +10,9 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 AUGMENTED_PATHS = [Path(f"{dir_path}/../../augmented/augment_exception/withoutconds"),
                    Path(f"{dir_path}/../../augmented/augment_location/withoutconds")]
-DEFAULT_PATHS = [Path(f"{dir_path}/../../programs_processed_precond_nograb_morepreconds/withoutconds")]
+DEFAULT_PATHS = [
+    Path(f"{dir_path}/../../programs_processed_precond_nograb_morepreconds/withoutconds")]
+
 
 class ActionSeqParser:
 
@@ -46,3 +48,11 @@ class ActionSeqParser:
     def get_action_to_id_dict(self):
         unique_actions = {action for seq in self.action_sequences for action in seq.actions}
         return {k: v for k, v in zip(unique_actions, range(len(unique_actions)))}
+
+    def get_action_to_occurence(self):
+        unique_actions = {action.action for seq in self.action_sequences for action in seq.actions}
+        action_to_occurence = {k: 0 for k in unique_actions}
+        for action_seq in self.action_sequences:
+            for action in action_seq:
+                action_to_occurence[action.action] += 1
+        return action_to_occurence
