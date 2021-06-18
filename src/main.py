@@ -43,8 +43,9 @@ if __name__ == '__main__':
     # TESTING
     # TODO: way to get action from idxs
     # maybe juts this:?
-    idx_to_action = lambda idx: list(action_to_id.keys())[list(action_to_id.values()).index(idx)]
-    print("action for idx 12", idx_to_action(12))
+    assert len(action_to_id.values()) == len(set(action_to_id.values()))
+    idx_to_action = {v: k for k,v in action_to_id.items()}
+    print("action for idx 12", idx_to_action[12])
 
     # TODO then maybe something like this:
     vec12 = model.idx_to_center_vec(12)
