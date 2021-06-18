@@ -1,54 +1,56 @@
 import random
 from itertools import chain
+
 import torch
 import torch.nn as nn
-
+from torch.nn import ReLU
 from src.parsing.actionSequence import generate_contexts
 from src.parsing.parser import ActionSeqParser
-import torch.optim as optim
 from torchUtils import read_embeddings_dict, data_loader_from_x_y
-import torch.nn.functional as F
-
 
 target_to_id = {}
 
 EMBEDDING_SIZE = 64
 BATCH_SIZE = 32
-CONTEXT_LENTGH = 4
+CONTEXT_LENTGH = 2
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-EPOCHS = 5
+EPOCHS = 10
 
-TEST_TRAIN_SPLIT = 0.001
+TEST_TRAIN_SPLIT = 0.1
 
 
-class OneLayerNN(nn.Module):
-    def __init__(self, context_length: int, embedding_size: int, units: int, num_classes: int):
-        super(OneLayerNN, self).__init__()
-        self.hidden = nn.Linear(embedding_size * 2 * context_length, units)
-        self.output = nn.Linear(units, num_classes)
-        self.softmax = nn.Softmax(dim=1)
+class LstmNN(nn.Module):
 
+    def __init__(self, input_size=76, hidden_size=150, num_layers=2, num_classes=76):
+        super(LstmNN, self).__init__()
+        self.lstm = nn.LSTM(input_size=input_size, hidden_size=hidden_size,
+                            num_layers=num_layers,
+                            batch_first=True)
+        self.linear = torch.nn.Linear(hidden_size, num_classes)
+        self.softmax = torch.nn.Softmax(dim=1)
+        self.dropout = nn.Dropout(0.8)
+        self.batchNorm = nn.BatchNorm1d(num_features=hidden_size)
+        self.relu = ReLU()
     def forward(self, x):
-        x = x.view(x.size(0), -1)
-        x = self.hidden(x)
-        x = F.relu(x)
-        x = self.output(x)
-        x = F.relu(x)
+        x, (ht, ct) = self.lstm(x)
+        x = self.batchNorm(ht[-1])
+        x = self.linear(x)
+        x = self.relu(x)
         x = self.softmax(x)
         return x
 
 
-def train(epochs: int, train_loader, model: OneLayerNN, learning_rate=0.001):
-    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-    citerion = nn.CrossEntropyLoss()
-    for epoch in range(epochs):
-        for batch_idx, (input_data, target) in enumerate(train_loader):
-            input_data = input_data.to(device=DEVICE)
-            target = target.to(device=DEVICE)
-            prediction = model.forward(input_data)
-            loss = citerion(prediction, target)
-            optimizer.zero_grad()
-            loss.backward(retain_graph=True)
+def train(model: LstmNN, train_set):
+    loss_function = nn.CrossEntropyLoss()
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.0001)
+
+    for epoch in range(EPOCHS):
+        for batch_idx, (inputs, targets) in enumerate(train_set):
+            model.zero_grad()
+
+            output = model(inputs)
+            loss = loss_function(output, targets)
+            loss.backward()
             optimizer.step()
 
 
@@ -86,7 +88,8 @@ def get_prediction_data(approach_name: str, context_size: int, test_train_split:
     for i in range(len(contexts)):
         context = contexts[i]
         center = centers[i][0]
-        input_data.append(torch.stack([action_to_embedding[action][1] for action in context]))
+        input_data.append(
+            torch.stack([action_to_embedding[action][1].clone().detach() for action in context]))
         labels.append(target_to_id[center.action])
 
     assert len(input_data) == len(labels)
@@ -106,14 +109,9 @@ def get_prediction_data(approach_name: str, context_size: int, test_train_split:
 if __name__ == '__main__':
     train_loader, test_loader = get_prediction_data('action_target_embedding', CONTEXT_LENTGH)
     num_classes = len(target_to_id)
-    model = OneLayerNN(CONTEXT_LENTGH, EMBEDDING_SIZE, 10, num_classes)
+    model = LstmNN(input_size=64, num_classes=num_classes)
     model = model.to(DEVICE)
 
-    # test of output dimensions
-    x = torch.randn(BATCH_SIZE, CONTEXT_LENTGH * 2, EMBEDDING_SIZE)
-    y = model(x)
-    assert y.shape == torch.Size([BATCH_SIZE, num_classes])
-
-    train(EPOCHS, train_loader, model, learning_rate=0.01)
-    print(check_accuracy(train_loader, model))
+    train(model, train_loader)
     print(check_accuracy(test_loader, model))
+    print(check_accuracy(train_loader, model))
