@@ -10,4 +10,4 @@ class Action:
         return hash((self.action, self.targets))
 
     def __str__(self):
-        return str((self.action, str(self.targets)))
+        return f"{self.action}, {self.targets}"
