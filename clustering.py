@@ -18,6 +18,7 @@ if __name__ == '__main__':
     argpar.add_argument("--ncluster", type=int, default=30)
     argpar.add_argument("-noload", action="store_true")
     argpar.add_argument("-train", action="store_true")
+    argpar.add_argument("-fused", action="store_true")
     args = argpar.parse_args()
     NAME = f"kmeans-{args.ncluster}-clusters-3dim-pca"
 
@@ -54,6 +55,8 @@ if __name__ == '__main__':
     idx_to_action = {v:k for k,v in action_to_id.items()}
 
     X = model.centers.detach().numpy()
+    if args.fused:
+        X += model.contexts.detach().numpy()
     pca = PCA(n_components=3)
     X = pca.fit_transform(X)
     print("SHAPE", X.shape)
