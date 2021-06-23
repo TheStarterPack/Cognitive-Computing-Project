@@ -20,7 +20,7 @@ if __name__ == '__main__':
     argpar.add_argument("-train", action="store_true")
     argpar.add_argument("-fused", action="store_true")
     args = argpar.parse_args()
-    NAME = f"kmeans-{args.ncluster}-clusters-3dim-pca"
+    NAME = f"kmeans-{'fused-' if args.fused else ''}{args.ncluster}-clusters-3dim-pca"
 
     # SETUP PARSER
     parser = parser.ActionSeqParser(include_augmented=False, include_default=True)
