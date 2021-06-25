@@ -1,0 +1,3 @@
+0 ["Sit, ('couch',)", "Scrub, ('teeth',)", "Walk, ('fridge',)", "Rinse, ('teeth',)", "Soak, ('clothes_pants', 'washing_machine')", "LookAt, ('brush',)", "Leave, ('bathroom',)", "PlugIn, ('blender',)", "PutBack, ('paper', 'chair')", "PutObjBack, ('food_butter',)"]
+1 ["Find, ('food_salt',)", "Fold, ('document',)", "Find, ('mousepad',)", "PutObjBack, ('food_salt',)", "Squeeze, ('pillow',)", "Find, ('cd',)", 'Dance, ()', "Grab, ('food_chicken',)", "Walk, ('magazine',)", "PutBack, ('water_glass', 'cupboard')"]
+2 ["Spread, ('soap', 'feet_both')", "Grab, ('pen',)", "Walk, ('rag',)", "Soak, ('rag', 'sink')", "TurnTo, ('cat',)", "Crawl, ('bedroom',)", "PlugOut, ('hairdryer',)", "Wash, ('shower',)", "LookAt, ('coffee',)", "Cut, ('food_bread',)"]
