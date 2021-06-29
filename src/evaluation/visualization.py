@@ -7,6 +7,10 @@ import nltk
 import numpy as np
 from tqdm import tqdm
 import os
+from prettytable import PrettyTable
+import dash
+import dash_table
+from src.parsing.parser import ActionSeqParser
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
@@ -65,9 +69,21 @@ def compute_cos_distance(embedding1, embedding2):
 
 
 def outer_inner_distances(model: CustomWord2Vec, idx_to_action):
-    embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
-    action_names = get_action_names(idx_to_action, len(embeddings))
+    app = dash.Dash("Result table")
+    app.layout = dash_table.DataTable(
+        id='table',
+        columns=[{"name": i, "id": i} for i in ["action_str", "occurences", "inner distance", "outer distance"]],
+        data=None,
+    )
+    app.run_server(debug=True)
 
+    embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
+
+    action_names = get_action_names(idx_to_action, len(embeddings))
+    parser = ActionSeqParser(include_augmented=False, include_default=True)
+    action_sequences = parser.read_action_seq_corpus()
+    print(len(action_sequences))
+    action_to_id = parser.get_action_to_id_dict()
     # get unique actions and print them
     unique_actions = list(set(action_names))
     print("We have " + str(len(unique_actions)) + " unique actions:")
