@@ -1,18 +1,35 @@
 import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import normalize
+from scipy.spatial import distance
+import enum
+import xlsxwriter
 from src.models.word2Vec import CustomWord2Vec
 from nltk.cluster.kmeans import KMeansClusterer
 import nltk
 import numpy as np
 from tqdm import tqdm
 import os
-from prettytable import PrettyTable
-import dash
-import dash_table
+import string
+import sys
 from src.parsing.parser import ActionSeqParser
+import main
+from itertools import takewhile
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
+
+
+class Distance_function_names(enum.Enum):
+    euclidean = 1
+    cosine_similarity = 2
+
+
+def get_distance_function(name: Distance_function_names):
+    if name == Distance_function_names.cosine_similarity:
+        return lambda embedding1, embedding2: np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
+    if name == Distance_function_names.euclidean:
+        return lambda embedding1, embedding2: distance.euclidean(embedding1, embedding2)
+    raise Exception("distance function name not defined")
 
 
 def do_pca(embeddings, components):
@@ -46,53 +63,122 @@ def get_params(idx_to_action, embedding_num):
     return labels
 
 
-def compute_dist_matrix(embeddings):
+def compute_dist_matrix(embeddings, function_name: Distance_function_names):
+
+    directory = os.path.join(main.result_folder, "distance_matrices", str(function_name.name))
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    dist_matrix_path = os.path.join(directory, "dist_matrix.npy")
     length = len(embeddings)
     matrix = np.zeros((length, length))
-    if not os.path.exists(os.path.join(dir_path, "dist_matrix.npy")):
+    if not os.path.exists(dist_matrix_path):
         print("compute distance matrix...")
         for i in tqdm(range(len(embeddings))):
             for j in range(len(embeddings)):
                 if not i == j and not i >= j:
-                    matrix[i, j] = compute_cos_distance(embeddings[i], embeddings[j])
-        np.save(os.path.join(dir_path, "dist_matrix.npy"), matrix)
+                    matrix[i, j] = get_distance_function(function_name)(embeddings[i], embeddings[j])
+        np.save(dist_matrix_path, matrix)
         return matrix
     else:
         print("load distance matrix...")
-        with open(os.path.join(dir_path, "dist_matrix.npy"), 'rb') as f:
+        with open(dist_matrix_path, 'rb') as f:
             matrix = np.load(f)
             return matrix
 
 
-def compute_cos_distance(embedding1, embedding2):
-    return np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
-
-
-def outer_inner_distances(model: CustomWord2Vec, idx_to_action):
-    app = dash.Dash("Result table")
-    app.layout = dash_table.DataTable(
-        id='table',
-        columns=[{"name": i, "id": i} for i in ["action_str", "occurences", "inner distance", "outer distance"]],
-        data=None,
-    )
-    app.run_server(debug=True)
-
+def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, target_file, function_name: Distance_function_names):
     embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
 
+    action_targets = get_params(idx_to_action, len(embeddings))
+    unique_targets = []
+    shortened_action_targets = []
+    for target in action_targets:
+        new_shortened_target = []
+        for target_point in target:
+            target_point = ''.join(list(takewhile(lambda x: x != '_', target_point)))
+            unique_targets.append(target_point)
+            new_shortened_target.append(target_point)
+        shortened_action_targets.append(tuple(new_shortened_target))
+    unique_targets = list(set(unique_targets))
+    print("We have " + str(len(unique_targets)) + " unique targets")
+
+    # get the indexes sorted by action
+    targets_indexes = {}
+    targets_avg_dist = {}
+
+    for elem in unique_targets:
+        targets_indexes[elem] = []
+        targets_avg_dist[elem] = [0, 0]
+        for i, action_target in enumerate(shortened_action_targets):
+            if elem in list(action_target):
+                targets_indexes[elem].append(i)
+
+
+        # compute distance matrix of all embeddings
+    dist_matrix = compute_dist_matrix(embeddings, function_name)
+    # compute avg distance for inner action distance and outer
+    print("compute avg action distance...")
+    inner_avg_list = []
+    outer_avg_list = []
+
+    # init table data struct
+    data = []
+    for target in tqdm(unique_targets):
+        inner_class_sum = 0
+        inner_class_count = 0
+        outer_class_sum = 0
+        outer_class_count = 0
+
+        # if only one occurence, no distance can be measured
+        if len(targets_indexes[target]) == 1:
+            print("Action " + target + " occurs only one time.")
+            continue
+        # compute
+        for i in range(len(embeddings)):
+            for j in range(i + 1, len(embeddings)):
+                if i in targets_indexes[target] and j in targets_indexes[target]:
+                    inner_class_sum += dist_matrix[i, j]
+                    inner_class_count += 1
+                else:
+                    outer_class_sum += dist_matrix[i, j]
+                    outer_class_count += 1
+        avg_inner_class = np.abs(np.divide(inner_class_sum, inner_class_count))
+        avg_outer_class = np.abs(np.divide(outer_class_sum, outer_class_count))
+        inner_avg_list.append(avg_inner_class)
+        outer_avg_list.append(avg_outer_class)
+        data_column = [target, str(len(targets_indexes[target])), str(avg_inner_class), str(avg_outer_class),
+                       str(avg_inner_class - avg_outer_class)]
+        data.append(data_column)
+
+    row_names = ["target", "occurrences", "inner_dist", "outer_dist", "distance_diff"]
+    workbook = xlsxwriter.Workbook(target_file)
+    worksheet = workbook.add_worksheet()
+    bold = workbook.add_format({'bold': True})
+    worksheet.write('A1', row_names[0], bold)
+    worksheet.write('B1', row_names[1], bold)
+    worksheet.write('C1', row_names[2], bold)
+    worksheet.write('D1', row_names[3], bold)
+    worksheet.write('E1', row_names[4], bold)
+    for row in range(1, len(data) + 1):
+        for col in range(len(row_names)):
+            worksheet.write(row, col, data[row - 1][col])
+    worksheet.write(len(data) + 1, 2, str(np.average(np.array(inner_avg_list, dtype=float))))
+    worksheet.write(len(data) + 1, 3, str(np.average(np.array(outer_avg_list, dtype=float))))
+    workbook.close()
+
+
+
+
     action_names = get_action_names(idx_to_action, len(embeddings))
-    parser = ActionSeqParser(include_augmented=False, include_default=True)
-    action_sequences = parser.read_action_seq_corpus()
-    print(len(action_sequences))
-    action_to_id = parser.get_action_to_id_dict()
+
     # get unique actions and print them
     unique_actions = list(set(action_names))
-    print("We have " + str(len(unique_actions)) + " unique actions:")
-    for action in unique_actions:
-        print(action)
+    print("We have " + str(len(unique_actions)) + " unique actions")
 
     # get the indexes sorted by action
     action_indexes = {}
     action_avg_dist = {}
+
     for i, elem in enumerate(action_names):
         if elem not in action_indexes:
             action_indexes[elem] = []
@@ -100,12 +186,14 @@ def outer_inner_distances(model: CustomWord2Vec, idx_to_action):
         action_avg_dist[elem] = [0, 0]
 
     # compute distance matrix of all embeddings
-    dist_matrix = compute_dist_matrix(embeddings)
+    dist_matrix = compute_dist_matrix(embeddings, function_name)
     # compute avg distance for inner action distance and outer
-    print("compute avg action distance...")
-    smaller_actions = []
+    print("compute avg target distance...")
     inner_avg_list = []
     outer_avg_list = []
+
+    # init table data struct
+    data = []
     for action in tqdm(unique_actions):
         inner_class_sum = 0
         inner_class_count = 0
@@ -125,19 +213,29 @@ def outer_inner_distances(model: CustomWord2Vec, idx_to_action):
                 else:
                     outer_class_sum += dist_matrix[i, j]
                     outer_class_count += 1
-        avg_outer_class = np.abs(np.divide(inner_class_sum, inner_class_count))
-        avg_inner_class = np.abs(np.divide(outer_class_sum, outer_class_count))
+        avg_inner_class = np.abs(np.divide(inner_class_sum, inner_class_count))
+        avg_outer_class = np.abs(np.divide(outer_class_sum, outer_class_count))
         inner_avg_list.append(avg_inner_class)
         outer_avg_list.append(avg_outer_class)
-        if avg_inner_class < avg_outer_class:
-            smaller_actions.append(action)
-        print(action + ": (" + str(avg_inner_class) + "),(" + str(avg_outer_class) +
-              ") Occurrence: " + str(len(action_indexes[action])) + " times")
-    print("From " + str(len(unique_actions)) + "actions " + str(len(smaller_actions)) + "inner averages where smaller than outer")
-    for action in smaller_actions:
-        print(action)
-    print("Avg inner class: " + str(np.average(np.array(inner_avg_list, dtype=float))))
-    print("Avg outer class: " + str(np.average(np.array(outer_avg_list, dtype=float))))
+        data_column = [action, str(len(action_indexes[action])), str(avg_inner_class), str(avg_outer_class),
+                       str(avg_inner_class - avg_outer_class)]
+        data.append(data_column)
+
+    row_names = ["action", "occurrences", "inner_dist", "outer_dist", "distance_diff"]
+    workbook = xlsxwriter.Workbook(action_file)
+    worksheet = workbook.add_worksheet()
+    bold = workbook.add_format({'bold': True})
+    worksheet.write('A1', row_names[0], bold)
+    worksheet.write('B1', row_names[1], bold)
+    worksheet.write('C1', row_names[2], bold)
+    worksheet.write('D1', row_names[3], bold)
+    worksheet.write('E1', row_names[4], bold)
+    for row in range(1, len(data) + 1):
+        for col in range(len(row_names)):
+            worksheet.write(row, col, data[row - 1][col])
+    worksheet.write(len(data) + 1, 2, str(np.average(np.array(inner_avg_list, dtype=float))))
+    worksheet.write(len(data) + 1, 3, str(np.average(np.array(outer_avg_list, dtype=float))))
+    workbook.close()
 
 
 def visualize_model_pca(model: CustomWord2Vec, idx_to_action, n=20):

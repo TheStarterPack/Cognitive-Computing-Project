@@ -1,9 +1,13 @@
-from parsing import parser, actionSequence as AS
-from models import word2Vec
-from evaluation import visualization
+from src.parsing import parser, actionSequence as AS
+from src.models import word2Vec
+from src.evaluation import visualization
 import argparse
+import os
 from src.models.torchUtils import data_loader_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
+
+project_root = os.getcwd()
+result_folder = os.path.join(project_root, "results")
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
@@ -62,5 +66,14 @@ if __name__ == '__main__':
 
     ## EVALUATION ##
     # visualization.cluster_by_actions(model, idx_to_action)
-    visualization.outer_inner_distances(model, idx_to_action)
+    visualization.outer_inner_distances(model,
+                                        idx_to_action,
+                                        os.path.join(result_folder, "action_distance_euclidean.xlsx"),
+                                        os.path.join(result_folder, "target_distance_euclidean.xlsx"),
+                                        visualization.Distance_function_names.euclidean)
+    visualization.outer_inner_distances(model,
+                                        idx_to_action,
+                                        os.path.join(result_folder, "action_distance_cosine_similarity.xlsx"),
+                                        os.path.join(result_folder, "target_distance_cosine_similarity.xlsx"),
+                                        visualization.Distance_function_names.cosine_similarity)
     #visualization.visualize_model_pca(model, idx_to_action)
