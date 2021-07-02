@@ -42,7 +42,7 @@ class CustomWord2Vec(nn.Module):
         self.save_every = 5
         self.plot_every = 1
 
-    def training_step(self, batch: [T.Tensor]):
+    def training_step(self, batch):
         # BATCH
         center_idxs, context_idxs = batch
         n_contexts = context_idxs.shape[1]
