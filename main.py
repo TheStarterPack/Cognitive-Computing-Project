@@ -1,5 +1,5 @@
-from parsing import parser, actionSequence as AS
-from models import word2Vec
+from src.parsing import parser, actionSequence as AS
+from src.models import word2Vec
 import argparse
 from src.models.torchUtils import data_loader_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
@@ -8,6 +8,7 @@ if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
     argpar = argparse.ArgumentParser()
     argpar.add_argument("--epochs", type=int, default=30)
+    argpar.add_argument("--dims", type=int, default=64)
     argpar.add_argument("-noload", action="store_true")
     argpar.add_argument("-train", action="store_true")
     args = argpar.parse_args()
@@ -20,7 +21,7 @@ if __name__ == '__main__':
     # SETUP MODEL
     vocab_size = len(action_to_id)
     print(f"vocab size: {vocab_size}")
-    model = word2Vec.CustomWord2Vec(vocab_size=vocab_size)
+    model = word2Vec.CustomWord2Vec(vocab_size=vocab_size, dims=args.dims)
     model.configure_optimizer()
     loaded_model_flag = False
     if not args.noload:
@@ -40,6 +41,7 @@ if __name__ == '__main__':
 
     write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
 
+    """
     # TESTING
     # TODO: way to get action from idxs
     # maybe juts this:?
@@ -58,3 +60,4 @@ if __name__ == '__main__':
     # TODO clustering of embedding vectors?
     # cluster(model.centers)
     # cluster(model.contexts)
+    """

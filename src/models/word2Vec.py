@@ -15,11 +15,12 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
-                 name: str = "default-word2vec") -> None:
+                 name: str = "word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
         self.path = "res/models/" + name + "/"
+        self.param_str = f"{dims}dim-"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
         self.log = {"loss": []}
@@ -113,20 +114,20 @@ class CustomWord2Vec(nn.Module):
     def save_model(self):
         os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers.detach(), self.path + "x.pt")
-        T.save(self.contexts.detach(), self.path + "y.pt")
+        T.save(self.centers.detach(), self.path+self.param_str + "x.pt")
+        T.save(self.contexts.detach(), self.path+self.param_str + "y.pt")
 
     def load_model(self):
-        if os.path.exists(self.path+"x.pt"):
-            print(f"loading model from {self.path}")
-            self.centers = T.load(self.path + "x.pt")
-            self.contexts = T.load(self.path + "y.pt")
+        if os.path.exists(self.path+self.param_str+"x.pt"):
+            print(f"loading model from {self.path+self.param_str}")
+            self.centers = T.load(self.path+self.param_str + "x.pt")
+            self.contexts = T.load(self.path+self.param_str + "y.pt")
             self.centers.requires_grad = True
             self.contexts.requires_grad = True
             #print("LEAF", self.centers.is_leaf)
             return True
         else:
-            print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
+            print(f"Couldn't find save files for {self.path+self.param_str} -> nothing loaded!")
             return False
 
     def get_averaged_embeddings(self):
