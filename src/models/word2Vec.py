@@ -36,7 +36,7 @@ class CustomWord2Vec(nn.Module):
         self.param_str = f"{dims}dim-"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
-        self.log = {"loss": []}
+        self.log = {"loss": [], "test_loss": []}
         self.neg_freq_fac = 1
         self.device = "cuda" if T.cuda.is_available() else "cpu"
         self.save_every = 5
@@ -61,45 +61,81 @@ class CustomWord2Vec(nn.Module):
         # LOSS
         self.opti.zero_grad()
         loss = ploss + nloss
-        self.log["loss"].append(loss.item())
         loss.backward()
         self.opti.step()
 
         return loss.item()
 
+    def test(self, loader):
+        losses = []
+        with T.no_grad():
+            for b_idx, batch in enumerate(loader):
+                # BATCH
+                center_idxs, context_idxs = batch
+                n_contexts = context_idxs.shape[1]
+                centers = self.centers[center_idxs]
+                centers = centers.repeat_interleave(n_contexts, dim=0)
+                contexts = self.contexts[context_idxs].flatten(0, 1)
+                c_size = contexts.shape[0]
+
+                # POSITIVE
+                ploss = F.cosine_embedding_loss(centers, contexts, target=T.ones(c_size))
+
+                # NEGATIVE
+                negatives = self.contexts[T.randint(self.vocab_size, size=(self.neg_freq_fac * c_size,))]
+                nloss = F.cosine_embedding_loss(centers, negatives, target=-1 * T.ones(c_size))
+
+                # LOSS
+                loss = ploss + nloss
+                losses.append(loss.item())
+        return sum(losses)/len(losses)
+
     def configure_optimizer(self) -> None:
         self.opti = T.optim.Adam([self.centers, self.contexts])
 
-    def train(self, train_loader: data.DataLoader, epochs=10, print_every=20) -> None:
+    def train(self, train_loader: data.DataLoader, test_loader=None, epochs=10, print_every=20) -> None:
         self.centers.to(self.device)
         self.contexts.to(self.device)
         for epoch in range(1, epochs + 1):
+            epoch_losses = []
             t = tqdm.tqdm(train_loader)
             for b_idx, batch in enumerate(t):
                 for b in batch:
                     b.to(self.device)
                 loss = self.training_step(batch)
+                epoch_losses.append(loss)
 
                 # PRINT
                 if not b_idx % print_every:
                     msg = f"epoch {epoch} loss {round(loss, 3)}"
                     t.set_description(msg)
 
+            self.log["loss"].append(sum(epoch_losses)/len(epoch_losses))
+
+            if test_loader is not None:
+                test_loss = self.test(test_loader)
+                self.log["test_loss"].append(test_loss)
+
             if not epoch % self.plot_every:
-                self.plot_logs(["loss"])
+                losses_list = ["loss"]+([] if test_loader is None else ["test_loss"])
+                #print(losses_list)
+                self.plot_logs(losses_list)
+
             if not epoch % self.save_every:
                 self.save_model()
 
     def plot_logs(self, keys, show=False):
         os.makedirs(self.path, exist_ok=True)
+        plt.clf()
         for key in keys:
             if self.log[key]:
-                plt.clf()
-                values = self.get_moving_avg(self.log[key], n=30)
+                #values = self.get_moving_avg(self.log[key], n=30)
+                values = self.log[key]
                 plt.plot(values, label=key)
                 if show:
                     plt.show()
-                plt.savefig(self.path + "plots.png")
+        plt.legend()
+        plt.savefig(self.path+self.param_str + "plots.png")
 
     def get_moving_avg(self, x, n=10):
         cumsum = np.cumsum(x)
@@ -137,7 +173,7 @@ class CustomWord2Vec(nn.Module):
             self.contexts = T.load(self.path+self.param_str + "y.pt")
             self.centers.requires_grad = True
             self.contexts.requires_grad = True
-            #print("LEAF", self.centers.is_leaf)
+            print("LEAF", self.centers.is_leaf)
             return True
         else:
             print(f"Couldn't find save files for {self.path+self.param_str} -> nothing loaded!")

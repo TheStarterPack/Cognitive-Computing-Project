@@ -11,6 +11,8 @@ def data_loader_from_numpy(centers, contexts, batch_size=32,
     dataset = data.TensorDataset(torch.from_numpy(centers), torch.from_numpy(contexts))
     return data.DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
 
+def data_set_from_numpy(centers, contexts) -> data.TensorDataset:
+    return data.TensorDataset(torch.from_numpy(centers), torch.from_numpy(contexts))
 
 def data_loader_from_x_y(x, y, batch_size=32,
                          shuffle=True) -> data.DataLoader:

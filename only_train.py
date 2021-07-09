@@ -2,8 +2,9 @@ from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
 import argparse
 import os
-from src.models.torchUtils import data_loader_from_numpy
+from src.models.torchUtils import data_set_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
+from torch.utils.data import random_split, DataLoader
 
 
 if __name__ == '__main__':
@@ -24,21 +25,25 @@ if __name__ == '__main__':
     vocab_size = len(action_to_id)
     print(f"vocab size: {vocab_size}")
     model = word2Vec.CustomWord2Vec(vocab_size=vocab_size, dims=args.dims)
-    model.configure_optimizer()
     loaded_model_flag = False
     if not args.noload:
         loaded_model_flag = model.load_model()
+    model.configure_optimizer()
 
     # SETUP DATA
     contexts, centers = AS.generate_contexts(action_sequences)
     np_contexts = AS.actions_to_tokenized_np_arrays(contexts, action_to_id)
     np_centers = AS.actions_to_tokenized_np_arrays(centers, action_to_id)
-    data_loader = data_loader_from_numpy(np_centers.squeeze(), np_contexts)
+    dataset = data_set_from_numpy(np_centers.squeeze(), np_contexts)
+    train_counts = int(0.9*len(dataset))
+    trainset, testset = random_split(dataset, (train_counts, len(dataset)-train_counts))
+    train_loader = DataLoader(trainset, batch_size=32, shuffle=True)
+    test_loader = DataLoader(testset, batch_size=32, shuffle=True)
 
     # TRAINING
     if not loaded_model_flag or args.train:
         print(f"Start of Training for {args.epochs} epochs")
-        model.train(data_loader, epochs=args.epochs)
+        model.train(train_loader, test_loader=test_loader, epochs=args.epochs)
         model.plot_logs(["loss"])
 
     write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
