@@ -18,6 +18,7 @@ from itertools import takewhile
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
+
 class Distance_function_names(enum.Enum):
     euclidean = 1
     cosine_similarity = 2
@@ -25,7 +26,8 @@ class Distance_function_names(enum.Enum):
 
 def get_distance_function(name: Distance_function_names):
     if name == Distance_function_names.cosine_similarity:
-        return lambda embedding1, embedding2: np.dot(embedding1, embedding2) / (np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
+        return lambda embedding1, embedding2: np.dot(embedding1, embedding2) / (
+                    np.linalg.norm(embedding1) * np.linalg.norm(embedding2))
     if name == Distance_function_names.euclidean:
         return lambda embedding1, embedding2: distance.euclidean(embedding1, embedding2)
     raise Exception("distance function name not defined")
@@ -40,10 +42,6 @@ def k_means(embeddings, num_classes, repeats):
     kclusterer = KMeansClusterer(num_classes, distance=nltk.cluster.util.cosine_distance, repeats=repeats)
     assigned_embeddings = kclusterer.cluster(embeddings, assign_clusters=True)
     return assigned_embeddings
-
-
-def get_avg_embedding(centers, contexts):
-    return np.divide(np.add(centers, contexts), 2)
 
 
 def get_action_names(idx_to_action, embedding_num):
@@ -63,7 +61,6 @@ def get_params(idx_to_action, embedding_num):
 
 
 def compute_dist_matrix(embeddings, function_name: Distance_function_names):
-
     directory = os.path.join(visualize.result_folder, "distance_matrices", str(function_name.name))
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -85,8 +82,9 @@ def compute_dist_matrix(embeddings, function_name: Distance_function_names):
             return matrix
 
 
-def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, target_file, function_name: Distance_function_names):
-    embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
+def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, target_file,
+                          function_name: Distance_function_names):
+    embeddings = model.get_embeddings()
 
     action_targets = get_params(idx_to_action, len(embeddings))
     unique_targets = []
@@ -111,7 +109,6 @@ def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, tar
         for i, action_target in enumerate(shortened_action_targets):
             if elem in list(action_target):
                 targets_indexes[elem].append(i)
-
 
         # compute distance matrix of all embeddings
     dist_matrix = compute_dist_matrix(embeddings, function_name)
@@ -164,9 +161,6 @@ def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, tar
     worksheet.write(len(data) + 1, 2, str(np.average(np.array(inner_avg_list, dtype=float))))
     worksheet.write(len(data) + 1, 3, str(np.average(np.array(outer_avg_list, dtype=float))))
     workbook.close()
-
-
-
 
     action_names = get_action_names(idx_to_action, len(embeddings))
 
@@ -238,7 +232,7 @@ def outer_inner_distances(model: CustomWord2Vec, idx_to_action, action_file, tar
 
 
 def visualize_model_pca(model: CustomWord2Vec, idx_to_action, n=20):
-    embeddings = get_avg_embedding(model.get_centers(), model.get_contexts())
+    embeddings = model.get_embeddings()
     reduced_embeddings = do_pca(embeddings, 3)
     classes = k_means(embeddings, 3, 25)
     print(classes.count(0))
