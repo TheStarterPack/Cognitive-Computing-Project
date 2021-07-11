@@ -11,13 +11,12 @@ import numpy as np
 from tqdm import tqdm
 import os
 import string
+import visualize
 import sys
 from src.parsing.parser import ActionSeqParser
-import main
 from itertools import takewhile
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-
 
 class Distance_function_names(enum.Enum):
     euclidean = 1
@@ -65,7 +64,7 @@ def get_params(idx_to_action, embedding_num):
 
 def compute_dist_matrix(embeddings, function_name: Distance_function_names):
 
-    directory = os.path.join(main.result_folder, "distance_matrices", str(function_name.name))
+    directory = os.path.join(visualize.result_folder, "distance_matrices", str(function_name.name))
     if not os.path.exists(directory):
         os.makedirs(directory)
     dist_matrix_path = os.path.join(directory, "dist_matrix.npy")
