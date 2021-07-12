@@ -36,7 +36,7 @@ class CustomWord2Vec(nn.Module):
         self.param_str = f"{dims}dim-"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
-        self.log = {"loss": [], "test_loss": []}
+        self.log = {"loss": [], "test_nloss": [], "test_ploss": []}
         self.neg_freq_fac = 1
         self.device = "cuda" if T.cuda.is_available() else "cpu"
         self.save_every = 5
@@ -57,6 +57,7 @@ class CustomWord2Vec(nn.Module):
         # NEGATIVE
         negatives = self.contexts[T.randint(self.vocab_size, size=(self.neg_freq_fac * c_size,))]
         nloss = F.cosine_embedding_loss(centers, negatives, target=-1 * T.ones(c_size))
+        #nloss = 0
 
         # LOSS
         self.opti.zero_grad()
@@ -67,7 +68,8 @@ class CustomWord2Vec(nn.Module):
         return loss.item()
 
     def test(self, loader):
-        losses = []
+        pls = []
+        nls = []
         with T.no_grad():
             for b_idx, batch in enumerate(loader):
                 # BATCH
@@ -83,12 +85,16 @@ class CustomWord2Vec(nn.Module):
 
                 # NEGATIVE
                 negatives = self.contexts[T.randint(self.vocab_size, size=(self.neg_freq_fac * c_size,))]
+                #print("NEGATIVES SHAPE", negatives.shape)
                 nloss = F.cosine_embedding_loss(centers, negatives, target=-1 * T.ones(c_size))
 
                 # LOSS
-                loss = ploss + nloss
-                losses.append(loss.item())
-        return sum(losses)/len(losses)
+                pls.append(ploss.item())
+                nls.append(nloss.item())
+
+        
+            
+        return sum(pls)/len(pls), sum(nls)/len(nls)
 
     def configure_optimizer(self) -> None:
         self.opti = T.optim.Adam([self.centers, self.contexts])
@@ -113,11 +119,12 @@ class CustomWord2Vec(nn.Module):
             self.log["loss"].append(sum(epoch_losses)/len(epoch_losses))
 
             if test_loader is not None:
-                test_loss = self.test(test_loader)
-                self.log["test_loss"].append(test_loss)
+                ploss, nloss = self.test(test_loader)
+                self.log["test_ploss"].append(ploss)
+                self.log["test_nloss"].append(nloss)
 
             if not epoch % self.plot_every:
-                losses_list = ["loss"]+([] if test_loader is None else ["test_loss"])
+                losses_list = ["loss"]+([] if test_loader is None else ["test_ploss", "test_nloss"])
                 #print(losses_list)
                 self.plot_logs(losses_list)
 

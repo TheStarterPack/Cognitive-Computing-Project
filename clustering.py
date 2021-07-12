@@ -1,3 +1,4 @@
+from typing import OrderedDict
 from sklearn import cluster
 from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
@@ -73,7 +74,18 @@ if __name__ == '__main__':
     writefile = open(f"results/{NAME}.txt", "w")
     for c_idx, center in enumerate(cluster_centers):
         #print(c_idx, [str(idx_to_action[idx]) for idx in model.get_most_similar_idxs(vec=T.from_numpy(center))], file=writefile)
-        print(c_idx, [str(idx_to_action[idx]) for idx in range(len(X)) if clusterer.labels_[idx]==c_idx], file=writefile)
+        full_actions = [str(idx_to_action[idx]) for idx in range(len(X)) if clusterer.labels_[idx]==c_idx]
+        action_beginnings = [item.split(",")[0] for item in full_actions]
+        action_counts = OrderedDict()
+        for action in action_beginnings:
+            if action in action_counts:
+                action_counts[action] += 1
+            else:
+                action_counts[action] = 0
+        top_action_beginning_idxs = np.argsort(np.array(list(action_counts.values())))[-10:]
+        action_beginning_names = list(action_counts.keys())
+        top_action_beginnings =[action_beginning_names[idx] for idx in top_action_beginning_idxs]
+        print(c_idx, top_action_beginnings, file=writefile)
 
     labels = clusterer.labels_
     fig = plt.figure()
