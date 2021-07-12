@@ -116,7 +116,7 @@ class CustomWord2Vec(nn.Module):
                     msg = f"epoch {epoch} loss {round(loss, 3)}"
                     t.set_description(msg)
 
-            self.log["loss"].append(sum(epoch_losses)/len(epoch_losses))
+            self.log["loss"].append(sum(epoch_losses) / len(epoch_losses))
 
             if test_loader is not None:
                 ploss, nloss = self.test(test_loader)
@@ -136,13 +136,13 @@ class CustomWord2Vec(nn.Module):
         plt.clf()
         for key in keys:
             if self.log[key]:
-                #values = self.get_moving_avg(self.log[key], n=30)
+                # values = self.get_moving_avg(self.log[key], n=30)
                 values = self.log[key]
                 plt.plot(values, label=key)
                 if show:
                     plt.show()
         plt.legend()
-        plt.savefig(self.path+self.param_str + "plots.png")
+        plt.savefig(self.path + self.param_str + "plots.png")
 
     def get_moving_avg(self, x, n=10):
         cumsum = np.cumsum(x)
@@ -154,36 +154,53 @@ class CustomWord2Vec(nn.Module):
     def idx_to_context_vec(self, idx):
         return self.contexts[idx]
 
-    def get_most_similar_idxs(self, idx=None, vec=None, centers=False, top_n=10):
+    def get_cosine_similarity(self, word_vector_1, word_vector_2):
+        return np.dot(word_vector_1, word_vector_2) / (np.linalg.norm(word_vector_1) * np.linalg.norm(word_vector_2))
+
+    def get_most_similar_idxs(self, idx=None, vec=None, top_n=10):
         assert idx is not None or vec is not None
         contained = int(vec is None)
-        vectors = self.centers if centers else self.contexts
+        vectors = self.get_embeddings()
         if contained:
             vec = vectors[idx]
 
-        norm = T.norm(vec)
-        all_norms = T.norm(vectors, dim=1)
-        sims = vec.matmul(vectors.T) / (norm * all_norms)
-        top = T.topk(sims, top_n + contained)[1][contained:10 + contained]
-        return top.tolist()
+        words_similarities = []
+        for i, other_vec in enumerate(vectors):
+            if i != idx:
+                similarity = self.get_cosine_similarity(vec, other_vec)
+                words_similarities.append((similarity, i))
+        words_similarities.sort(key=lambda x: x[0], reverse=True)
+        return list(map(lambda x: x[1], words_similarities[:10]))
+
+    # gets two lists of vectors and returns the vector most similar to sum(pos) - sum(neg)
+    # pos: Vectors which are added
+    # neg: Vectors which are subtracted
+    # for example: King - Man = Queen - Woman => King - Man + Woman = Queen => pos = (King, Woman) neg(Man)
+    def get_best_match_arithmetic(self, pos, neg, top_n=10):
+        assert pos is not None and len(pos) > 0 and neg is not None and len(neg) > 0
+        embeddings = self.get_embeddings()
+        pos_sum = np.add.reduce([embeddings[i] for i in pos])
+        neg_sum = np.add.reduce([embeddings[i] for i in neg])
+        target = pos_sum + neg_sum
+        return self.get_most_similar_idxs(vec=target, top_n=top_n)
 
     def save_model(self):
         os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers.detach(), self.path+self.param_str + "x.pt")
-        T.save(self.contexts.detach(), self.path+self.param_str + "y.pt")
+        T.save(self.centers.detach(), self.path + self.param_str + "x.pt")
+        T.save(self.contexts.detach(), self.path + self.param_str + "y.pt")
 
     def load_model(self):
-        if os.path.exists(self.path+self.param_str+"x.pt"):
-            print(f"loading model from {self.path+self.param_str}")
-            self.centers = T.load(self.path+self.param_str + "x.pt")
-            self.contexts = T.load(self.path+self.param_str + "y.pt")
+        if os.path.exists(self.path + self.param_str + "x.pt"):
+            print(f"loading model from {self.path + self.param_str}")
+            self.centers = T.load(self.path + self.param_str + "x.pt")
+            self.contexts = T.load(self.path + self.param_str + "y.pt")
             self.centers.requires_grad = True
             self.contexts.requires_grad = True
             print("LEAF", self.centers.is_leaf)
             return True
         else:
-            print(f"Couldn't find save files for {self.path+self.param_str} -> nothing loaded!")
+            print(f"Couldn't find save files for {self.path + self.param_str} -> nothing loaded!")
             return False
 
     def get_centers(self):
@@ -191,6 +208,9 @@ class CustomWord2Vec(nn.Module):
 
     def get_contexts(self):
         return self.contexts.detach().numpy()
+
+    def get_embeddings(self):
+        return np.divide(np.add(self.get_centers(), self.get_contexts()), 2)
 
 
 if __name__ == "__main__":
