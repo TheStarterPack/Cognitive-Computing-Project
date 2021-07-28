@@ -4,21 +4,16 @@ from pathlib import Path
 
 from .action import Action
 from .actionSequence import ActionSequence
-import os
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-
-AUGMENTED_PATHS = [Path(f"{dir_path}/../../augmented/augment_exception/withoutconds"),
-                   Path(f"{dir_path}/../../augmented/augment_location/withoutconds")]
-DEFAULT_PATHS = [
-    Path(f"{dir_path}/../../programs_processed_precond_nograb_morepreconds/withoutconds")]
+AUGMENTED_PATHS = [Path("augmented/augment_exception/withoutconds"),
+                   Path("augmented/augment_location/withoutconds")]
+DEFAULT_PATHS = [Path("programs_processed_precond_nograb_morepreconds/withoutconds")]
 
 
 class ActionSeqParser:
 
     def __init__(self, include_augmented: bool, include_default: bool):
         paths = []
-        print(f"{dir_path}/../augmented/augment_exception/withoutconds")
         if include_augmented:
             paths += AUGMENTED_PATHS
         if include_default:
@@ -49,10 +44,11 @@ class ActionSeqParser:
         unique_actions = {action for seq in self.action_sequences for action in seq.actions}
         return {k: v for k, v in zip(unique_actions, range(len(unique_actions)))}
 
-    def get_action_to_occurence(self):
-        unique_actions = {action.action for seq in self.action_sequences for action in seq.actions}
-        action_to_occurence = {k: 0 for k in unique_actions}
+    def get_str_action_to_occurence(self):
+        action_to_occurence = {action.action: 0 for seq in self.action_sequences for action in seq.actions}
+
         for action_seq in self.action_sequences:
             for action in action_seq:
                 action_to_occurence[action.action] += 1
+
         return action_to_occurence

@@ -35,7 +35,7 @@ if __name__ == '__main__':
     # TRAINING
     if not loaded_model_flag or args.train:
         print(f"Start of Training for {args.epochs} epochs")
-        model.train(data_loader, epochs=args.epochs)
+        model.train(data_loader, epochs=int(args.epochs))
         model.plot_logs(["loss"])
 
     write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')

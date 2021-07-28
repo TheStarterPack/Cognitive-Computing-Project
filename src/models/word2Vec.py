@@ -14,7 +14,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
 class CustomWord2Vec(nn.Module):
-    def __init__(self, vocab_size: int = 30000, dims: int = 64,
+    def __init__(self, vocab_size: int = 30000, dims: int = 150,
                  name: str = "default-word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
