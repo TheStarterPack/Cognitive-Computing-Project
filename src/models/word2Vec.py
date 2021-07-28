@@ -13,22 +13,36 @@ import tqdm
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
 
+class TrainedEmbedding:
+    def __init__(self, center, contexts, action):
+        self.center,
+        self.context,
+        self.action,
+
+    def get_averaged_vector(self):
+        return (self.centers + self.contexts) / 2
+
+    def get_action_name(self):
+        return self.action.action
+
+
 class CustomWord2Vec(nn.Module):
-    def __init__(self, vocab_size: int = 30000, dims: int = 150,
+    def __init__(self, vocab_size: int = 30000, dims: int = 64,
                  name: str = "default-word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
         self.path = "res/models/" + name + "/"
+        self.param_str = f"{dims}dim-"
         self.centers = T.randn(vocab_size, dims, requires_grad=True)
         self.contexts = T.randn(vocab_size, dims, requires_grad=True)
-        self.log = {"loss": []}
+        self.log = {"loss": [], "test_nloss": [], "test_ploss": []}
         self.neg_freq_fac = 1
         self.device = "cuda" if T.cuda.is_available() else "cpu"
         self.save_every = 5
         self.plot_every = 1
 
-    def training_step(self, batch: [T.Tensor]):
+    def training_step(self, batch):
         # BATCH
         center_idxs, context_idxs = batch
         n_contexts = context_idxs.shape[1]
@@ -43,6 +57,7 @@ class CustomWord2Vec(nn.Module):
         # NEGATIVE
         negatives = self.contexts[T.randint(self.vocab_size, size=(self.neg_freq_fac * c_size,))]
         nloss = F.cosine_embedding_loss(centers, negatives, target=-1 * T.ones(c_size))
+        #nloss = 0
 
         # LOSS
         self.opti.zero_grad()
@@ -53,39 +68,82 @@ class CustomWord2Vec(nn.Module):
 
         return loss.item()
 
+    def test(self, loader):
+        pls = []
+        nls = []
+        with T.no_grad():
+            for b_idx, batch in enumerate(loader):
+                # BATCH
+                center_idxs, context_idxs = batch
+                n_contexts = context_idxs.shape[1]
+                centers = self.centers[center_idxs]
+                centers = centers.repeat_interleave(n_contexts, dim=0)
+                contexts = self.contexts[context_idxs].flatten(0, 1)
+                c_size = contexts.shape[0]
+
+                # POSITIVE
+                ploss = F.cosine_embedding_loss(centers, contexts, target=T.ones(c_size))
+
+                # NEGATIVE
+                negatives = self.contexts[T.randint(self.vocab_size, size=(self.neg_freq_fac * c_size,))]
+                #print("NEGATIVES SHAPE", negatives.shape)
+                nloss = F.cosine_embedding_loss(centers, negatives, target=-1 * T.ones(c_size))
+
+                # LOSS
+                pls.append(ploss.item())
+                nls.append(nloss.item())
+
+
+
+        return sum(pls)/len(pls), sum(nls)/len(nls)
+
     def configure_optimizer(self) -> None:
         self.opti = T.optim.Adam([self.centers, self.contexts])
 
-    def train(self, train_loader: data.DataLoader, epochs=10, print_every=20) -> None:
+    def train(self, train_loader: data.DataLoader, test_loader=None, epochs=10, print_every=20) -> None:
         self.centers.to(self.device)
         self.contexts.to(self.device)
         for epoch in range(1, epochs + 1):
+            epoch_losses = []
             t = tqdm.tqdm(train_loader)
             for b_idx, batch in enumerate(t):
                 for b in batch:
                     b.to(self.device)
                 loss = self.training_step(batch)
+                epoch_losses.append(loss)
 
                 # PRINT
                 if not b_idx % print_every:
                     msg = f"epoch {epoch} loss {round(loss, 3)}"
                     t.set_description(msg)
 
+            self.log["loss"].append(sum(epoch_losses) / len(epoch_losses))
+
+            if test_loader is not None:
+                ploss, nloss = self.test(test_loader)
+                self.log["test_ploss"].append(ploss)
+                self.log["test_nloss"].append(nloss)
+
             if not epoch % self.plot_every:
-                self.plot_logs(["loss"])
+                losses_list = ["loss"]+([] if test_loader is None else ["test_ploss", "test_nloss"])
+                #print(losses_list)
+                self.plot_logs(losses_list)
+
             if not epoch % self.save_every:
                 self.save_model()
 
     def plot_logs(self, keys, show=False):
         os.makedirs(self.path, exist_ok=True)
+        plt.clf()
         for key in keys:
             if self.log[key]:
-                plt.clf()
-                values = self.get_moving_avg(self.log[key], n=30)
+                # values = self.get_moving_avg(self.log[key], n=30)
+                values = self.log[key]
                 plt.plot(values, label=key)
                 if show:
                     plt.show()
-                plt.savefig(self.path + "plots.png")
+        plt.legend()
+        plt.savefig(self.path + self.param_str + "plots.png")
 
     def get_moving_avg(self, x, n=10):
         cumsum = np.cumsum(x)
@@ -97,37 +155,60 @@ class CustomWord2Vec(nn.Module):
     def idx_to_context_vec(self, idx):
         return self.contexts[idx]
 
-    def get_most_similar_idxs(self, idx=None, vec=None, centers=False, top_n=10):
+    def get_cosine_similarity(self, word_vector_1, word_vector_2):
+        return np.dot(word_vector_1, word_vector_2) / (np.linalg.norm(word_vector_1) * np.linalg.norm(word_vector_2))
+
+    def get_most_similar_idxs(self, idx=None, vec=None, top_n=10):
         assert idx is not None or vec is not None
         contained = int(vec is None)
-        vectors = self.centers if centers else self.contexts
+        vectors = self.get_embeddings()
         if contained:
             vec = vectors[idx]
 
-        norm = T.norm(vec)
-        all_norms = T.norm(vectors, dim=1)
-        sims = vec.matmul(vectors.T) / (norm * all_norms)
-        top = T.topk(sims, top_n + contained)[1][contained:10 + contained]
-        return top.tolist()
+        words_similarities = []
+        for i, other_vec in enumerate(vectors):
+            if i != idx:
+                similarity = self.get_cosine_similarity(vec, other_vec)
+                words_similarities.append((similarity, i))
+        words_similarities.sort(key=lambda x: x[0], reverse=True)
+        return list(map(lambda x: x[1], words_similarities[:10]))
+
+    # gets two lists of vectors and returns the vector most similar to sum(pos) - sum(neg)
+    # pos: Vectors which are added
+    # neg: Vectors which are subtracted
+    # for example: King - Man = Queen - Woman => King - Man + Woman = Queen => pos = (King, Woman) neg(Man)
+    def get_best_match_arithmetic(self, pos, neg, top_n=10):
+        assert pos is not None and len(pos) > 0 and neg is not None and len(neg) > 0
+        embeddings = self.get_embeddings()
+        pos_sum = np.add.reduce([embeddings[i] for i in pos])
+        neg_sum = np.add.reduce([embeddings[i] for i in neg])
+        target = pos_sum + neg_sum
+        return self.get_most_similar_idxs(vec=target, top_n=top_n)
 
     def save_model(self):
         os.makedirs(self.path, exist_ok=True)
         print(f"saving model to {self.path}")
-        T.save(self.centers.detach(), self.path + "x.pt")
-        T.save(self.contexts.detach(), self.path + "y.pt")
+        T.save(self.centers.detach(), self.path + self.param_str + "x.pt")
+        T.save(self.contexts.detach(), self.path + self.param_str + "y.pt")
 
     def load_model(self):
-        if os.path.exists(self.path+"x.pt"):
-            print(f"loading model from {self.path}")
-            self.centers = T.load(self.path + "x.pt")
-            self.contexts = T.load(self.path + "y.pt")
+        if os.path.exists(self.path + self.param_str + "x.pt"):
+            print(f"loading model from {self.path + self.param_str}")
+            self.centers = T.load(self.path + self.param_str + "x.pt")
+            self.contexts = T.load(self.path + self.param_str + "y.pt")
             self.centers.requires_grad = True
             self.contexts.requires_grad = True
-            #print("LEAF", self.centers.is_leaf)
+            print("LEAF", self.centers.is_leaf)
             return True
         else:
-            print(f"Couldn't find save files in path {self.path} -> nothing loaded!")
+            print(f"Couldn't find save files for {self.path + self.param_str} -> nothing loaded!")
             return False
 
-    def get_averaged_embeddings(self):
-        return (self.centers + self.contexts) / 2
+    def get_centers(self):
+        return self.centers.detach().numpy()
+
+    def get_contexts(self):
+        return self.contexts.detach().numpy()
+
+    def get_embeddings(self):
+        return np.divide(np.add(self.get_centers(), self.get_contexts()), 2)
