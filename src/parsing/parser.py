@@ -43,3 +43,12 @@ class ActionSeqParser:
     def get_action_to_id_dict(self):
         unique_actions = {action for seq in self.action_sequences for action in seq.actions}
         return {k: v for k, v in zip(unique_actions, range(len(unique_actions)))}
+
+    def get_str_action_to_occurence(self):
+        action_to_occurence = {action.action: 0 for seq in self.action_sequences for action in seq.actions}
+
+        for action_seq in self.action_sequences:
+            for action in action_seq:
+                action_to_occurence[action.action] += 1
+
+        return action_to_occurence
