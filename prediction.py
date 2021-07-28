@@ -6,7 +6,7 @@ import torch.nn as nn
 from src.parsing.actionSequence import generate_contexts
 from src.parsing.parser import ActionSeqParser
 import torch.optim as optim
-from torchUtils import read_embeddings_dict, data_loader_from_x_y
+from src.models.torchUtils import read_embeddings_dict, data_loader_from_x_y
 import torch.nn.functional as F
 
 target_to_id = {}
@@ -151,15 +151,5 @@ if __name__ == '__main__':
     assert y.shape == torch.Size([BATCH_SIZE, num_classes])
 
     train(EPOCHS, train_loader, model, learning_rate=0.005)
-    print(check_accuracy(test_loader, model))
-    print(check_accuracy(train_loader, model))
-
-    '''
-    from sklearn.metrics import accuracy_score
-
-    y_pred = model(np.concatenate([x for x, y in train_loader]))
-
-    accuracy = accuracy_score(np.concatenate([y for x, y in train_loader], axis=0),
-                              np.argmax(y_pred, axis=1))
-    print(accuracy)
-    '''
+    print(f'Test Accuracy: {check_accuracy(test_loader, model)}')
+    print(f'Train Accuracy: {check_accuracy(train_loader, model)}')

@@ -1,15 +1,11 @@
-from sklearn import cluster
 from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
 import argparse
-from src.models.torchUtils import data_loader_from_numpy
-from src.models.torchUtils import write_embeddings_to_file
-from sklearn.cluster import KMeans, DBSCAN
+from models.torchUtils import data_loader_from_numpy
+from sklearn.cluster import KMeans
 from sklearn.decomposition import PCA
-from sklearn.metrics.pairwise import cosine_distances
 import torch as T
 from matplotlib import pyplot as plt
-import numpy as np
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER

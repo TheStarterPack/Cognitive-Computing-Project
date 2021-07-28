@@ -131,9 +131,3 @@ class CustomWord2Vec(nn.Module):
 
     def get_averaged_embeddings(self):
         return (self.centers + self.contexts) / 2
-
-
-if __name__ == "__main__":
-    model = CustomWord2Vec()
-    model.configure_optimizer()
-    model.train(get_dummy_loader(1000, 1000, 4))
