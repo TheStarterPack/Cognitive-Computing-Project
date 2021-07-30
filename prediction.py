@@ -15,7 +15,7 @@ EMBEDDING_SIZE = 150
 BATCH_SIZE = 64
 CONTEXT_LENGTH = 2
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-EPOCHS = 20
+EPOCHS = 10
 
 TEST_TRAIN_SPLIT = 0.2
 

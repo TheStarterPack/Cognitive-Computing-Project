@@ -57,10 +57,13 @@ In a nutshell the embedding vectors are trained by taking sequences from the cor
 ### Prediction
 
 
+Likewise word embeddings we want that action embeddings can be used in high level machine-learning tasks. Like in the introduction mentioned word embeddings are used as an input for next word or word type classification. As an equivalent we made-up the task of unparameterized action prediction. This task is defined by predicting the unparameterized action given the embeddings of the surrounding actions of an sequence. For example we have this action sequence:
 
+[WALK] <food_food>, [GRAB] <food_food>, [FIND] <freezer>, [PUTIN] <food_food> <freezer> , [CLOSE] <freezer>
 
+The model would receive the embeddings of the actions [WALK] <food_food> (1), [GRAB] <food_food> (1), [PUTIN] <food_food> (1) <freezer> (1), [CLOSE] <freezer> (1) and should predict the unparameterized action [FIND]. 
 
-Start the Bullseye prediction
+Start prediction
 
 ```
 python prediction.py
@@ -68,9 +71,12 @@ python prediction.py
 
 If you want to change the hyperparameters you can edit the variables at module level.
 
-## Installation/Usage Guide
 
-### Installation
+We used the whole corpus to create input embedding sequences and unparameterized action as prediction target. The training and evaluation was maded with a randomized test/train split of 0.80/0.20%, batch size of 64, 10 epochs and a learning rate of 0.005.
+
+The architecture consists of three layers. An LSTM, Batch Normalization and Linear Layer. A LSTM Layer is a recurrent layer which receives an timestep sequence (here embedding sequence) and learns during the train process the relations between the time step by including a hidden state into the processing of each timestamp. As a result, it's possible to learn the relation of the timesteps among themselves. The hidden state of the last timestamp is normalized by the batch normalization layer to avoid overfitting to high frequent classes. After that the final dense layer maps the normalized hidden state to the number of classes.
+
+The results are not that good. We achieved an accuracy of 60% in the train and 40% in the test set. A reason for that could be that the network architecture is not suitable or that the train process of the embeddings is more focused on the parameters instead of the unparameterized action. Another possible reason could be that the corpus is to small to learn embeddings or high level tasks based on that.
 
 ### Training
 
