@@ -1,4 +1,4 @@
-from typing import OrderedDict
+from collections import OrderedDict
 from sklearn import cluster
 from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
