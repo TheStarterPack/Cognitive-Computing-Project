@@ -1,7 +1,7 @@
 # Action Embeddings (CC-Project SS 21) 
 
 
-# Installation
+## Installation
 
 Supported python version: 3.9
 
@@ -23,7 +23,21 @@ Install requirements:
 pip install -r requirements.txt
 ```
 
-# Bullseye prediction
+## Motivation
+
+## What are Embeddings? (Till)
+
+## Our corpus/dataset (Lukas)
+
+## Training Process (Augustin)
+
+## Evaluation 
+
+### Clustering
+
+### Embedding Arithmetic
+
+### Prediction
 
 Start the Bullseye prediction
 
@@ -31,4 +45,16 @@ Start the Bullseye prediction
 python prediction.py
 ```
 
-If you want to change the Hyperparameters you can edit the variables at module level.
+If you want to change the hyperparameters you can edit the variables at module level.
+
+## Installation/Usage Guide
+
+### Installation
+
+### Training
+
+### Clustering
+
+### Arithmetic
+
+### Prediction
