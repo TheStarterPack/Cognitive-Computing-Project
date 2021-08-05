@@ -138,6 +138,8 @@ However, when trying to achieve this result, the most similar vector was always 
 We hoped the properties of 'Grab' and 'Glass' would cancel out, leading to "Find, ('coffee',)". 
 As discussed in other parts of this document, there might be many reasons for poor or unexpected performance.  
 
+All of these semantic tests can be run by executing the ```semantics.py``` script.
+
 ### Prediction
 
 
