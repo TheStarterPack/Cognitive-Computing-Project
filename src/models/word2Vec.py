@@ -28,7 +28,7 @@ class TrainedEmbedding:
 
 class CustomWord2Vec(nn.Module):
     def __init__(self, vocab_size: int = 30000, dims: int = 64,
-                 name: str = "word2vec") -> None:
+                 name: str = "default-word2vec") -> None:
         super().__init__()
         self.vocab_size = vocab_size
         self.dims = dims
@@ -62,6 +62,7 @@ class CustomWord2Vec(nn.Module):
         # LOSS
         self.opti.zero_grad()
         loss = ploss + nloss
+        self.log["loss"].append(loss.item())
         loss.backward()
         self.opti.step()
 
@@ -92,8 +93,8 @@ class CustomWord2Vec(nn.Module):
                 pls.append(ploss.item())
                 nls.append(nloss.item())
 
-        
-            
+
+
         return sum(pls)/len(pls), sum(nls)/len(nls)
 
     def configure_optimizer(self) -> None:
@@ -211,9 +212,3 @@ class CustomWord2Vec(nn.Module):
 
     def get_embeddings(self):
         return np.divide(np.add(self.get_centers(), self.get_contexts()), 2)
-
-
-if __name__ == "__main__":
-    model = CustomWord2Vec()
-    model.configure_optimizer()
-    model.train(get_dummy_loader(1000, 1000, 4))

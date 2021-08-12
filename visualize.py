@@ -1,7 +1,10 @@
 from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
+from src.parsing import parser, actionSequence as AS
+from src.models import word2Vec
 from src.evaluation import visualization
 import argparse
+from src.models.torchUtils import  data_loader_from_numpy
 import os
 from src.models.torchUtils import data_loader_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
@@ -41,7 +44,7 @@ if __name__ == '__main__':
     # TRAINING
     if not loaded_model_flag or args.train:
         print(f"Start of Training for {args.epochs} epochs")
-        model.train(data_loader, epochs=args.epochs)
+        model.train(data_loader, epochs=int(args.epochs))
         model.plot_logs(["loss"])
 
     write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
@@ -51,7 +54,8 @@ if __name__ == '__main__':
     # TESTING
     # TODO: way to get action from idxs
     # maybe juts this:?
-    #print("action for idx 12", idx_to_action(12))
+    idx_to_action = lambda idx: list(action_to_id.keys())[list(action_to_id.values()).index(idx)]
+    print("action for idx 12", idx_to_action(12))
 
     # TODO then maybe something like this:
     vec12 = model.idx_to_center_vec(12)

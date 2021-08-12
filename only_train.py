@@ -48,41 +48,6 @@ if __name__ == '__main__':
     write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
     idx_to_action = {v: k for k, v in action_to_id.items()}
 
-    # simple evaluate based on similarity:
-
-    for i in range(5):
-        most_similar_idxs = model.get_most_similar_idxs(i, top_n=5)
-        most_similar_actions = [str(idx_to_action[idx]) for idx in most_similar_idxs]
-        print(f"most similar to {idx_to_action[i]} are {most_similar_actions}")
-
-    find_glass_idx = action_to_id[action_sequences[2][2]]
-    grab_glass_idx = action_to_id[action_sequences[2][3]]
-
-    find_milk_idx = action_to_id[action_sequences[2][16]]
-    grab_milk_idx = action_to_id[action_sequences[2][17]]
-
-    find_coffee_idx = action_to_id[action_sequences[2][7]]
-    grab_coffee_idx = action_to_id[action_sequences[2][8]]
-
-    find_spoon_idx = action_to_id[action_sequences[2][10]]
-    grab_spoon_idx = action_to_id[action_sequences[2][11]]
-
-    # find_glass - grab_glass = find_coffee - grab_coffee
-    # find_glass + grab_coffee - grab_glass = find_coffee?
-    result1 = model.get_best_match_arithmetic([find_glass_idx, grab_coffee_idx], [grab_glass_idx])
-    result1_text = [str(idx_to_action[idx]) for idx in result1]
-    print(f"find_glass + grab_coffee - grab_glass = {result1_text}")
-
-    # find_glass + grab_spoon - grab_class
-    result2 = model.get_best_match_arithmetic([find_glass_idx, grab_spoon_idx], [grab_glass_idx])
-    result2_text = [str(idx_to_action[idx]) for idx in result2]
-    print(f"find_glass + grab_spoon - grab_glass {result2_text}")
-
-    # find_glass + grab_milk - grab_class
-    result3 = model.get_best_match_arithmetic([find_glass_idx, grab_milk_idx], [grab_glass_idx])
-    result3_text = [str(idx_to_action[idx]) for idx in result3]
-    print(f"find_glass + grab_milk - grab_glass {result3_text}")
-
     """
     # TESTING
     # TODO: way to get action from idxs

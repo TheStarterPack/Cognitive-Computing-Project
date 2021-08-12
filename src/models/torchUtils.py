@@ -31,8 +31,7 @@ def get_dummy_loader(vocab_size: int, embedding_size: int, context_length: int,
 def read_embeddings_dict(approach_name: str) -> dict:
     with open(f'{EMBEDDING_PATH}{approach_name}.json') as file:
         json_string = file.read()
-
-    return jsonpickle.decode(json_string, keys=True)
+        return jsonpickle.decode(json_string, keys=True)
 
 
 def write_embeddings_to_file(model,

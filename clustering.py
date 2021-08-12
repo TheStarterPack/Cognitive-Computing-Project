@@ -1,8 +1,10 @@
-from typing import OrderedDict
+from collections import OrderedDict
 from sklearn import cluster
 from src.parsing import parser, actionSequence as AS
 from src.models import word2Vec
 import argparse
+from src.models.torchUtils import data_loader_from_numpy
+from sklearn.cluster import KMeans
 from src.models.torchUtils import data_set_from_numpy
 from src.models.torchUtils import write_embeddings_to_file
 from torch.utils.data import random_split, DataLoader
