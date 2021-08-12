@@ -78,9 +78,47 @@ Other approaches which we did not follow could be to discard all parameters, con
 
 ## Training Process (Augustin)
 
+### Method
+The paper [Efficient Estimation of Word Representations in
+Vector Space](https://arxiv.org/pdf/1301.3781v3.pdf) made headlines with high quality word embeddings with relatively low computational cost. Many following word embedding approaches build upon that work and we also followed their approach implementing a skipgram architecture with negative sampling: We look at a center token and its surrounding context tokens and maximize the cosine similarity between the center embedding and all context embeddings. Without regularization this might lead to a degenerate solution where every token embedding is the same. That is why we use "negative sampling": We minimize the cosine similarity between the center embedding and randomly sampled embeddings from our dictionary. If the dictionary size is big in relatiion to the context size we can assume that most random samples are not part of a meaningful context and minimizing their similarity to the center token is useful. This avoids the collapse of the embedding space.
+
+![Schematic Architecture Overview](imgs/wordvecarchitecture.png)
+
+### Training
+We choose a embedding dimensionality of 64 and train for 50 epochs with a batchsize of 32 and a context of ±3 tokens, resulting in 32*(3*2)=192 center-to-context-token pairs for the normal *positive* loss(in the graphs called *ploss*). We sample the same amount (192) random negative embeddings and optimize its loss (*nloss*) simultaniously.
+
+![Normal Training Loss Plot](imgs/normalloss.png)
+
+The loss decreases steadily while the negative loss stays low which is low from the beginning on since we initialize the embeddings to random vectors which in a high dimensional space are very unliekly to be correlated. If we remove the negative sampling during training we can see that the positive loss decreases more rapidly but at the same time the negative loss increases indicating a collapse of the embeddings space and providing evidence for the effectiveness of negative sampling:
+
+![Training without Negative Sampling indicating its usefulness](imgs/nonloss.png)
+
 ## Evaluation 
 
 ### Clustering
+For better visualization we used PCA to reduce the embedding dimensionality to 3 and then clustered the embedding space of all dictionary entries with Kmeans into clusters and then analyzed which tokens are assigned to which cluster: Because each unique action contains an action verb and an action object we caluclated the 10 most frequent action verb and action objects in each cluster. Our results show no obvious structur and meaningful clustering. We suspect that a problem is that the Kmeans method used so far uses eculidean distance for clustering wourso our following work shows that evaluations based on the euclidean distance dont seem to work. Further work can be done by chossing a clustering method which supports cosine similarity.
+
+**Action verb for 3 Clusters:**
+0 PutIn, PointAt, PutObjBack, LookAt, TurnTo, Pour, Walk, Grab, Find, PutBack
+1 Wipe, Wash, Pour, LookAt, PutObjBack, TurnTo, Walk, Grab, Find, PutBack
+2 PointAt, Wipe, Pour, PutObjBack, LookAt, TurnTo, Grab, Walk, Find, PutBack
+
+**Action objects for 10 Clusters:**
+0 ['coffe_maker', 'radio', 'food_chicken', 'plate', 'glass', 'sink', 'coffee', 'towel', 'clothes_pants', 'food_food']
+1 ['shampoo', 'brush', 'soap', 'food_bread', 'toothbrush', 'mug', 'fryingpan', 'closet', 'rag', 'child']
+2 ['document', 'pasta', 'food_food', 'clothes_dress', 'bowl', 'mop', 'television', 'cookingpot', 'cleaning_solution', 'plate']
+3 ['mop', 'toilet_paper', 'spoon', 'clothes_pants', 'cup', 'mail', 'hair', 'rag', 'knife', 'kettle']
+4 ['toilet', 'plate', 'sink', 'blender', 'chair', 'pillow', 'water', 'toy', 'soap', 'food_bread']
+5 ['couch', 'bowl', 'cleaning_solution', 'sponge', 'dish_soap', 'basket_for_clothes', 'soap', 'clothes_dress', 'towel', 'water']
+6 ['curtain', 'spoon', 'bowl', 'water', 'hairdryer', 'folder', 'drawing', 'mug', 'bathtub', 'toothbrush']
+7 ['document', 'pot', 'toy', 'food_kiwi', 'blanket', 'laptop', 'mouse', 'book', 'juice', 'dish_soap']
+8 ['laptop', 'spoon', 'water', 'coffee_cup', 'food_sugar', 'paper', 'cabinet', 'child', 'dish_soap', 'drinking_glass']
+9 ['towel', 'knife', 'clothes_shirt', 'book', 'water_glass', 'table_cloth', 'cd_player', 'cookingpot', 'milk', 'clothes_dress']
+
+![3 Clusters in 3D](imgs/kmeans-3-clusters-3dim-pca.png)
+
+![10 Clusters in 3D](imgs/kmeans-10-clusters-3dim-pca.png)
+
 
 ### Semantic Analysis and Embedding Arithmetic
 
