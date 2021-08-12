@@ -12,6 +12,9 @@ from sklearn.metrics.pairwise import cosine_distances
 import torch as T
 from matplotlib import pyplot as plt
 import numpy as np
+from nltk.cluster.kmeans import KMeansClusterer
+import nltk
+
 
 if __name__ == '__main__':
     # SETUP ARGUMENT PARSER
@@ -22,8 +25,10 @@ if __name__ == '__main__':
     argpar.add_argument("-noload", action="store_true")
     argpar.add_argument("-train", action="store_true")
     argpar.add_argument("-fused", action="store_true")
+    argpar.add_argument("-pca", action="store_true")
+    argpar.add_argument("-actions", action="store_true")
     args = argpar.parse_args()
-    NAME = f"kmeans-{'fused-' if args.fused else ''}{args.ncluster}-clusters-3dim-pca"
+    NAME = f"kmeans-{'fused-' if args.fused else ''}{args.ncluster}-clusters-3dim-{'pca' if args.pca else ''}"
 
     # SETUP PARSER
     parser = parser.ActionSeqParser(include_augmented=False, include_default=True)
@@ -63,19 +68,26 @@ if __name__ == '__main__':
     X = model.centers.detach().numpy()
     if args.fused:
         X += model.contexts.detach().numpy()
-    pca = PCA(n_components=3)
-    X = pca.fit_transform(X)
+    if args.pca:
+        pca = PCA(n_components=3)
+        X = pca.fit_transform(X)
     print("SHAPE", X.shape)
 
-    clusterer = KMeans(n_clusters=args.ncluster).fit(X)
+    #clusterer = KMeans(n_clusters=args.ncluster).fit(X)
+    clusterer = KMeansClusterer(args.ncluster, distance=nltk.cluster.util.cosine_distance, repeats=10)
+    labels = clusterer.cluster(X, assign_clusters=True)
+    #print("assigned embeds:", assigned_embeddings)
     #clusterer = DBSCAN(metric="cosine").fit(X)
-    cluster_centers = pca.inverse_transform(clusterer.cluster_centers_)
+    #cluster_centers = pca.inverse_transform(clusterer.cluster_centers_)
 
     writefile = open(f"results/{NAME}.txt", "w")
-    for c_idx, center in enumerate(cluster_centers):
+    for c_idx in range(args.ncluster):
         #print(c_idx, [str(idx_to_action[idx]) for idx in model.get_most_similar_idxs(vec=T.from_numpy(center))], file=writefile)
-        full_actions = [str(idx_to_action[idx]) for idx in range(len(X)) if clusterer.labels_[idx]==c_idx]
-        action_beginnings = [item.split(",")[0] for item in full_actions]
+        full_actions = [str(idx_to_action[idx]) for idx in range(len(X)) if labels[idx]==c_idx]
+        if args.actions:
+            action_beginnings = [item.split(",")[0] for item in full_actions]
+        else:
+            action_beginnings = [item.split("\'")[1] if len(item.split("\'"))>1 else "None" for item in full_actions]
         action_counts = OrderedDict()
         for action in action_beginnings:
             if action in action_counts:
@@ -87,10 +99,11 @@ if __name__ == '__main__':
         top_action_beginnings =[action_beginning_names[idx] for idx in top_action_beginning_idxs]
         print(c_idx, top_action_beginnings, file=writefile)
 
-    labels = clusterer.labels_
-    fig = plt.figure()
-    ax = plt.axes(projection ='3d')
-    ax.scatter(X[:,0],X[:,1],X[:,2], c=labels)
-    ax.set_title(NAME)
-    plt.savefig(f"results/{NAME}.png")
-    plt.show()
+    #labels = clusterer.labels_
+    if args.pca:
+        fig = plt.figure()
+        ax = plt.axes(projection ='3d')
+        ax.scatter(X[:,0],X[:,1],X[:,2], c=labels)
+        ax.set_title(NAME)
+        plt.savefig(f"results/{NAME}.png")
+        plt.show()

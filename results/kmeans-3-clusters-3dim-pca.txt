@@ -1,3 +1,3 @@
-0 ['Wipe', 'PointAt', 'Pour', 'LookAt', 'PutObjBack', 'TurnTo', 'Walk', 'Grab', 'Find', 'PutBack']
-1 ['PutIn', 'Touch', 'TurnTo', 'Pour', 'PutObjBack', 'LookAt', 'Grab', 'Walk', 'Find', 'PutBack']
-2 ['PointAt', 'Wipe', 'PutObjBack', 'Pour', 'LookAt', 'TurnTo', 'Walk', 'Grab', 'Find', 'PutBack']
+0 PutIn, PointAt, PutObjBack, LookAt, TurnTo, Pour, Walk, Grab, Find, PutBack
+1 Wipe, Wash, Pour, LookAt, PutObjBack, TurnTo, Walk, Grab, Find, PutBack
+2 PointAt, Wipe, Pour, PutObjBack, LookAt, TurnTo, Grab, Walk, Find, PutBack

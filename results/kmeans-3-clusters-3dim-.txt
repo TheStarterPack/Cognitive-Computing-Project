@@ -1,0 +1,3 @@
+0 bed, cookingpot, food_food, spoon, basket_for_clothes, board_game, bowl, plate, water, soap
+1 sheets, plate, clothes_dress, water, bowl, tooth_paste, cleaning_solution, drinking_glass, water_glass, toy
+2 clothes_dress, child, food_chicken, towel, toothbrush, pillow, food_food, plate, water, dish_soap
