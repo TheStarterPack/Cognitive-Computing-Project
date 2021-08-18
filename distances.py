@@ -47,7 +47,7 @@ if __name__ == '__main__':
         model.train(data_loader, epochs=int(args.epochs))
         model.plot_logs(["loss"])
 
-    write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
+    #write_embeddings_to_file(model, action_to_id, approach_name='action_target_embedding')
     idx_to_action = {v: k for k, v in action_to_id.items()}
 
     """
