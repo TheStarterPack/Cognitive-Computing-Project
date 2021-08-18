@@ -136,9 +136,13 @@ python distances.py
 
 The computation of the distance matrices takes some time, so it is saved in result/distance_matrices.
 The four tables containing the results should appear after execution in the following place:
+<br />
 results/action_distance_cosine_similiarity.xlsx
+<br />
 results/action_distance_euclidean.xlsx
+<br />
 results/target_distance_cosine_similiarity.xlsx
+<br />
 results/target_distance_euclidean.xlsx
 
 ### Semantic Analysis and Embedding Arithmetic
