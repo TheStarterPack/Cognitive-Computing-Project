@@ -96,7 +96,7 @@ The loss decreases steadily while the negative loss stays low which is low from 
 ## Evaluation 
 
 ### Clustering
-For better visualization we used PCA to reduce the embedding dimensionality to 3 and then clustered the embedding space of all dictionary entries with Kmeans into clusters and then analyzed which tokens are assigned to which cluster: Because each unique action contains an action verb and an action object we caluclated the 10 most frequent action verb and action objects in each cluster. Our results show no obvious structur and meaningful clustering. We suspect that a problem is that the Kmeans method used so far uses eculidean distance for clustering wourso our following work shows that evaluations based on the euclidean distance dont seem to work. Further work can be done by chossing a clustering method which supports cosine similarity.
+For better visualization we used PCA to reduce the embedding dimensionality to 3 and then clustered the embedding space of all dictionary entries with Kmeans into clusters and then analyzed which tokens are assigned to which cluster: Because each unique action contains an action verb and an action object we caluclated the 10 most frequent action verb and action objects in each cluster. Our results show no obvious structure and meaningful clustering. We suspect that a problem is that the Kmeans method used so far uses eculidean distance for clustering wourso our following work shows that evaluations based on the euclidean distance dont seem to work. Further work can be done by chossing a clustering method which supports cosine similarity.
 
 **Action verb for 3 Clusters:**
 0 PutIn, PointAt, PutObjBack, LookAt, TurnTo, Pour, Walk, Grab, Find, PutBack
@@ -119,6 +119,27 @@ For better visualization we used PCA to reduce the embedding dimensionality to 3
 
 ![10 Clusters in 3D](imgs/kmeans-10-clusters-3dim-pca.png)
 
+### Embedding distance and similarities
+
+To check whether the embeddings contain the semantic information we expect it to have through spatial relation, we calculated the similarities between our handcrafted classes and all other embeddings, which are not belonging to the distinct class.
+We had mainly two ideas for the classes. First we considered all embeddings which have the same action name as a class. Around 65 classes are created. 15 are not taken into account, because they are only appearing one time.
+The second approach puts embeddings in the same class if an embedding contains a target/parameter with the same name. The amount of targets was reduced by always taking the first part of an action target name. e.g. clothes_pants-> clothes. This approach made sense most of the time and reduced the class count to 236. 
+
+![Averaged results over all actions/targets(Picture not created by code)](imgs/distance_results.PNG)
+
+These results showed us that there is indeed some sort of clustering happening when using the cosine similarity. But it is not enough to call these groups “clusters”. The euclidean distances show no significant differences. This is what we expected, because it is not a measure in the training.
+Start prediction
+
+```
+python distances.py
+```
+
+The computation of the distance matrices takes some time, so it is saved in result/distance_matrices.
+The four tables containing the results should appear after execution in the following place:
+results/action_distance_cosine_similiarity.xlsx
+results/action_distance_euclidean.xlsx
+results/target_distance_cosine_similiarity.xlsx
+results/target_distance_euclidean.xlsx
 
 ### Semantic Analysis and Embedding Arithmetic
 
