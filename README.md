@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Motivation
 
-We realised a pipeline for the creation and evaluation of action embeddings. Additionally we assess if arithmetic relations can also be observed likewise in word embeddings. After that we want to evaluate the created embeddings by considering metrics and application in furthermore tasks. Finally we talk about limitations and problems that occur during the development process.
+We realised a pipeline for the creation and evaluation of action embeddings. Additionally we assess if arithmetic relations, similar to those present in word embeddings, can be observed. After that we want to evaluate the created embeddings by considering metrics and application in furthermore tasks. Finally we talk about limitations and problems that occur during the development process.
 
 
 
