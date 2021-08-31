@@ -121,29 +121,28 @@ For better visualization we used PCA to reduce the embedding dimensionality to 3
 
 ### Embedding distance and similarities
 
-To check whether the embeddings contain the semantic information we expect it to have through spatial relation, we calculated the similarities between our handcrafted classes and all other embeddings, which are not belonging to the distinct class.
-We had mainly two ideas for the classes. First we considered all embeddings which have the same action name as a class. Around 65 classes are created. 15 are not taken into account, because they are only appearing one time.
+To check whether the embeddings contain the semantic information we expect it to have through spatial relation, we calculated the similarities between our handcrafted classes and all other embeddings, which do not belong to the distinct class.
+We considered two approaches for manually splitting the dataset into classes. First we considered all embeddings which have the same action name as a class.  Around 65 classes are created. 15 are not taken into account, because they are only appearing once.
 The second approach puts embeddings in the same class if an embedding contains a target/parameter with the same name. The amount of targets was reduced by always taking the first part of an action target name. e.g. clothes_pants-> clothes. This approach made sense most of the time and reduced the class count to 236. 
 
 ![Averaged results over all actions and targets.Picture not created by code](imgs/distance_results.PNG)
 
 These results showed us that there is indeed some sort of clustering happening when using the cosine similarity. But it is not enough to call these groups “clusters”. The euclidean distances show no significant differences. This is what we expected, because it is not a measure in the training.
-Start prediction
+Start evaluation of distances:
 
 ```
 python distances.py
 ```
 
-The computation of the distance matrices takes some time, so it is saved in result/distance_matrices.
+The computation of the distance matrices takes some time, so it is saved in `result/distance_matrices`.
 The four tables containing the results should appear after execution in the following place:
-<br />
+
+```
 results/action_distance_cosine_similiarity.xlsx
-<br />
 results/action_distance_euclidean.xlsx
-<br />
 results/target_distance_cosine_similiarity.xlsx
-<br />
 results/target_distance_euclidean.xlsx
+```
 
 ### Semantic Analysis and Embedding Arithmetic
 
