@@ -29,7 +29,7 @@ We realised a pipeline for the creation and evaluation of action embeddings. Add
 
 
 
-## What are Embeddings? (Till)
+## What are Embeddings?
 
 
 Action embeddings are similar to word embeddings. The central motivation behind word embeddings is to represent the contextual relations of words by a multi dimensional vector space. Due to their contextual information embeddings are often used in further specific behavior understanding/generation tasks. The contextual meaning is realised by the arithmetic of the vector space. For example we have the relation capital:
@@ -44,7 +44,7 @@ For word type classificatin, given the surrounding words, we could used them dir
 
 In a nutshell the embedding vectors are trained by taking sequences from the corpus. For each sequence embeddings of the word in the middle and the surrounding words get customized to be more similar to each other. As a result the whole training process yield embedding vectors which are more similar to each other if the corresponding words occure in the same context. Likewise are action embeddings are created.
 
-## Our corpus/dataset (Lukas)
+## Our corpus/dataset
 
 For training the action embeddings the Virtual Home’s ‘Activity Knowledge Base’ (AKB) (http://virtual-home.org/tools/explore.html) was used. 
 The AKB consists of many action sequences which were collected for training robots. 
@@ -76,7 +76,7 @@ Other approaches which we did not follow could be to discard all parameters, con
  
 
 
-## Training Process (Augustin)
+## Training Process
 
 ### Method
 The paper [Efficient Estimation of Word Representations in
